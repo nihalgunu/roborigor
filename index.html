@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RoboRigor</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#555; --accent:#08306b; --bg:#ffffff; --rule:#e3e3e3; }
+  * { box-sizing:border-box; margin:0; }
+  body { font:17px/1.65 Georgia,'Times New Roman',serif; color:var(--ink); background:var(--bg); }
+  .wrap { max-width:760px; margin:0 auto; padding:56px 20px 80px; }
+  h1 { font-size:2rem; line-height:1.25; text-align:center; }
+  .kicker { text-align:center; font-family:Helvetica,Arial,sans-serif; font-size:.85rem;
+            letter-spacing:.22em; text-transform:uppercase; color:var(--accent);
+            margin:0 0 10px; }
+  .sub { text-align:center; color:var(--muted); margin:10px 0 4px; }
+  .authors { text-align:center; margin:14px 0 6px; font-size:1.05rem; }
+  .links { text-align:center; margin:22px 0 34px; }
+  .links a { display:inline-block; margin:4px 6px; padding:8px 18px; border:1.5px solid var(--accent);
+             border-radius:999px; color:var(--accent); text-decoration:none; font-family:Helvetica,Arial,sans-serif;
+             font-size:.92rem; }
+  .links a:hover { background:var(--accent); color:#fff; }
+  .links a.soon { border-color:#bbb; color:#888; cursor:default; pointer-events:none; }
+  h2 { font-size:1.25rem; margin:38px 0 12px; border-bottom:1px solid var(--rule); padding-bottom:6px; }
+  p { margin:12px 0; }
+  figure { margin:22px 0; text-align:center; }
+  figure img { max-width:100%; border:1px solid var(--rule); border-radius:4px; }
+  figcaption { font-size:.88rem; color:var(--muted); margin-top:8px; text-align:left; }
+  ul { padding-left:22px; } li { margin:7px 0; }
+  pre { background:#f6f6f4; border:1px solid var(--rule); border-radius:6px; padding:14px;
+        overflow-x:auto; font-size:.82rem; line-height:1.5; }
+  .note { font-size:.9rem; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">RoboRigor</p>
+  <h1>Same Scene, Different Answer:<br>Variance and Rollout Budgets for Flow-Policy Evaluation</h1>
+  <p class="authors">Nihal Gunukula</p>
+  <p class="sub">Preprint, under submission</p>
+  <div class="links">
+    <a href="same-scene-different-answer.pdf">Paper (PDF)</a>
+    <a href="https://github.com/nihalgunu/roborigor">Code</a>
+    <a href="https://github.com/nihalgunu/roborigor/releases/tag/logs-v1">Per-episode logs</a>
+    <a href="#bibtex">BibTeX</a>
+  </div>
+
+  <h2>TL;DR</h2>
+  <p><b>With the initial state held fixed, the flow sampler, not the environment, carries
+  61 to 84 percent of the variance in a reported success rate.</b> Nobody had decomposed
+  robot policy evaluation variance by source; once you do, the budget follows. A
+  replicate block splits that surviving share on the informative task into the flow
+  sampler (38.5 percent of total) and system nondeterminism (46.0 percent), the second
+  of which is invisible in any single reported rate. Rerunning the
+  field's standard 500-episode LIBERO protocol changing only the sampling seed moves the
+  headline number by 2.2 points, a band already containing 27 percent of the recomputable
+  improvements claimed across 50 recent VLA papers, 34.4 percent of whose highlighted
+  comparisons state no usable rollout count at all.</p>
+
+  <figure>
+    <img src="assets/fig_hero.png" alt="Panel a: share of outcome variance from the flow sampler versus the initial state for three policies. Panel b: points each factor moves the reported success rate.">
+    <figcaption>Where the variance lives, and what it costs. Top: with the initial state held
+    fixed, the flow sampler accounts for most outcome variance across three policies. Bottom:
+    what each factor moves on the reported rate. The seed shifts the 500-episode aggregate by
+    only 2.2 points precisely because averaging suppresses the per-episode variance above it,
+    and that gap is the budget an honest protocol has to buy.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="assets/fig_pareto.png" alt="Success rate versus control latency for all twelve steps-by-horizon cells">
+    <figcaption>The whole Pareto frontier is one cell: a single denoising step executed
+    over a horizon of 10. The published default (10, 5) is dominated.</figcaption>
+  </figure>
+
+  <h2>Findings</h2>
+  <ul>
+    <li><b>The scene is the smallest part of the variance.</b> With the initial state held
+        fixed, 84, 81, and 61 percent of outcome variance survives for pi0.5, pi0, and
+        SmolVLA, across base rates from 0.16 to 0.59, replicating at three environment
+        seeds. A replicate block splits that surviving share on the informative task into
+        the flow sampler (38.5 percent of total) and system nondeterminism (46.0 percent).
+        That the sampler can decide an episode is established; the partition itself had not
+        been measured for robot policies, and it is what tells you how many rollouts a claim
+        actually needs.</li>
+    <li><b>The budget that follows.</b> Rerunning the field's standard 500-episode LIBERO
+        protocol changing only the sampling seed moves the headline number by 2.2 points, a
+        band already containing 27 percent of the recomputable improvements claimed across 50
+        recent VLA papers. At the audited median of 50 rollouts per task the minimum
+        detectable effect is 18 points; a 2-point claim costs 2,200 episodes per arm.</li>
+    <li><b>Spending it: the shipped default is dominated.</b> For pi0.5 a single Euler step at
+        horizon 10 matches the 10-step default at 2.7x lower measured inference latency,
+        statistically indistinguishable under a pre-declared equivalence margin, on the
+        unmodified public checkpoint. Its one confirmed price is 4.7 points under
+        camera-viewpoint shift (pre-declared 838-pair sample, exact McNemar p=0.0008). The
+        equivalence certificate is scoped honestly: it holds on the registered battery, which
+        is near ceiling, and the study says where it stops holding. Others have shown few
+        steps can suffice and that the two knobs couple; what the powered factorial on
+        released weights adds is a claim of equivalence rather than an anecdote.</li>
+    <li><b>Rankings survive off the floor; margins never do.</b> Across four LIBERO-Plus axes,
+        one 16.5-point clean gap stands for anything from 9.6 to 67 points of deployed margin
+        (the clean anchors are single uncontrolled-seed draws, disclosed with their seed
+        band in the paper).
+        The single significant rank inversion (SmolVLA over pi0 under robot-state shift, exact
+        p=0.0022; exploratory, post-freeze axis) appears exactly where an axis floors the
+        trailing policies.</li>
+    <li><b>A third of published claims cannot be checked at all.</b> Across 50 audited VLA
+        papers, 34.4 percent of highlighted comparisons state no usable rollout count, so the
+        claim cannot be evaluated even in principle.</li>
+  </ul>
+
+  <figure>
+    <img src="assets/fig_newaxes.png" alt="Success by perturbation level on two additional axes for three policies">
+    <figcaption>Two perturbation axes, three policies, frozen variant sets. Lighting degrades
+    without reordering; robot-initial-state shift floors pi0, where the clean pi0 versus SmolVLA
+    ordering inverts (exact p=0.0022; exploratory, post-freeze axis).</figcaption>
+  </figure>
+
+  <h2>Tooling</h2>
+  <p>Every number regenerates from released per-episode JSONL records by one script, including the
+  tables and the abstract's numerals. The harness is pip-installable
+  (<code>pip install roborigor</code>): exact intervals, paired comparisons, a rollout-budget
+  calculator, variance decomposition, and a campaign runner with exactly-once resume.</p>
+
+  <h2 id="bibtex">BibTeX</h2>
+  <pre>Citation will be posted when the preprint is up (in progress).</pre>
+  <p class="note">Page assets and numbers are generated from the released data; see the repository
+  for the drift test that keeps them honest.</p>
+</div>
+</body>
+</html>
