@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RoboRigor</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#555; --accent:#08306b; --bg:#ffffff; --rule:#e3e3e3; }
+  * { box-sizing:border-box; margin:0; }
+  body { font:17px/1.65 Georgia,'Times New Roman',serif; color:var(--ink); background:var(--bg); }
+  .wrap { max-width:760px; margin:0 auto; padding:56px 20px 80px; }
+  h1 { font-size:2rem; line-height:1.25; text-align:center; }
+  .sub { text-align:center; color:var(--muted); margin:10px 0 4px; }
+  .authors { text-align:center; margin:14px 0 6px; font-size:1.05rem; }
+  .links { text-align:center; margin:22px 0 34px; }
+  .links a { display:inline-block; margin:4px 6px; padding:8px 18px; border:1.5px solid var(--accent);
+             border-radius:999px; color:var(--accent); text-decoration:none; font-family:Helvetica,Arial,sans-serif;
+             font-size:.92rem; }
+  .links a:hover { background:var(--accent); color:#fff; }
+  .links a.soon { border-color:#bbb; color:#888; cursor:default; pointer-events:none; }
+  h2 { font-size:1.25rem; margin:38px 0 12px; border-bottom:1px solid var(--rule); padding-bottom:6px; }
+  p { margin:12px 0; }
+  figure { margin:22px 0; text-align:center; }
+  figure img { max-width:100%; border:1px solid var(--rule); border-radius:4px; }
+  figcaption { font-size:.88rem; color:var(--muted); margin-top:8px; text-align:left; }
+  ul { padding-left:22px; } li { margin:7px 0; }
+  pre { background:#f6f6f4; border:1px solid var(--rule); border-radius:6px; padding:14px;
+        overflow-x:auto; font-size:.82rem; line-height:1.5; }
+  .note { font-size:.9rem; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>RoboRigor: Three Dials of Flow-Policy Inference<br>and What Actually Moves VLA Success Rates</h1>
+  <p class="authors">Nihal Gunukula</p>
+  <p class="sub">soon</p>
+  <div class="links">
+    <a class="soon" title="arXiv submission in progress">Paper (PDF) &middot; soon</a>
+    <a href="https://github.com/nihalgunu/roborigor">Code</a>
+    <a href="https://github.com/nihalgunu/roborigor/releases/tag/logs-v1">Per-episode logs</a>
+    <a href="#bibtex">BibTeX</a>
+  </div>
+
+  <h2>TL;DR</h2>
+  <p><b>27 percent of the improvements highlighted across 50 recent VLA papers are smaller
+  than the noise floor of the protocol that produced them.</b> Rerunning the identical
+  standard LIBERO evaluation with nothing changed but the flow-sampling seed moves the
+  headline number by 2.2 points (86 recomputable comparisons audited); on informative
+  mid-difficulty tasks the swing is 7.5 points, the size of the field's median claimed
+  gap. Two of the three inference knobs everyone sets by habit are set wrong, and the
+  third is not a knob at all.</p>
+
+  <figure>
+    <img src="assets/fig_hero.png" alt="Ranked bars: points each factor moves the reported success rate, against the field's median claimed improvement">
+    <figcaption>What actually moves a reported VLA success rate. The three largest factors
+    move the number by three to six times the field's median claimed improvement (7.2
+    points, dashed); the sampling seed alone spans 2.2 points on the standard protocol,
+    a band containing 27 percent of the 86 recomputable audited claims.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="assets/fig_pareto.png" alt="Success rate versus control latency for all twelve steps-by-horizon cells">
+    <figcaption>The whole Pareto frontier is one cell: a single denoising step executed
+    over a horizon of 10. The published default (10, 5) is dominated.</figcaption>
+  </figure>
+
+  <h2>Findings</h2>
+  <ul>
+    <li><b>The default is dominated.</b> For pi0.5, a single Euler step at horizon 10 matches
+        the 10-step default at a third of the control latency: statistically indistinguishable
+        by a pre-declared equivalence standard, on the unmodified public checkpoint, no
+        distillation. Its one measured price is about 4 points under camera-viewpoint shift
+        (confirmed by a pre-declared 838-pair sample: 4.7 points, exact McNemar p=0.0008).</li>
+    <li><b>Everyone tunes the wrong dial.</b> Execution horizon dominates denoising steps:
+        replanning every step costs 9 to 41 points across all three policies
+        (a truncated interim look had suggested SmolVLA collapses; the pre-declared
+        completion to full n showed a task-composition artifact). Three for three across two model families.</li>
+    <li><b>The seed is not a dial.</b> With the initial state fixed, flow-sampling noise
+        carries 84, 81, and 61 percent of outcome variance across the three policies, and
+        the decomposition structure replicates across three environment seeds while the
+        headline level moves. Averaging over sampling seeds is a property of the
+        flow-policy class, not a nicety for one model.</li>
+    <li><b>Rankings survive off the floor; margins never do.</b> The same 16.5-point clean
+        gap stands for anything from 9.6 to 67 points depending on the perturbation axis,
+        and the one significant rank inversion (SmolVLA over pi0, exact p=0.0022) appears
+        exactly where an axis floors the trailing policies. Leaderboard order is
+        trustworthy off the floor; leaderboard distance carries almost no information.</li>
+    <li><b>The field's protocols cannot see their own claims.</b> At the audited median of
+        50 rollouts per task the minimum detectable effect is 18 points, over a third of
+        highlighted comparisons state no usable rollout count, and nearly a third of the
+        recomputable ones fail an exact test at their own n.</li>
+  </ul>
+
+  <figure>
+    <img src="assets/fig_newaxes.png" alt="Success by perturbation level on two additional axes for three policies">
+    <figcaption>Two perturbation axes, three policies, frozen variant sets. Lighting degrades
+    without reordering; robot-initial-state shift floors pi0, where the clean pi0 versus SmolVLA
+    ordering inverts (exact p=0.0022).</figcaption>
+  </figure>
+
+  <h2>Tooling</h2>
+  <p>Every number regenerates from released per-episode JSONL records by one script, including the
+  tables and the abstract's numerals. The harness is pip-installable
+  (<code>pip install roborigor</code>): exact intervals, paired comparisons, a rollout-budget
+  calculator, variance decomposition, and a campaign runner with exactly-once resume.</p>
+
+  <h2 id="bibtex">BibTeX</h2>
+  <pre>Citation will be posted when the preprint is up (in progress).</pre>
+  <p class="note">Page assets and numbers are generated from the released data; see the repository
+  for the drift test that keeps them honest.</p>
+</div>
+</body>
+</html>
