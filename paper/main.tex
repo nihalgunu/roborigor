@@ -1,0 +1,599 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage[hidelinks,pdfauthor={},pdfcreator={},pdfproducer={}]{hyperref}
+\input{numbers}
+\newif\ifanon \anontrue % set \anonfalse for arXiv/camera-ready
+
+% Anonymized for double-anonymous review (ICRA 2027).
+
+\title{Three Dials of Flow-Policy Inference:\\What Actually Moves VLA Success Rates}
+\author{\IEEEauthorblockN{\ifanon Anonymous\else Nihal Gunukula\fi}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Flow-matching vision-language-action policies ship with three inference
+dials that the field sets by folklore: the number of denoising steps
+(typically 10), the execution horizon before replanning (typically 5),
+and the sampling seed (typically unreported). We characterize all three
+on LIBERO under a significance-first protocol with exact intervals and
+paired designs. Two dials have sharp Pareto structure: for $\pi_{0.5}$,
+a \emph{single} Euler integration step executed over a horizon of 10 is
+statistically indistinguishable from the 10-step default at $3\times$
+lower control latency, its one measured price a
+confirmed $\NumCameraCost$-point robustness cost under
+camera-viewpoint shift; replanning every step costs
+$\NumEveryStepLo$--$\NumEveryStepHi$ points across all three
+policies we test. The third dial is not a dial at
+all: rerunning the standard 500-episode protocol with a different
+flow-sampling seed spans $\NumSeedSpread$ points, a band that
+already contains $\NumSeedShare\%$ of the recomputable improvements
+highlighted across 50 recent VLA papers, and grows to
+$\NumBatterySpread$ points on informative mid-difficulty tasks. A nested
+decomposition shows flow-sampling noise, not the initial state,
+dominates outcome variance wherever the benchmark is informative.
+Across four LIBERO-Plus perturbation axes, pairwise margins moved
+wildly (a $\NumCleanGap$-point clean gap stood for anything from
+$\NumGapLayout$ to $\NumGapMax$ points of deployed margin) while
+policy \emph{rankings}
+inverted only where an axis drove the trailing policies toward the
+floor: for policies separated as ours are, ordering is stable off the
+floor; margins never are. All claims ship
+with pre-registered analyses, a public deviations log, per-episode
+logs, and a pip-installable harness with an exact rollout-budget
+calculator.
+\end{abstract}
+
+\section{Introduction}
+Flow-matching action heads are now the dominant recipe for
+vision-language-action (VLA) policies, a line advancing
+rapidly~\cite{black2024pi0,pi05,shukor2025smolvla,pi07}, and their
+inference behavior is
+governed by three dials every deployment sets implicitly: the number of
+ODE integration steps, the number of actions executed before
+replanning, and the random seed feeding the flow sampler. Published
+evaluations almost never vary, report, or cost these dials. We measure
+what each one buys, what each one costs, and what each one does to the
+statistical meaning of a reported success rate
+(Fig.~\ref{fig:hero}).\footnote{Per-episode logs for every reported number, the frozen pre-registration with its deviations log, the audit extraction, and the harness \ifanon are prepared for anonymous release; the link is withheld here only to preserve anonymity and appears in the camera-ready.\else are released at \url{https://github.com/nihalgunu/roborigor}.\fi}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_hero.pdf}
+\caption{What actually moves a reported VLA success rate, measured
+on $\pi_{0.5}$: inference dials the evaluator sets (dark) and
+deployment shifts (light), ranked by points moved. The three
+largest factors move the number by three to six times the field's
+median claimed improvement ($7.2$ points across the $86$ recomputable
+audited comparisons, dashed); the sampling seed alone spans $2.2$
+points on the standard protocol and $7.5$ on the mid-difficulty
+battery, a band containing $27\%$ of those claims
+(Secs.~\ref{sec:pareto}--\ref{sec:margins}).}
+\label{fig:hero}
+\end{figure}
+The cost of folklore is measurable. Auditing 50 recent VLA papers
+under frozen intake rules, over a third of their highlighted
+comparisons carry no usable rollout count; at the audited median of 50
+rollouts per task (IQR 20--50), the minimum detectable effect at
+LIBERO-typical base rates is $\NumMdeFifty$ points; nearly a third of
+the recomputable highlighted comparisons fail an exact test at their
+own rollout counts, and nearly half fall below their own protocol's
+MDE~(Sec.~\ref{sec:audit}). The dials
+and the statistics are not separate problems: two dials move the
+number, and the third alone spans more than a quarter of the field's
+claimed advances.
+
+\textbf{Contributions.}
+(1)~A $4{\times}3$ Pareto map of denoising steps~$\times$~execution
+horizon with exact confidence intervals (Sec.~\ref{sec:pareto});
+(2)~a nested variance decomposition separating flow-sampling noise
+from initial-state variation, with system nondeterminism measured and
+bounded (Sec.~\ref{sec:seed}); (3)~a significance-first evaluation protocol,
+budget calculator, and released per-episode logs; (4)~a perturbation study
+across four LIBERO-Plus axes and three policies: one $16.5$-point
+clean gap stands for $\NumGapLayout$ to $\NumGapMax$ points of
+deployed margin, and rankings invert only in the floor regime
+(Sec.~\ref{sec:margins}).
+
+\section{Related Work}\label{sec:related}
+\textbf{Inference dials as improvement levers.} Recent work treats
+denoising steps and initial noise as levers for making flow policies
+better or faster~\cite{snapflow2026}, and real-time chunking
+\cite{black2025rtc} redesigns execution scheduling for reactive
+deployment. We measure the same dials as \emph{evaluation variables}:
+what they do to the reported number and its uncertainty. Our
+single-step result needs no distillation or retraining, holds on
+the unmodified public checkpoint, and is policy-conditional, which is
+a different claim from making few-step policies \emph{trainable}. Our horizon
+finding is the benchmark-side complement of RTC, not a contradiction of
+it (Sec.~\ref{sec:pareto}).
+
+\textbf{Evaluation methodology.} Kress-Gazit et
+al.~\cite{kressgazit2024empirical} set out best practices; Jiang et
+al.~\cite{jiang2026benchmarking} audit LIBERO significance and find
+most SOTA claims unprovable; we extend that audit with per-comparison
+minimum detectable effects, unit-tagged rollout counts, and
+non-reporting as a first-class outcome. STEP~\cite{snyder2025step} and
+its successor~\cite{snyder2026beyond} provide anytime-valid policy
+comparison; our paired e-process and the design-effect correction from
+measured variance components build directly on them.
+PhAIL~\cite{phail2026} ships a distributional real-robot protocol;
+we are simulation-scale and success-rate-focused. Active experiment
+selection~\cite{anwar2025active} is complementary to our budget
+calculator.
+
+\textbf{Perturbation suites.} LIBERO-Plus~\cite{fei2025liberoplus}
+supplies the perturbation battery; we evaluate frozen variant sets
+over four of its seven axes (camera viewpoint, object layout,
+lighting, robot initial state);
+LIBERO-PRO~\cite{zhou2025liberopro} adds semantics-breaking probes
+whose floor effects are degenerate for rank analysis, so we cite rather
+than run it.
+
+\section{Protocol}\label{sec:protocol}
+Every reported aggregate is regenerated from per-episode JSONL
+records by released scripts, and a released consistency check pins
+the paper's numerals, tables, and generated macros to those records;
+no aggregate is carried by hand.
+\textbf{Design.} LIBERO exposes deterministic initial states indexed
+per task, so all comparisons are paired episode-for-episode; per-task
+comparisons use the exact McNemar test on discordant pairs, suite-level
+families use Holm correction, exploratory per-task families use
+Benjamini--Hochberg~\cite{holm1979,bh1995}. Intervals are
+Clopper--Pearson~\cite{clopper1934} (Wilson~\cite{wilson1927} intervals ship
+alongside in the artifact summaries; conclusions are
+interval-choice-invariant), differences use
+Newcombe's score interval~\cite{newcombe1998} (computed unpaired,
+which is conservative under the positive correlation that pairing
+induces), unpaired literature
+recomputations use Boschloo's exact test~\cite{boschloo1970} below
+the registered sample-size cap and Fisher's exact test above it
+(deviations log, Entry 1).
+\textbf{Seed semantics.} A ``sampling seed'' names a noise
+\emph{stream}, not a draw: each action chunk receives a seed derived
+from (episode seed, chunk index), so a replicate reproduces the whole
+trajectory's noise sequence and consecutive chunks never reuse noise.
+Fixed-request determinism is bitwise on our A100 reference; closed-loop
+replicates at fully fixed factors still disagree on 7.6\% of cells,
+which we report as system-level nondeterminism and fold into the
+decomposition rather than assume away.
+\textbf{Equivalence margin.} The $\pm5$-point margin used
+throughout was fixed at the design reframe, anchored to the audit's median per-comparison MDE ($4.35$ points), an
+external quantity: it postdates the
+$4{\times}3$ grid itself but predates the distribution-shift
+(Sec.~\ref{sec:fusion}), replication, and camera data (deviations
+log, Entry 5(a)). The headline
+equivalence verdict is not margin-fragile: its Newcombe interval
+$[-1.2, +4.1]$ sits inside any margin down to $\pm4.2$ points.
+\textbf{Pre-registration.} Analysis choices, intake rules for the
+literature audit, and go/no-go thresholds were frozen before data
+collection; the released deviations log records every post-freeze
+change, including the direction of this paper after two registered
+provocations failed (Sec.~\ref{sec:negatives}).
+
+\section{Dials One and Two: Steps and Horizon}\label{sec:pareto}
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_pareto.pdf}
+\caption{Success rate vs.\ control latency for all 12
+$(\textit{num\_steps}, \textit{exec\_horizon})$ cells ($n{=}480$ each,
+Clopper--Pearson 95\% intervals; latency from the measured A100 cost
+model). For $\pi_{0.5}$ the folklore default $(10,5)$ is dominated;
+the frontier is a single integration step at horizon 10
+(Sec.~\ref{sec:replication} for what replicates on $\pi_0$).}
+\label{fig:pareto}
+\end{figure}
+We evaluate $\pi_{0.5}$ on a $4{\times}3$ grid of denoising steps
+$s\in\{1,2,5,10\}$ and execution horizon $h\in\{1,5,10\}$ over the
+registered eight-task LIBERO-10 battery (20 paired initial states, 3
+sampling seeds; $n{=}480$ per cell; 5{,}760 episodes, exactly-once
+coverage verified against the campaign manifest;
+Table~\ref{tab:grid}). The battery is the
+V1 selection rule applied to prior per-task rates: the four tasks then
+inside the informative band $p\in[0.5,0.95]$ plus the four
+least-saturated others; task 5 (saturated at $1.00$) was excluded by
+that rule, and task 7 was dropped from a three-way $0.98$ tie with
+tasks 1 and 3 by a lowest-index tie-break.
+
+\textbf{The default is dominated.} The published default $(s{=}10,
+h{=}5)$ reaches $0.950$ at $16.2$\,ms of amortized control latency per
+executed step (latency modeled from measured per-component costs, not
+per-cell wall clock). The frontier cell $(s{=}1,h{=}10)$ reaches $0.965$ $[0.944,0.979]$
+at $5.6$\,ms (Fig.~\ref{fig:pareto}); nothing on the grid dominates
+it, and per-chunk inference cost falls from $81$ to $56$\,ms. Held to
+this paper's own standard, the right claim is equivalence, not
+superiority: paired by initial state against the default, the exact
+McNemar test does not separate them ($18$ vs $11$ discordant wins,
+$p{=}0.26$) and the Newcombe interval on the difference,
+$[-1.2, +4.1]$ points, establishes equivalence within $\pm5$ points.
+A tenth of the denoising budget and a third of the latency buy a
+statistically indistinguishable success rate. Mechanistically this is
+expected: one Euler step from the prior executes approximately the
+conditional-mean action chunk, and the measured flow-sampling variance
+at $(1,10)$ is $0.023$ versus $0.052$ at $(10,10)$, consistent with
+near-deterministic mean-chunk execution on a benchmark where the mean
+action suffices. Intervals in Fig.~\ref{fig:pareto} are
+Clopper--Pearson over episodes; init-cluster bootstrap intervals are
+wider in $11$ of $12$ cells (median $+36\%$, up to $+54\%$; the
+saturated $(10,10)$ cell is $7\%$ narrower) and change no conclusion
+(artifact).
+
+\begin{table}[t]
+\centering
+\caption{$\pi_{0.5}$ success on the registered battery for all
+$(s,h)$ cells ($n{=}480$ each; Clopper--Pearson 95\% intervals). The
+folklore default is $(10,5)$; the frontier is $(1,10)$.}
+\label{tab:grid}
+\input{table_grid}
+\end{table}
+\textbf{The dials interact.} At $h{=}1$ (replan every step), steps
+matter: success climbs from $0.642$ to $0.848$ as $s$ goes $1\to10$.
+At $h{=}10$ the effect inverts: $s{=}1$ is nominally best. Replanning
+cadence, not denoising budget, is the dominant dial: every $h{=}1$ cell
+loses $10$--$32$ points to its $h{=}10$ counterpart. The measured
+variance components couple the same way: the flow-sampling variance component rises steeply as steps fall at
+$h{=}1$ ($0.058\to 0.117$) and flattens at $h{=}10$, i.e., frequent replanning repeatedly
+re-exposes the trajectory to sampler noise.
+
+\textbf{Scope.} These results are conditional on LIBERO's quasi-static
+manipulation: nothing in the scene demands mid-chunk reactivity. On
+tasks that do, tight closed-loop execution is the point, and real-time
+chunking~\cite{black2025rtc} addresses precisely the latency--reactivity
+tension that our open-loop frontier sidesteps. We state the finding as
+benchmark-conditional; its value is that the benchmark in question is
+the field's primary one.
+
+\subsection{Does the cheap frontier survive distribution shift?}
+\label{sec:fusion}
+The natural objection to a mean-chunk shortcut is that its slack
+appears only off-distribution. We re-ran $s\in\{1,2,10\}$ at $h{=}10$
+on identical LIBERO-Plus variant sets ($688$ variants, one paired
+episode per variant per cell). Under
+object-layout perturbation the cheap cells hold exactly: $0.920$ vs
+$0.913$ for $s{=}1$ vs $s{=}10$. Under camera-viewpoint perturbation
+the cost is real, by the strongest evidence in this paper: a
+pre-declared confirmatory sample (all $419$ camera variants of the
+fork suite, two fresh draws per variant at each step count, $838$
+pairs, single registered analysis; deviations log, Entries 7 and 9)
+measures $0.406$ vs $0.452$, a $4.7$-point deficit, discordants
+$45$--$84$, exact McNemar $p{=}0.0008$ (unpaired Newcombe interval
+$[-9.4, +0.1]$ points, conservative under pairing). The exploratory
+draws that motivated it ($632$ pairs, pooled $p{=}0.017$; deviations
+log, Entries 4(d), 5(b)) also carried this paper's central caution in
+miniature: an equivalence screen that pooled camera with layout read
+an ambiguous $p{=}0.076$ where the camera-only paired test was
+already $p{=}0.015$; the wrong aggregation, like the wrong rollout
+count, manufactures apparent equivalence. A second step does not
+recover the cost: $s{=}2$ patterns with $s{=}1$ under camera
+perturbation ($0.468$ vs $0.505$) while holding fully under layout
+($0.907$ vs $0.913$), so the deficit is a many-steps effect, not a
+one-versus-two effect. The honest summary: the cheap-steps frontier
+is free on-distribution and under layout shift, and carries a
+confirmed $4.7$-point robustness cost under viewpoint shift, a price
+we attach to the deployment recommendation rather than bury.
+
+\subsection{Which parts replicate on a second policy?}
+\label{sec:replication}
+Rerunning the key cells on $\pi_0$ (same battery, paired inits,
+$n{=}480$ per cell) separates the universal from the policy-specific.
+The horizon effect replicates emphatically: replanning every step
+costs $\pi_0$ $40.8$ points at $s{=}1$ ($0.365$ vs $0.773$) and
+$18.1$ points at $s{=}10$ ($0.671$ vs $0.852$). The single-step cell
+is again not separated from the $(10,5)$ default ($0.773$ vs $0.787$,
+McNemar $p{=}0.56$; difference CI $[-6.7, +3.8]$ points, consistent
+with equivalence but too wide to establish it at $\pm5$), but
+unlike $\pi_{0.5}$, $\pi_0$ pays a real price for
+dropping steps at $h{=}10$: $(10,10)$ beats $(1,10)$ by $3.0$--$12.8$
+points (paired $p{=}0.00025$). The scoped conclusion: execution
+horizon dominates denoising budget for both policies, while
+single-step sufficiency is a property of the policy, not of the
+benchmark, which sharpens the mechanism reading, since whether the
+conditional-mean chunk suffices is exactly what should vary across
+training recipes. Finally, at a second environment seed $\pi_{0.5}$'s
+single-step cell reproduces to within one episode in $480$
+($0.9625$ vs $0.9646$)
+and never trails the default there either (paired difference
+$[+0.1,+5.9]$ points in the frontier's favor, $p{=}0.02$): the
+headline cell is stable across policies' shared protocol, environment
+seeds, and, per Sec.~\ref{sec:fusion}, layout perturbation.
+A third policy widens the pattern: SmolVLA~\cite{shukor2025smolvla},
+a compact non-openpi flow policy served through the same harness,
+shows the same horizon ordering on an eight-task battery ($h{=}10$
+$0.648$ vs.\ $h{=}5$ $0.596$, paired discordants $63$--$38$, McNemar
+$p{=}0.017$, $n{=}480$ per cell) and pays a real every-step price:
+$0.554$ at $h{=}1$ ($9.4$ points below $h{=}10$; paired difference
+CI $[3.2, 15.5]$, $p{<}10^{-4}$). That number carries its own
+cautionary tale: an interim look at this cell, truncated at $26$
+episodes that happened to all come from the battery's hardest task,
+read $2/26$ and briefly suggested outright collapse; the pre-declared
+completion to the designed $n{=}480$ (deviations log, Entries 4(c),
+6, 8) shows a task-composition artifact, not a collapse. Partial
+looks at non-random subsets manufacture effects; the full cell is
+the measurement. Its
+single-step cell is statistically indistinguishable from its default
+($0.625$ vs.\ $0.648$, paired difference $-2.3$ points
+$[-8.3, +3.8]$, $p{=}0.29$), though the interval is too wide to claim
+equivalence at our $\pm5$-point margin. Horizon dominance is thus
+three-for-three across two model families while its magnitude is
+policy-dependent ($10$--$32$ points for $\pi_{0.5}$, $18$--$41$
+for $\pi_0$, $9$ for SmolVLA), and single-step sufficiency holds
+for two of the three policies, with $\pi_0$ the exception that
+pays.
+
+\section{Dial Three Is Not a Dial: the Seed}\label{sec:seed}
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_seed_spread.pdf}
+\caption{Ten runs of the standard 500-episode LIBERO-10 protocol
+differing only in flow-sampling seed (5{,}000 fresh episodes). The
+2.2-point spread contains 27\% of the 86 recomputable improvements
+highlighted across the 50 audited papers.}
+\label{fig:seed}
+\end{figure}
+Fixing everything but the seed exposes the third dial for what it is,
+at two scales. At the field's standard protocol (the full LIBERO-10
+suite, 50 initial states per task, 5{,}000 fresh episodes across ten
+flow-sampling seeds) the headline rate spans $2.2$ points (SD $0.64$,
+mean pairwise shift $0.71$; Fig.~\ref{fig:seed}). That band is not
+small relative to what the field reports: $27\%$ of the $86$
+recomputable highlighted improvements are $\le 2.2$ points ($34\%$
+when restricted to LIBERO-family comparisons, where the band was
+measured), and $19\%$ sit within two seed-noise standard
+deviations. The band itself is
+measured on one policy and one suite; policies and suites with lower
+base rates will have wider ones (Sec.~\ref{sec:pareto}'s variance
+coupling). The band also grows with
+benchmark informativeness: on a battery weighted toward
+mid-difficulty tasks (the V1 grid marginalized by seed, $160$
+episodes per replicate), the same reseeding spans $7.5$ points (SD
+$2.4$), the scale of the field's median claimed gap ($7.2$). Part of
+that growth is mechanical (the smaller replicate implies
+$\sqrt{500/160}\approx1.8\times$ the SD); the measured
+$3.8\times$ exceeds it, so roughly a $2\times$ factor is
+informativeness itself.
+Saturated protocols do not remove seed sensitivity; they hide it in
+tasks whose outcome no longer varies.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_varstacks.pdf}
+\caption{Outcome-variance components per battery task: initial-state
+share (dark) vs.\ within-init flow-sampling variance (light).
+Saturated tasks (grey, $\mu\ge0.96$) contribute almost nothing to
+either component.}
+\label{fig:varstacks}
+\end{figure}
+\textbf{Where the variance lives.} With initial states fixed and seeds
+varied ($8$ tasks $\times$ up to $40$ inits $\times$ $10$ seeds), a
+nested beta-binomial decomposition attributes outcome variance to the
+initial state (ICC) versus flow-sampling noise, with a
+method-of-moments cross-check and cluster bootstrap over inits
+(Fig.~\ref{fig:varstacks}). On the
+informative task (base rate $0.59$), the flow-sampling variance
+component is $0.204$ of a $0.242$ total ($84\%$ of outcome variance;
+init ICC $0.16$ $[0.06, 0.24]$): at a fixed initial state, the
+sampler's noise stream largely decides the outcome. On near-saturated tasks ($\mu \ge 0.96$)
+every component degenerates: five of the eight battery tasks sit at
+or above $0.96$ in our own measurement despite four qualifying at
+selection time, the quantitative form of the observation that the benchmark can
+no longer separate frontier policies.
+In our own 20-init scan of the other three LIBERO suites, no task
+falls below $0.90$, and every task not at ceiling scores exactly
+$18/20$ or $19/20$. At $n{=}20$ this certifies no task as clearly
+informative while it cannot exclude mildly informative ones (an
+$18/20$ interval reaches down to $0.68$); by our own budget table,
+settling that census would take hundreds of episodes per task.
+The flow-sampling component as estimated includes residual system
+nondeterminism; the measured $7.6\%$ replicate disagreement bounds that
+contribution above by $0.038$ of variance, well below the $0.204$
+measured on the informative task.
+\textbf{The decomposition replicates across environment seeds.}
+Rerunning the four qualifying tasks at two further environment seeds
+($24$ inits $\times$ $10$ sampling seeds each, $1{,}920$ fresh
+episodes) reproduces the structure: on the informative task the
+sampling component is $0.200$ and $0.214$ (vs.\ $0.204$), the
+init-dominated task keeps its high init share ($0.57$ at both new
+seeds), and the near-saturated tasks stay degenerate. The
+\emph{level}, by contrast, moves: the informative task's base rate
+shifts from $0.59$ to $0.53$ and $0.54$. Where the variance lives is a
+stable property of the policy--benchmark pair; the headline number is
+not.
+\textbf{And across policies.} The same instrument cell rerun on
+$\pi_0$ and SmolVLA ($40$ inits $\times$ $10$ sampling seeds each)
+gives the same verdict at very different competence levels: with the
+initial state fixed, flow-sampling noise accounts for $84\%$,
+$81\%$, and $61\%$ of outcome variance for $\pi_{0.5}$
+(base rate $0.59$), $\pi_0$ ($0.16$), and SmolVLA ($0.30$)
+respectively, with the method-of-moments cross-check agreeing in every
+case. Averaging over sampling seeds is not an optional refinement for
+some particular policy; it is where most of the per-init variance
+lives across the flow-policy class.
+
+\textbf{What this costs.} At the field's default of 50 rollouts per
+task, the minimum detectable effect at base rate $0.95$ is $18.3$
+points ($80\%$ power, exactly enumerated); $500$ episodes buy $4.6$ points and
+$1{,}500$ buy $2.5$. Our released calculator inverts these exactly for
+paired and unpaired designs, and the measured components supply the
+design-effect correction for sequential tests~\cite{snyder2025step}.
+
+\section{Rankings Survive Off the Floor; Margins Do Not}\label{sec:margins}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_perturb.pdf}
+\caption{Clean vs.\ perturbed success for three policies on identical
+LIBERO-Plus variant sets. Lines never cross (ordering stable) while
+separations change drastically.}
+\label{fig:perturb}
+\end{figure}
+\textbf{Rankings survive perturbation; magnitudes do not.} Across three
+policies ($\pi_{0.5}$, $\pi_0$, SmolVLA) evaluated on an identical set
+of 688 LIBERO-Plus variants (Fig.~\ref{fig:perturb}), not one pairwise ordering inverted at the
+axis level (Kendall $\tau{=}1.0$; a null simulation that redraws
+observed rates under binomial noise with the clean ordering preserved
+yields $p{=}1.0$; the single nominal level-scan inversion has
+$p{=}0.26$). Clean anchors come from our own paired 200-episode runs
+on the same suite ($\pi_{0.5}$ $0.960$, $\pi_0$ $0.795$, SmolVLA
+$0.645$), not from published numbers; the ordering conclusion is
+unchanged under either choice. Meanwhile the \emph{gaps} moved wildly
+in both directions: the $16.5$-point $\pi_{0.5}$--$\pi_0$ gap nearly
+tripled to $45.7$ under camera perturbation and fell to $9.6$ under
+layout; the $15.0$-point $\pi_0$--SmolVLA gap collapsed to $4.5$ under
+camera and more than tripled to $53.8$ under layout. Two caveats
+scope this result: the no-inversion analysis here covers two of the
+seven LIBERO-Plus axes (the two further axes below extend coverage to
+four, and find the floor-regime exception), and
+with perturbed separations this large the design has little power to
+detect inversions between closely matched policies; the informative
+finding is the magnitude instability, not the absence of flips. The
+practical reading is good news with an asterisk: the field's
+leaderboard ordering is more trustworthy than our premise assumed, but
+a clean-benchmark gap carries almost no information about the
+robustness margin behind it.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_newaxes.pdf}
+\caption{Success by perturbation level on two further axes (frozen
+variant sets, identical across all three policies). Lighting degrades
+without reordering; robot-initial-state shift floors $\pi_0$, where
+the clean $\pi_0$--SmolVLA ordering inverts ($p{=}0.0022$).}
+\label{fig:newaxes}
+\end{figure}
+\textbf{Two further axes find the regime where ordering fails.}
+On frozen variant sets for two additional axes run on all three
+policies ($252$ lighting and $370$ robot-state variants,
+Fig.~\ref{fig:newaxes}), the axes behave qualitatively
+differently. Under Light Conditions every clean ordering is preserved
+emphatically ($\pi_{0.5}$ $0.921$, $\pi_0$ $0.794$, SmolVLA
+$0.238$; $\pi_0$--SmolVLA discordants $146$--$6$). Under Robot
+Initial States the top of the order holds: $\pi_{0.5}$ at $0.730$
+degrades gradually from $0.92$ to $0.45$ while $\pi_0$ is floored at
+every level ($0.059$, discordant pairs $250$--$2$, a $67.0$-point
+gap). At the floor, however, the clean ordering breaks: SmolVLA ($0.122$)
+significantly outscores $\pi_0$ ($38$--$15$ discordants, exact
+$p{=}0.0022$, unchanged under Holm across the six pairwise tests of
+this section; exploratory, as this axis postdates the freeze),
+inverting a $15$-point clean-benchmark gap. The
+collapse is not a serving artifact: $\pi_0$ scores $0.794$ under
+Light Conditions through the identical fork wrapper, server process,
+and session (matching its clean $0.795$), and $\pi_{0.5}$ handles the
+same robot-state variants through the same code path, so the
+observation pipeline and the perturbation application are both
+exonerated; what remains is $\pi_0$'s own brittleness to shifted
+initial joint states. The
+pattern is a two-regime rule. While every policy retains headroom,
+perturbation rescales gaps without reordering (the same
+$16.5$-point clean gap stands for anything from $9.6$ to $67.0$
+points); once
+an axis floors the competitors, even the ordering carries no
+information.
+
+\section{The Pre-Registered Gates and the Audit}\label{sec:negatives}\label{sec:audit}
+This paper began as a provocation with two pre-registered go
+conditions, and both failed. We report them because their failure is
+informative and because a pre-registration that only survives success
+is theater. The first condition required rank inversions under
+perturbation at the registered scale; on the two registered axes the
+ordering held everywhere while pairwise gaps across all three policy
+pairs ranged from $4.5$ to $63.5$ points around clean gaps of $15.0$
+to $31.5$, and the gate was called as failed. A post-gate extension to two
+further axes (deviations log, Entry 4(b)) later found one significant
+inversion in the floor regime (Sec.~\ref{sec:margins}), consistent
+with the registered condition's spirit but outside its frozen scope,
+so we report it as exploratory. The second required at least one third of
+audited comparisons to fail exact tests at their stated rollout
+counts, or the audited median MDE to exceed the median claimed gap;
+the measured rate fell just short ($32.6\%$) and the median MDE
+($4.35$) sits below the median gap ($7.2$), so both disjuncts failed.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig_audit.pdf}
+\caption{Each audited highlighted comparison: its claimed gap vs.\ the
+minimum detectable effect of its own protocol. Points below the
+diagonal claim less than their protocol could detect.}
+\label{fig:audit}
+\end{figure}
+\textbf{The audit, reduced to what survived.} Across 50 papers sampled
+under frozen intake rules (stratified 2024--2026, newest-first,
+no discretionary skips), $32.6\%$ of the 86 recomputable highlighted
+comparisons fail an exact test at the papers' own rollout counts: real,
+but under our registered one-third threshold, and the median highlighted
+gap ($7.2$ points) exceeds the median per-comparison MDE ($4.35$). The
+statistic that needs no threshold: $34.4\%$ of highlighted comparisons
+carry no usable rollout count at all ($45/131$: not reported or
+unit-ambiguous), $13$ of $50$ papers $[15\%, 40\%]$ report no usable
+count on any extracted comparison (two further papers publish success
+rates only as figures), and eval seed counts appear for only $31$ of
+$131$ comparisons. Eleven comparisons pit the authors' method at known $n$
+against baseline rates copied from other papers at unknown $n$
+(Fig.~\ref{fig:audit}). The
+full extraction, intake logs, and deviations log ship with the
+artifact.
+
+\section{A Costed Protocol}\label{sec:protocolrec}
+The findings compress into a protocol, and the released harness makes
+each step one command.
+
+\begin{table}[t]
+\centering
+\caption{Episodes per arm required to detect a gap at baseline
+$0.95$ (unpaired score test; power computed by exact binomial
+enumeration; $80\%$ power, $\alpha{=}0.05$).
+Pairing by initial state and the measured design effect reduce these;
+the released calculator inverts both directions exactly.}
+\label{tab:power}
+\input{table_power}
+\end{table}
+
+\textbf{Report the dials.} Steps, horizon, and seed policy move the
+number by up to $\NumEveryStepHi$ points across the three policies
+we test (Sec.~\ref{sec:pareto}); a success rate without them is not a
+measurement. \textbf{Size the run before launching it.}
+Table~\ref{tab:power} is the cost of honesty at LIBERO-typical base
+rates: the field's median protocol (50 rollouts) resolves only
+$18$-point gaps, and a $2$-point claim costs $2{,}200$ episodes per
+arm. \textbf{Pair everything.} LIBERO's indexed initial states make
+episode-level pairing free; on our own key comparisons the
+measured relative efficiency of the paired design over the unpaired
+one is $1.4$--$2.3\times$ (per-comparison values in the artifact). \textbf{Average over sampling seeds} on any task
+inside the informative band, where the sampler carries $61$--$84\%$
+of per-init outcome variance (Sec.~\ref{sec:seed}); report the seed
+count. \textbf{Report a margin band, not a clean gap}: a clean gap
+predicts deployed separation only up to a factor of seven
+(Sec.~\ref{sec:margins}). \textbf{Stop early honestly} with
+anytime-valid sequential tests~\cite{snyder2025step,snyder2026beyond}
+corrected by the measured design effect.
+
+The harness (\ifanon released; name withheld during
+review\else\texttt{pip install roborigor}\fi) runs every policy as a
+websocket server speaking the openpi client protocol, so a new policy
+is one serve script of roughly a hundred lines; episodes land as append-only JSONL
+records whose factor-complete key gives exactly-once resume, cross-box
+integrity checks, and the pairing used throughout this paper. Noise
+is seeded per (episode, chunk) so replicates are bit-reproducible
+where the stack allows, and the residual $7.6\%$ system
+nondeterminism is measured rather than assumed away
+(Sec.~\ref{sec:protocol}). The paper's numerals, tables, and the
+abstract's generated macros regenerate from the released records by
+the released scripts.
+
+\section{Limitations}\label{sec:limitations}
+All results are simulation-only and LIBERO-family; the horizon
+finding is conditional on quasi-static tasks (Sec.~\ref{sec:pareto}).
+Initial states remain the paired factor throughout;
+environment-seed variation is measured separately
+(Sec.~\ref{sec:seed}). SmolVLA illustrates a
+final caution: its default-configuration per-task success spans
+$0.25$ to $0.98$ across the battery ($n{=}60$ each), so suite-pooled
+numbers can hide task-level competence differences that matter for
+deployment.
+
+\bibliographystyle{IEEEtran}
+\bibliography{refs}
+
+\end{document}

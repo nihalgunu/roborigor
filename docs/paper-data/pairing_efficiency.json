@@ -1,0 +1,14 @@
+{
+ "pi05_frontier_vs_default": {
+  "n_pairs": 480,
+  "rel_efficiency": 1.36
+ },
+ "pi0_1010_vs_110": {
+  "n_pairs": 480,
+  "rel_efficiency": 1.43
+ },
+ "smolvla_eh10_vs_eh5": {
+  "n_pairs": 480,
+  "rel_efficiency": 2.26
+ }
+}
