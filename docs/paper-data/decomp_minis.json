@@ -1,0 +1,30 @@
+{
+ "pi0_libero": {
+  "task": "libero_10/task8",
+  "n_episodes": 400,
+  "n_inits": 40,
+  "mu": 0.1559,
+  "icc": 0.1878,
+  "icc_ci95": [
+   0.0914,
+   0.2795
+  ],
+  "e_pq_sampling": 0.10689,
+  "icc_mom": 0.187,
+  "mom_agrees": true
+ },
+ "smolvla_libero": {
+  "task": "libero_10/task8",
+  "n_episodes": 400,
+  "n_inits": 40,
+  "mu": 0.2993,
+  "icc": 0.3912,
+  "icc_ci95": [
+   0.2562,
+   0.5031
+  ],
+  "e_pq_sampling": 0.12769,
+  "icc_mom": 0.3911,
+  "mom_agrees": true
+ }
+}

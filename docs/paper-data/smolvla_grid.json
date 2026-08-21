@@ -1,0 +1,83 @@
+{
+ "n_unique": 986,
+ "cells": {
+  "nsdef_eh1": {
+   "k": 2,
+   "n": 26,
+   "sr": 0.0769,
+   "cp": [
+    0.0095,
+    0.2513
+   ]
+  },
+  "nsdef_eh10": {
+   "k": 311,
+   "n": 480,
+   "sr": 0.6479,
+   "cp": [
+    0.6033,
+    0.6907
+   ]
+  },
+  "nsdef_eh5": {
+   "k": 286,
+   "n": 480,
+   "sr": 0.5958,
+   "cp": [
+    0.5504,
+    0.6401
+   ]
+  },
+  "ns1_eh10": {
+   "k": 300,
+   "n": 480,
+   "sr": 0.625,
+   "cp": [
+    0.58,
+    0.6685
+   ]
+  },
+  "nsdef_eh1_full": {
+   "k": 266,
+   "n": 480,
+   "sr": 0.5542,
+   "cp": [
+    0.5084,
+    0.5992
+   ],
+   "note": "Entry 6 completion of the designed 480-cell; supersedes the truncated 2/26"
+  }
+ },
+ "eh5_vs_eh10": {
+  "n": 480,
+  "a_only": 38,
+  "b_only": 63,
+  "p": 0.01651
+ },
+ "def10_vs_ns1_10": {
+  "n": 480,
+  "def_only": 51,
+  "ns1_only": 40,
+  "p": 0.29447,
+  "diff_pts": -2.3,
+  "diff_ci": [
+   -8.3,
+   3.8
+  ]
+ },
+ "truncation_bias_exhibit": {
+  "truncated_2_of_26_sr": 0.0769,
+  "full_sr": 0.5542,
+  "note": "The 26 truncated episodes were all task 0 (the manifest's first task), whose full-cell h=1 rate is 9/60; the battery-wide rate is 0.554. The truncated read was a task-composition artifact, not an estimate of the cell."
+ },
+ "eh1_full_vs_eh10": {
+  "n": 480,
+  "h10_only": 81,
+  "h1_only": 36,
+  "p": 3.866e-05,
+  "diff_ci_pts": [
+   -15.5,
+   -3.2
+  ]
+ }
+}

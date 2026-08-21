@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use RoboRigor, please cite the paper below once it is public."
+title: "RoboRigor"
+authors:
+  - family-names: "Gunukula"
+    given-names: "Nihal"
+license: Apache-2.0
+repository-code: "https://github.com/nihalgunu/roborigor"
+preferred-citation:
+  type: article
+  title: "Three Dials of Flow-Policy Inference: What Actually Moves VLA Success Rates"
+  authors:
+    - family-names: "Gunukula"
+      given-names: "Nihal"
+  year: 2026
+  notes: "Under review. Citation details will be updated on publication."
