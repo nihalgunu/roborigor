@@ -1,0 +1,15 @@
+# Stage-2 pilot: SmolVLA on libero_10, one env seed, control arm only.
+# Not runnable until the rollout runner lands (Stage 1) and a box is up (Stage 2).
+campaign: pilot_smolvla
+benchmark: libero
+policy:
+  policy_id: smolvla_libero
+  checkpoint: TBD_HF_ID  # day-1 desk check: does a SmolVLA LIBERO finetune exist?
+suite: libero_10
+output_dir: results/pilot_smolvla
+base:
+  seeds: [7]
+  sampling_seeds: [0]
+  n_trials_per_task: 10
+arms:
+  - name: control

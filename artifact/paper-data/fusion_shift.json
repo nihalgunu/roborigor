@@ -1,0 +1,130 @@
+{
+ "per_axis": {
+  "Camera Viewpoints": {
+   "ns1": {
+    "sr": 0.4521,
+    "n": 376,
+    "ci95": [
+     0.401,
+     0.504
+    ]
+   },
+   "ns2": {
+    "sr": 0.4681,
+    "n": 376,
+    "ci95": [
+     0.4167,
+     0.5199
+    ]
+   },
+   "ns10": {
+    "sr": 0.5053,
+    "n": 376,
+    "ci95": [
+     0.4536,
+     0.557
+    ]
+   }
+  },
+  "Objects Layout": {
+   "ns1": {
+    "sr": 0.9199,
+    "n": 312,
+    "ci95": [
+     0.884,
+     0.9475
+    ]
+   },
+   "ns2": {
+    "sr": 0.9071,
+    "n": 312,
+    "ci95": [
+     0.8692,
+     0.9369
+    ]
+   },
+   "ns10": {
+    "sr": 0.9135,
+    "n": 312,
+    "ci95": [
+     0.8766,
+     0.9422
+    ]
+   }
+  }
+ },
+ "equivalence_vs_ns10": {
+  "ns1": {
+   "pairs": 688,
+   "mcnemar_p": 0.0758,
+   "diff_pct_ci95": [
+    -7.54,
+    2.32
+   ],
+   "tost_pm5": false
+  },
+  "ns2": {
+   "pairs": 688,
+   "mcnemar_p": 0.1133,
+   "diff_pct_ci95": [
+    -7.24,
+    2.61
+   ],
+   "tost_pm5": false
+  }
+ },
+ "camera_powerup": {
+  "pairs": 632,
+  "sr_ns1": 0.5174,
+  "sr_ns10": 0.557,
+  "ns1_only": 38,
+  "ns10_only": 63,
+  "mcnemar_p": 0.0165,
+  "diff_pct_ci95": [
+   -9.42,
+   1.54
+  ],
+  "tost_pm5": false,
+  "note": "camera axis only; fusion draw + independent campow draw per variant, paired within draw",
+  "eprocess": {
+   "draws": [
+    376,
+    256
+   ],
+   "e_value": 2.73,
+   "anytime_p": 0.2515,
+   "decision": "continue"
+  },
+  "per_draw": [
+   {
+    "draw": 1,
+    "pairs": 376,
+    "s1_only": 21,
+    "s10_only": 41,
+    "p": 0.0151
+   },
+   {
+    "draw": 2,
+    "pairs": 256,
+    "s1_only": 17,
+    "s10_only": 22,
+    "p": 0.5224
+   }
+  ],
+  "convention": "discordants reported s1-wins first everywhere"
+ },
+ "camera_confirmatory": {
+  "design": "Entry 7/9 confirmatory: 419 camera variants x 2 replicates x s in {1,10} at h=10",
+  "pairs": 838,
+  "sr_s1": 0.4057,
+  "sr_s10": 0.4523,
+  "s1_only": 45,
+  "s10_only": 84,
+  "mcnemar_p": 0.00076,
+  "diff_pts_ci95": [
+   -9.36,
+   0.08
+  ],
+  "episodes": 1676
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "anchors": {
+  "pi05_libero": 0.96,
+  "pi0_libero": 0.795,
+  "smolvla_libero": 0.645
+ },
+ "anchor_sampling_seed": "uncontrolled (null) in every anchor episode",
+ "pi05_seed_band": {
+  "rates_pct": [
+   96.0,
+   94.0,
+   92.5,
+   92.5,
+   94.0,
+   93.5,
+   94.0,
+   93.0,
+   94.0,
+   92.5
+  ],
+  "mean_pct": 93.6,
+  "sd_pct": 1.07,
+  "min_pct": 92.5,
+  "max_pct": 96.0,
+  "anchor_pct": 96.0,
+  "anchor_is_band_max": true
+ },
+ "clean_gap_pi05_minus_pi0": {
+  "at_anchor_pts": 16.5,
+  "at_seed_mean_pts": 14.1
+ }
+}

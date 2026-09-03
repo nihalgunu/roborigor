@@ -1,0 +1,175 @@
+{
+ "cells": [
+  {
+   "num_steps": 1,
+   "exec_horizon": 1,
+   "n": 480,
+   "success_rate": 0.6417,
+   "ci95": [
+    0.597,
+    0.6846
+   ],
+   "control_latency_ms_per_step": 55.99,
+   "measured_latency_ms_per_step": 57.7,
+   "measured_chunk_ms": 57.7
+  },
+  {
+   "num_steps": 1,
+   "exec_horizon": 5,
+   "n": 480,
+   "success_rate": 0.8958,
+   "ci95": [
+    0.865,
+    0.9217
+   ],
+   "control_latency_ms_per_step": 11.2,
+   "measured_latency_ms_per_step": 12.6,
+   "measured_chunk_ms": 62.62
+  },
+  {
+   "num_steps": 1,
+   "exec_horizon": 10,
+   "n": 480,
+   "success_rate": 0.9646,
+   "ci95": [
+    0.9439,
+    0.9792
+   ],
+   "control_latency_ms_per_step": 5.6,
+   "measured_latency_ms_per_step": 6.72,
+   "measured_chunk_ms": 66.13
+  },
+  {
+   "num_steps": 2,
+   "exec_horizon": 1,
+   "n": 480,
+   "success_rate": 0.8063,
+   "ci95": [
+    0.768,
+    0.8407
+   ],
+   "control_latency_ms_per_step": 58.78,
+   "measured_latency_ms_per_step": 60.45,
+   "measured_chunk_ms": 60.45
+  },
+  {
+   "num_steps": 2,
+   "exec_horizon": 5,
+   "n": 480,
+   "success_rate": 0.9208,
+   "ci95": [
+    0.893,
+    0.9434
+   ],
+   "control_latency_ms_per_step": 11.76,
+   "measured_latency_ms_per_step": 13.17,
+   "measured_chunk_ms": 65.43
+  },
+  {
+   "num_steps": 2,
+   "exec_horizon": 10,
+   "n": 480,
+   "success_rate": 0.9521,
+   "ci95": [
+    0.929,
+    0.9694
+   ],
+   "control_latency_ms_per_step": 5.88,
+   "measured_latency_ms_per_step": 7.04,
+   "measured_chunk_ms": 69.34
+  },
+  {
+   "num_steps": 5,
+   "exec_horizon": 1,
+   "n": 480,
+   "success_rate": 0.8083,
+   "ci95": [
+    0.7702,
+    0.8426
+   ],
+   "control_latency_ms_per_step": 67.15,
+   "measured_latency_ms_per_step": 69.24,
+   "measured_chunk_ms": 69.24
+  },
+  {
+   "num_steps": 5,
+   "exec_horizon": 5,
+   "n": 480,
+   "success_rate": 0.9292,
+   "ci95": [
+    0.9024,
+    0.9505
+   ],
+   "control_latency_ms_per_step": 13.43,
+   "measured_latency_ms_per_step": 14.95,
+   "measured_chunk_ms": 74.3
+  },
+  {
+   "num_steps": 5,
+   "exec_horizon": 10,
+   "n": 480,
+   "success_rate": 0.9583,
+   "ci95": [
+    0.9364,
+    0.9744
+   ],
+   "control_latency_ms_per_step": 6.72,
+   "measured_latency_ms_per_step": 8.07,
+   "measured_chunk_ms": 79.48
+  },
+  {
+   "num_steps": 10,
+   "exec_horizon": 1,
+   "n": 480,
+   "success_rate": 0.8479,
+   "ci95": [
+    0.8126,
+    0.8789
+   ],
+   "control_latency_ms_per_step": 81.1,
+   "measured_latency_ms_per_step": 83.44,
+   "measured_chunk_ms": 83.44
+  },
+  {
+   "num_steps": 10,
+   "exec_horizon": 5,
+   "n": 480,
+   "success_rate": 0.95,
+   "ci95": [
+    0.9265,
+    0.9677
+   ],
+   "control_latency_ms_per_step": 16.22,
+   "measured_latency_ms_per_step": 17.81,
+   "measured_chunk_ms": 88.47
+  },
+  {
+   "num_steps": 10,
+   "exec_horizon": 10,
+   "n": 480,
+   "success_rate": 0.9458,
+   "ci95": [
+    0.9216,
+    0.9643
+   ],
+   "control_latency_ms_per_step": 8.11,
+   "measured_latency_ms_per_step": 9.5,
+   "measured_chunk_ms": 93.56
+  }
+ ],
+ "pareto_frontier": [
+  {
+   "num_steps": 1,
+   "exec_horizon": 10,
+   "n": 480,
+   "success_rate": 0.9646,
+   "ci95": [
+    0.9439,
+    0.9792
+   ],
+   "control_latency_ms_per_step": 5.6,
+   "measured_latency_ms_per_step": 6.72,
+   "measured_chunk_ms": 66.13
+  }
+ ]
+}

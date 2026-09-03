@@ -1,0 +1,11 @@
+{
+ "n_papers": 34,
+ "n_comparisons": 91,
+ "n_unusable_n": 30,
+ "unusable_rate": 0.33,
+ "n_recomputed": 61,
+ "n_not_significant": 25,
+ "share_not_significant": 0.41,
+ "n_gap_below_mde": 35,
+ "share_below_mde": 0.574
+}
