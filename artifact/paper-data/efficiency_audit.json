@@ -293,6 +293,12 @@
    }
   ]
  },
+ "median_base_rate": 0.964,
+ "margin5_allowed_failure_ratio_median": 2.351,
+ "margin5_allows_doubling": {
+  "k": 51,
+  "n": 83
+ },
  "method_families": [
   "caching",
   "chunking",

@@ -284,6 +284,9 @@ def main():
             **alt,
         },
         "dilution_curve_pi05": dilution_curve(a, b),
+        "task8_share_of_ten_step_failures": round(
+            (1 - ref_rate[8]) * battery["per_task"]["8"]["n"]
+            / sum((1 - ref_rate[t]) * battery["per_task"][str(t)]["n"] for t in tasks_all), 4),
         "certify": {
             "headroom_tasks": headroom,
             "observed_discordance_rate": round(p_disc, 4),

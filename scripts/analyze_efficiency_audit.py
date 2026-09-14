@@ -103,6 +103,12 @@ def main():
                "n_certifiable_but_ratio_hi_ge_1_5": sum(1 for x in cert if x["ratio_hi"] >= 1.5)},
         "O8": {"n_papers_with_lower_base_benchmark": len(pairs), "loss_larger_on_lower_base": larger,
                "loss_smaller_on_lower_base": smaller, "sign_test_p": sign_p, "pairs": pairs},
+        "median_base_rate": round(statistics.median(c["rate_base"] for c in claims), 4),
+        "margin5_allowed_failure_ratio_median": round(statistics.median(
+            (1 - c["rate_base"] + MARGIN) / (1 - c["rate_base"]) for c in claims if c["rate_base"] < 1), 3),
+        "margin5_allows_doubling": {"k": sum(1 for c in claims if c["rate_base"] < 1
+                                             and (1 - c["rate_base"] + MARGIN) / (1 - c["rate_base"]) >= 2),
+                                    "n": sum(1 for c in claims if c["rate_base"] < 1)},
         "method_families": sorted({r.get("method_family") for r in inc if r.get("method_family")}),
     }
     dest = ROOT / "docs/paper-data/efficiency_audit.json"

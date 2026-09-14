@@ -113,6 +113,20 @@ def main():
         by_level[lev] = {"n": len(us), "sr_s1": round(s1 / len(us), 3), "sr_s10": round(s10 / len(us), 3),
                          "s1_only": w1, "s10_only": w10}
 
+    # Camera contrast pooled over the benchmark's easier (1-3) and harder (4-5) levels.
+    from roborigor.stats.report import noloss_report
+    cam_recs = [r for r in cam if r.perturbation_axis == "Camera Viewpoints"]
+    camera_groups = {}
+    for name, levels in (("levels_1_3", {"1", "2", "3"}), ("levels_4_5", {"4", "5"})):
+        rep_ = noloss_report([r for r in cam_recs if r.num_steps == 1 and r.perturbation_level in levels],
+                             [r for r in cam_recs if r.num_steps == 10 and r.perturbation_level in levels],
+                             n_boot=1000)
+        c_ = rep_.all_tasks
+        camera_groups[name] = {"n": c_.n_pairs, "rate_s1": round(c_.rate_a, 4), "rate_s10": round(c_.rate_b, 4),
+                               "diff_pts": round(c_.diff_pts, 2), "ci_pts": [round(x, 2) for x in c_.ci_pts],
+                               "s1_only": c_.a_only, "s10_only": c_.b_only, "p": c_.mcnemar_p,
+                               "verdict": c_.verdict}
+
     # Failure timing on discordant pairs: does the losing arm time out or fail early?
     def timing(a, b):
         out = {"loser_timeouts": 0, "loser_early": 0, "winner_steps_median": None}
@@ -168,7 +182,7 @@ def main():
                "chunk_ms_s10_h10": round(lat[(10, 10)]["measured_chunk_ms"])}
 
     out = {"ratio_bound": RATIO_BOUND, "failure_ratio": rows, "smolvla_horizon_paired": smol_h,
-           "camera_by_level": by_level, "failure_timing": timing_out, "seed_per_task_discordants": seeds,
+           "camera_by_level": by_level, "camera_level_groups": camera_groups, "failure_timing": timing_out, "seed_per_task_discordants": seeds,
            "census": census, "latency": latency}
     dest = ROOT / "docs/paper-data/failure_ratio_and_shift.json"
     dest.write_text(json.dumps(out, indent=1) + "\n")

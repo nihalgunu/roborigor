@@ -120,6 +120,36 @@
    "s10_only": 56
   }
  },
+ "camera_level_groups": {
+  "levels_1_3": {
+   "n": 236,
+   "rate_s1": 0.8729,
+   "rate_s10": 0.8559,
+   "diff_pts": 1.69,
+   "ci_pts": [
+    -2.55,
+    6.01
+   ],
+   "s1_only": 14,
+   "s10_only": 10,
+   "p": 0.5412561893463135,
+   "verdict": "INCONCLUSIVE"
+  },
+  "levels_4_5": {
+   "n": 602,
+   "rate_s1": 0.2226,
+   "rate_s10": 0.294,
+   "diff_pts": -7.14,
+   "ci_pts": [
+    -10.45,
+    -3.84
+   ],
+   "s1_only": 31,
+   "s10_only": 74,
+   "p": 3.27553526874422e-05,
+   "verdict": "DIFFERENT"
+  }
+ },
  "failure_timing": {
   "pi05_task8": {
    "loser_timeouts": 19,

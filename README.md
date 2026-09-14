@@ -6,8 +6,8 @@ VLA acceleration papers (fewer denoising steps, caching, token pruning, quantiza
 
 - One denoising step is equivalent to ten within +/-5 points for pi0.5 on an eight-task LIBERO-10 battery, but inconclusive on the four tasks classified as informative before the experiment ([-2.0, +7.1] points).
 - Across all 79 paired comparisons in our grids, 18 certify equivalence on the battery. At equal episode counts the four saturated tasks keep 17 of those certificates and the four informative tasks keep 1, while the informative tasks keep 57 of 59 significant differences.
-- Where failures are common, the verdicts diverge: one step costs pi0 7.9 points (p=0.00025) and pi0.5 4.7 points under large camera-viewpoint shifts (p=0.0008).
-- Among 86 VLA efficiency papers claiming parity on LIBERO, 76% compare against a base policy at or above 90% success, and 15 report any uncertainty, per-task result, or paired analysis.
+- Where failures are common, one step costs pi0 7.9 points (p=0.00025) and pi0.5 7.1 points on the hardest LIBERO-Plus camera-viewpoint shifts (levels 4-5, p=0.00003); on levels 1-3 the contrast is inconclusive.
+- Among 86 VLA efficiency papers claiming parity on LIBERO, the base policy succeeds in at least 90% of episodes in 64 of the 84 claims with numeric rates (median 96.4%, where a +/-5-point margin tolerates 2.35x the base's failures), and 15 report any uncertainty, per-task result, or paired analysis.
 
 ## Outputs
 
