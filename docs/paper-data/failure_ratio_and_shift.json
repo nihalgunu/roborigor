@@ -133,7 +133,16 @@
    "s1_only": 14,
    "s10_only": 10,
    "p": 0.5412561893463135,
-   "verdict": "INCONCLUSIVE"
+   "verdict": "INCONCLUSIVE",
+   "odds_ratio_ci": [
+    0.578,
+    3.523
+   ],
+   "failure_ratio": 0.882,
+   "failure_ratio_ci": [
+    0.62,
+    1.228
+   ]
   },
   "levels_4_5": {
    "n": 602,
@@ -147,7 +156,16 @@
    "s1_only": 31,
    "s10_only": 74,
    "p": 3.27553526874422e-05,
-   "verdict": "DIFFERENT"
+   "verdict": "DIFFERENT",
+   "odds_ratio_ci": [
+    0.266,
+    0.645
+   ],
+   "failure_ratio": 1.101,
+   "failure_ratio_ci": [
+    1.054,
+    1.156
+   ]
   }
  },
  "failure_timing": {

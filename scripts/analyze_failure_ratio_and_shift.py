@@ -125,7 +125,10 @@ def main():
         camera_groups[name] = {"n": c_.n_pairs, "rate_s1": round(c_.rate_a, 4), "rate_s10": round(c_.rate_b, 4),
                                "diff_pts": round(c_.diff_pts, 2), "ci_pts": [round(x, 2) for x in c_.ci_pts],
                                "s1_only": c_.a_only, "s10_only": c_.b_only, "p": c_.mcnemar_p,
-                               "verdict": c_.verdict}
+                               "verdict": c_.verdict,
+                               "odds_ratio_ci": [round(x, 3) for x in c_.odds_ratio_ci],
+                               "failure_ratio": round(rep_.failure_ratio, 3),
+                               "failure_ratio_ci": [round(x, 3) for x in rep_.failure_ratio_ci]}
 
     # Failure timing on discordant pairs: does the losing arm time out or fail early?
     def timing(a, b):

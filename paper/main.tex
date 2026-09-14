@@ -88,6 +88,19 @@ costs something once failures are common (Sec.~\ref{sec:transfer});
 sit in this regime, and a three-part report with a tool that computes it
 (Secs.~\ref{sec:audit},~\ref{sec:report}).
 
+\section{Related Work}\label{sec:related}
+In robot learning, the LBM study compares policies with paired initial
+conditions and posterior uncertainty~\cite{lbm2026}, and sequential
+tests stop comparisons early~\cite{snyder2025step}. On
+LIBERO specifically, most state-of-the-art claims cannot be significant
+given their headline scores~\cite{jiang2026benchmarking}, undocumented
+evaluation details move scores by tens of points~\cite{choi2026vlaeval},
+and perturbed variants expose large drops that clean scores
+hide~\cite{fei2025liberoplus,zhou2025liberopro}. These works concern
+claims that one policy beats another, or robustness; the no-loss claims
+that efficiency methods rest on, and how saturation certifies them,
+have not been examined for robot policies.
+
 \section{Setup}\label{sec:protocol}
 Released $\pi_{0.5}$ and $\pi_0$ LIBERO checkpoints (openpi) and SmolVLA,
 served through one harness; $31{,}858$ per-episode records are released.
@@ -106,8 +119,7 @@ both at execution horizon 10. Comparisons are paired on (initial state,
 seed) or (variant, draw) and tested with exact McNemar~\cite{mcnemar1947};
 intervals are Newcombe's paired score intervals~\cite{newcombe1998paired}.
 A comparison is a significant difference if $p{<}0.05$, otherwise
-equivalent if its 95\% interval lies within $\pm5$ points (stricter than
-two one-sided tests~\cite{schuirmann1987}), otherwise inconclusive.
+equivalent if its 95\% interval lies within $\pm5$ points, otherwise inconclusive.
 
 \section{Saturated Tasks Supply the Certificate}\label{sec:dilution}
 \textbf{One contrast.} On the battery, $\pi_{0.5}$ succeeds in $0.965$ of
@@ -209,7 +221,29 @@ interval on tasks declared informative before the experiment; and
 (iii)~a failure-rate-ratio interval against a declared bound, certifying
 only if (ii) lies inside the margin and (iii) lies below the bound.
 \texttt{\ifanon ceilingcheck\else roborigor\fi{} report} computes all three from paired records and
-warns when a pooled certificate does not hold on the informative tasks.
+warns when a pooled certificate does not hold on the informative tasks. Table~\ref{tab:report} applies the report: the battery certificate
+fails (ii) because its informative tasks are inconclusive, and the two
+costs are flagged by all three parts.
+
+\begin{table}[t]
+\centering
+\caption{The three-part report for one step vs.\ ten at horizon 10.
+$b$--$c$: pairs won by one step vs.\ by ten. (i) exact conditional
+odds-ratio interval; (ii) paired Newcombe 95\% interval; (iii)
+failure-rate ratio with init-cluster bootstrap interval. Verdict from
+(ii) and McNemar; a claim is certified only if (ii) holds on the
+informative tasks and (iii) stays below the declared bound.}
+\label{tab:report}
+\setlength{\tabcolsep}{2.5pt}
+\resizebox{\columnwidth}{!}{\input{table_transfer}}
+\end{table}
+
+\textbf{For authors.} A no-loss claim that the report can certify is
+cheap to design: pair every episode by initial state and seed; pick the
+informative tasks from a pilot scan before the comparison, keeping those
+with room to fail; size that subset for the disagreement rate the pilot
+shows (about $\NumCertifyPairs$ pairs at the $\NumHeadroomDisc\%$ we
+observe); and state the margin and ratio bound before running.
 
 \textbf{Limitations.} Simulation only, on LIBERO-family benchmarks and
 three flow-matching policies. The certificates in our grids come from

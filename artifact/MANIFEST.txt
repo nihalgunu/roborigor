@@ -79,7 +79,7 @@ dd75da4feb27e801daf6eba82ca0adae839268d526626446e44c83b77e32be40        29  pape
 b9cf51184025161c0707863fbcf8c1edb4c18c6188d649d42053dad7cee11f1d      6043  paper-data/dilution_census.json
 c827b0ed54c67ac603a5c40a11c2367eb45b97534c8d30830e8bb7f5d15ee6db       314  paper-data/efficiency_audit.json
 ef58e5be4483b6d785a7c32c97bf04d2aa3fc1b89fdb051037554f4bdf0c621c       424  paper-data/envseed_replication.json
-81167cb725e9a758ea14237c2124ed2705db3d38ecb1a2e4099f928205d70e20       254  paper-data/failure_ratio_and_shift.json
+0985cafe939ad059c41fdb8338dfc99e1eba5535fe8be02c06fb5fe5f1dbec69       272  paper-data/failure_ratio_and_shift.json
 a246fb31bc80899049a67263bd95f75aa736347cc1e53e1b70e1cf611f96fb09       129  paper-data/fusion_shift.json
 ff87cfe9e427853de04dd1ee57956e20997c5e2a6657828d60c98ca1c401e421       339  paper-data/new_axes.json
 e93349e6725e6c9bc19b0b3bba77006aedcd11d5bb9ed13456c28a711396c382        84  paper-data/nondeterminism.json
