@@ -1,0 +1,6043 @@
+{
+ "informative_tasks": [
+  0,
+  2,
+  8,
+  9
+ ],
+ "classification_source": "configs/v1_varcomp_pi05.yaml (2026-08-18), before any grid episode",
+ "n_pairs": 79,
+ "transitions": {
+  "DIFF->DIFF": 57,
+  "EQUIV->INCONCLUSIVE": 17,
+  "DIFF->INCONCLUSIVE": 2,
+  "INCONCLUSIVE->DIFF": 1,
+  "EQUIV->EQUIV": 1,
+  "INCONCLUSIVE->INCONCLUSIVE": 1
+ },
+ "n_equiv_full": 18,
+ "n_equiv_full_not_equiv_informative": 17,
+ "n_equiv_full_diff_informative": 0,
+ "n_diff_full": 59,
+ "n_diff_full_still_diff_informative": 57,
+ "median_ci_width_full": 6.7299999999999995,
+ "median_ci_width_informative": 11.020000000000001,
+ "by_grid": {
+  "pi05_seed7": {
+   "DIFF->DIFF": 47,
+   "EQUIV->INCONCLUSIVE": 15,
+   "DIFF->INCONCLUSIVE": 2,
+   "INCONCLUSIVE->DIFF": 1,
+   "EQUIV->EQUIV": 1
+  },
+  "pi05_seed8": {
+   "DIFF->DIFF": 1,
+   "EQUIV->INCONCLUSIVE": 2
+  },
+  "pi0_seed7": {
+   "DIFF->DIFF": 9,
+   "INCONCLUSIVE->INCONCLUSIVE": 1
+  }
+ },
+ "rows": [
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    1,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.6417,
+    "rate_b": 0.8958,
+    "diff_pts": -25.42,
+    "a_only": 9,
+    "b_only": 131,
+    "p": 6.739276631949471e-29,
+    "ci_pts": [
+     -29.69,
+     -21.12
+    ],
+    "odds_ci": [
+     0.031,
+     0.134
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -29.68,
+     -21.15
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -30.43,
+     -20.25
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.5125,
+    "rate_b": 0.8167,
+    "diff_pts": -30.42,
+    "a_only": 5,
+    "b_only": 78,
+    "p": 6.403904916571207e-18,
+    "ci_pts": [
+     -36.63,
+     -23.83
+    ],
+    "odds_ci": [
+     0.02,
+     0.156
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -36.78,
+     -24.05
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -38.09,
+     -22.17
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    1,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.6417,
+    "rate_b": 0.9646,
+    "diff_pts": -32.29,
+    "a_only": 4,
+    "b_only": 159,
+    "p": 4.971661895138105e-42,
+    "ci_pts": [
+     -36.68,
+     -27.94
+    ],
+    "odds_ci": [
+     0.007,
+     0.066
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -36.63,
+     -27.95
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -36.87,
+     -27.65
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.5125,
+    "rate_b": 0.9417,
+    "diff_pts": -42.92,
+    "a_only": 2,
+    "b_only": 105,
+    "p": 7.123167455112855e-29,
+    "ci_pts": [
+     -49.25,
+     -36.19
+    ],
+    "odds_ci": [
+     0.002,
+     0.071
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -49.39,
+     -36.45
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -49.63,
+     -35.64
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    2,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.6417,
+    "rate_b": 0.8063,
+    "diff_pts": -16.46,
+    "a_only": 23,
+    "b_only": 102,
+    "p": 4.56640478646766e-13,
+    "ci_pts": [
+     -20.77,
+     -12.09
+    ],
+    "odds_ci": [
+     0.137,
+     0.357
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -20.78,
+     -12.14
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -21.94,
+     -10.84
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.5125,
+    "rate_b": 0.7167,
+    "diff_pts": -20.42,
+    "a_only": 13,
+    "b_only": 62,
+    "p": 8.396008067237178e-09,
+    "ci_pts": [
+     -26.86,
+     -13.67
+    ],
+    "odds_ci": [
+     0.106,
+     0.385
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -27.0,
+     -13.83
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -28.66,
+     -11.74
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    2,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.6417,
+    "rate_b": 0.9208,
+    "diff_pts": -27.92,
+    "a_only": 10,
+    "b_only": 144,
+    "p": 1.4422596333525145e-31,
+    "ci_pts": [
+     -32.34,
+     -23.47
+    ],
+    "odds_ci": [
+     0.033,
+     0.131
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -32.33,
+     -23.51
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -32.78,
+     -22.92
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.5125,
+    "rate_b": 0.8583,
+    "diff_pts": -34.58,
+    "a_only": 6,
+    "b_only": 89,
+    "p": 4.697192490523779e-20,
+    "ci_pts": [
+     -41.05,
+     -27.68
+    ],
+    "odds_ci": [
+     0.024,
+     0.153
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -41.23,
+     -27.93
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -41.96,
+     -26.59
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    2,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.6417,
+    "rate_b": 0.9521,
+    "diff_pts": -31.04,
+    "a_only": 6,
+    "b_only": 155,
+    "p": 1.5660589055377066e-38,
+    "ci_pts": [
+     -35.45,
+     -26.64
+    ],
+    "odds_ci": [
+     0.014,
+     0.086
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -35.42,
+     -26.67
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -35.7,
+     -26.29
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.5125,
+    "rate_b": 0.9083,
+    "diff_pts": -39.58,
+    "a_only": 5,
+    "b_only": 100,
+    "p": 5.006007865146344e-24,
+    "ci_pts": [
+     -46.1,
+     -32.6
+    ],
+    "odds_ci": [
+     0.016,
+     0.121
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -46.29,
+     -32.88
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -46.57,
+     -31.98
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    5,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.6417,
+    "rate_b": 0.8083,
+    "diff_pts": -16.67,
+    "a_only": 28,
+    "b_only": 108,
+    "p": 2.784955761611638e-12,
+    "ci_pts": [
+     -21.17,
+     -12.09
+    ],
+    "odds_ci": [
+     0.165,
+     0.396
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -21.19,
+     -12.14
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -22.14,
+     -11.06
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.5125,
+    "rate_b": 0.6958,
+    "diff_pts": -18.33,
+    "a_only": 17,
+    "b_only": 61,
+    "p": 5.663739625418237e-07,
+    "ci_pts": [
+     -25.02,
+     -11.35
+    ],
+    "odds_ci": [
+     0.153,
+     0.483
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -25.16,
+     -11.5
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -26.67,
+     -9.6
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    5,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.6417,
+    "rate_b": 0.9292,
+    "diff_pts": -28.75,
+    "a_only": 7,
+    "b_only": 145,
+    "p": 1.1891783915075953e-34,
+    "ci_pts": [
+     -33.1,
+     -24.39
+    ],
+    "odds_ci": [
+     0.019,
+     0.102
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -33.08,
+     -24.42
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -33.56,
+     -23.82
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.5125,
+    "rate_b": 0.875,
+    "diff_pts": -36.25,
+    "a_only": 4,
+    "b_only": 91,
+    "p": 1.6794639150698915e-22,
+    "ci_pts": [
+     -42.59,
+     -29.5
+    ],
+    "odds_ci": [
+     0.012,
+     0.116
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -42.76,
+     -29.74
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -43.5,
+     -28.38
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    5,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.6417,
+    "rate_b": 0.9583,
+    "diff_pts": -31.67,
+    "a_only": 4,
+    "b_only": 156,
+    "p": 3.691704519642905e-41,
+    "ci_pts": [
+     -36.03,
+     -27.33
+    ],
+    "odds_ci": [
+     0.007,
+     0.067
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -35.99,
+     -27.35
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -36.29,
+     -26.97
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.5125,
+    "rate_b": 0.9292,
+    "diff_pts": -41.67,
+    "a_only": 2,
+    "b_only": 102,
+    "p": 5.384961754264932e-28,
+    "ci_pts": [
+     -47.98,
+     -34.97
+    ],
+    "odds_ci": [
+     0.002,
+     0.073
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -48.11,
+     -35.22
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -48.48,
+     -34.26
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    10,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.6417,
+    "rate_b": 0.8479,
+    "diff_pts": -20.62,
+    "a_only": 14,
+    "b_only": 113,
+    "p": 2.0723909491809205e-20,
+    "ci_pts": [
+     -24.84,
+     -16.37
+    ],
+    "odds_ci": [
+     0.066,
+     0.217
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -24.84,
+     -16.41
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -25.9,
+     -15.2
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.5125,
+    "rate_b": 0.7542,
+    "diff_pts": -24.17,
+    "a_only": 7,
+    "b_only": 65,
+    "p": 6.9644370929921e-13,
+    "ci_pts": [
+     -30.25,
+     -17.77
+    ],
+    "odds_ci": [
+     0.042,
+     0.235
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -30.39,
+     -17.95
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -32.22,
+     -15.62
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.6417,
+    "rate_b": 0.95,
+    "diff_pts": -30.83,
+    "a_only": 6,
+    "b_only": 154,
+    "p": 3.0161601998957896e-38,
+    "ci_pts": [
+     -35.23,
+     -26.44
+    ],
+    "odds_ci": [
+     0.014,
+     0.087
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -35.2,
+     -26.47
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -35.51,
+     -26.06
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.5125,
+    "rate_b": 0.9125,
+    "diff_pts": -40.0,
+    "a_only": 4,
+    "b_only": 100,
+    "p": 4.7190556679600615e-25,
+    "ci_pts": [
+     -46.44,
+     -33.12
+    ],
+    "odds_ci": [
+     0.011,
+     0.106
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -46.61,
+     -33.39
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -46.95,
+     -32.44
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.6417,
+    "rate_b": 0.9458,
+    "diff_pts": -30.42,
+    "a_only": 13,
+    "b_only": 159,
+    "p": 4.227536149253027e-33,
+    "ci_pts": [
+     -35.02,
+     -25.74
+    ],
+    "odds_ci": [
+     0.043,
+     0.144
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -35.03,
+     -25.8
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -35.12,
+     -25.61
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.5125,
+    "rate_b": 0.9167,
+    "diff_pts": -40.42,
+    "a_only": 7,
+    "b_only": 104,
+    "p": 2.8012475593516644e-23,
+    "ci_pts": [
+     -47.12,
+     -33.18
+    ],
+    "odds_ci": [
+     0.026,
+     0.144
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -47.34,
+     -33.5
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -47.34,
+     -32.89
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    5
+   ],
+   "b": [
+    1,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8958,
+    "rate_b": 0.9646,
+    "diff_pts": -6.88,
+    "a_only": 7,
+    "b_only": 40,
+    "p": 1.0709118214435875e-06,
+    "ci_pts": [
+     -9.84,
+     -4.18
+    ],
+    "odds_ci": [
+     0.066,
+     0.395
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -9.61,
+     -4.14
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -10.2,
+     -3.69
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8167,
+    "rate_b": 0.9417,
+    "diff_pts": -12.5,
+    "a_only": 5,
+    "b_only": 35,
+    "p": 1.382612026645802e-06,
+    "ci_pts": [
+     -17.75,
+     -7.59
+    ],
+    "odds_ci": [
+     0.044,
+     0.366
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -17.42,
+     -7.58
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -18.36,
+     -6.75
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    5
+   ],
+   "b": [
+    2,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8958,
+    "rate_b": 0.8063,
+    "diff_pts": 8.96,
+    "a_only": 58,
+    "b_only": 15,
+    "p": 4.0931991166650604e-07,
+    "ci_pts": [
+     5.56,
+     12.46
+    ],
+    "odds_ci": [
+     2.163,
+     7.346
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     5.56,
+     12.35
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     4.47,
+     13.44
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8167,
+    "rate_b": 0.7167,
+    "diff_pts": 10.0,
+    "a_only": 35,
+    "b_only": 11,
+    "p": 0.0005355850721002753,
+    "ci_pts": [
+     4.53,
+     15.49
+    ],
+    "odds_ci": [
+     1.58,
+     6.945
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     4.61,
+     15.39
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     2.43,
+     17.44
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    5
+   ],
+   "b": [
+    2,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8958,
+    "rate_b": 0.9208,
+    "diff_pts": -2.5,
+    "a_only": 10,
+    "b_only": 22,
+    "p": 0.050102459732443094,
+    "ci_pts": [
+     -4.97,
+     -0.14
+    ],
+    "odds_ci": [
+     0.192,
+     1.0
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -4.8,
+     -0.2
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -6.2,
+     1.18
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8167,
+    "rate_b": 0.8583,
+    "diff_pts": -4.17,
+    "a_only": 7,
+    "b_only": 17,
+    "p": 0.06391465663909912,
+    "ci_pts": [
+     -8.39,
+     -0.08
+    ],
+    "odds_ci": [
+     0.144,
+     1.045
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -8.13,
+     -0.2
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -10.78,
+     2.47
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    5
+   ],
+   "b": [
+    2,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8958,
+    "rate_b": 0.9521,
+    "diff_pts": -5.62,
+    "a_only": 11,
+    "b_only": 38,
+    "p": 0.00014197068519905542,
+    "ci_pts": [
+     -8.63,
+     -2.81
+    ],
+    "odds_ci": [
+     0.133,
+     0.578
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -8.44,
+     -2.81
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -9.06,
+     -2.29
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8167,
+    "rate_b": 0.9083,
+    "diff_pts": -9.17,
+    "a_only": 10,
+    "b_only": 32,
+    "p": 0.0009406740282429382,
+    "ci_pts": [
+     -14.56,
+     -3.94
+    ],
+    "odds_ci": [
+     0.137,
+     0.652
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -14.33,
+     -4.0
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -15.34,
+     -3.01
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    5
+   ],
+   "b": [
+    5,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8958,
+    "rate_b": 0.8083,
+    "diff_pts": 8.75,
+    "a_only": 57,
+    "b_only": 15,
+    "p": 6.539968221733264e-07,
+    "ci_pts": [
+     5.37,
+     12.24
+    ],
+    "odds_ci": [
+     2.123,
+     7.227
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     5.37,
+     12.13
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     4.27,
+     13.23
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8167,
+    "rate_b": 0.6958,
+    "diff_pts": 12.08,
+    "a_only": 39,
+    "b_only": 10,
+    "p": 3.845911694355664e-05,
+    "ci_pts": [
+     6.5,
+     17.67
+    ],
+    "odds_ci": [
+     1.912,
+     8.761
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     6.57,
+     17.59
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     4.41,
+     19.59
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    5
+   ],
+   "b": [
+    5,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8958,
+    "rate_b": 0.9292,
+    "diff_pts": -3.33,
+    "a_only": 12,
+    "b_only": 28,
+    "p": 0.01658900337497471,
+    "ci_pts": [
+     -6.07,
+     -0.73
+    ],
+    "odds_ci": [
+     0.199,
+     0.87
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -5.9,
+     -0.77
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -6.97,
+     0.26
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8167,
+    "rate_b": 0.875,
+    "diff_pts": -5.83,
+    "a_only": 8,
+    "b_only": 22,
+    "p": 0.016124801710247997,
+    "ci_pts": [
+     -10.5,
+     -1.33
+    ],
+    "odds_ci": [
+     0.14,
+     0.848
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -10.25,
+     -1.42
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -12.31,
+     0.65
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    5
+   ],
+   "b": [
+    5,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8958,
+    "rate_b": 0.9583,
+    "diff_pts": -6.25,
+    "a_only": 12,
+    "b_only": 42,
+    "p": 5.209447200793526e-05,
+    "ci_pts": [
+     -9.38,
+     -3.3
+    ],
+    "odds_ci": [
+     0.137,
+     0.553
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -9.2,
+     -3.3
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -9.63,
+     -2.99
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8167,
+    "rate_b": 0.9292,
+    "diff_pts": -11.25,
+    "a_only": 9,
+    "b_only": 36,
+    "p": 6.57466324582856e-05,
+    "ci_pts": [
+     -16.78,
+     -5.91
+    ],
+    "odds_ci": [
+     0.106,
+     0.529
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -16.54,
+     -5.96
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -17.23,
+     -5.34
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    5
+   ],
+   "b": [
+    10,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8958,
+    "rate_b": 0.8479,
+    "diff_pts": 4.79,
+    "a_only": 40,
+    "b_only": 17,
+    "p": 0.0032015437674503813,
+    "ci_pts": [
+     1.71,
+     7.96
+    ],
+    "odds_ci": [
+     1.304,
+     4.426
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     1.74,
+     7.84
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     0.56,
+     9.04
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8167,
+    "rate_b": 0.7542,
+    "diff_pts": 6.25,
+    "a_only": 26,
+    "b_only": 11,
+    "p": 0.020073851919732988,
+    "ci_pts": [
+     1.26,
+     11.29
+    ],
+    "odds_ci": [
+     1.129,
+     5.3
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     1.35,
+     11.15
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -1.11,
+     13.54
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    5
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8958,
+    "rate_b": 0.95,
+    "diff_pts": -5.42,
+    "a_only": 6,
+    "b_only": 32,
+    "p": 2.4342560209333897e-05,
+    "ci_pts": [
+     -8.12,
+     -2.96
+    ],
+    "odds_ci": [
+     0.064,
+     0.455
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -7.89,
+     -2.95
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -8.87,
+     -2.05
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8167,
+    "rate_b": 0.9125,
+    "diff_pts": -9.58,
+    "a_only": 4,
+    "b_only": 27,
+    "p": 3.39532271027565e-05,
+    "ci_pts": [
+     -14.31,
+     -5.19
+    ],
+    "odds_ci": [
+     0.038,
+     0.425
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -13.97,
+     -5.2
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -15.72,
+     -3.47
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    5
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8958,
+    "rate_b": 0.9458,
+    "diff_pts": -5.0,
+    "a_only": 15,
+    "b_only": 39,
+    "p": 0.0014962588853935084,
+    "ci_pts": [
+     -8.13,
+     -2.01
+    ],
+    "odds_ci": [
+     0.197,
+     0.714
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -7.97,
+     -2.03
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -8.49,
+     -1.59
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8167,
+    "rate_b": 0.9167,
+    "diff_pts": -10.0,
+    "a_only": 9,
+    "b_only": 33,
+    "p": 0.0002715392342906853,
+    "ci_pts": [
+     -15.38,
+     -4.81
+    ],
+    "odds_ci": [
+     0.115,
+     0.583
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -15.14,
+     -4.86
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -16.1,
+     -3.94
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    2,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9646,
+    "rate_b": 0.8063,
+    "diff_pts": 15.83,
+    "a_only": 80,
+    "b_only": 4,
+    "p": 2.0972709481945113e-19,
+    "ci_pts": [
+     12.44,
+     19.49
+    ],
+    "odds_ci": [
+     7.514,
+     75.19
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     12.37,
+     19.3
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     11.96,
+     19.83
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9417,
+    "rate_b": 0.7167,
+    "diff_pts": 22.5,
+    "a_only": 55,
+    "b_only": 1,
+    "p": 1.582067810090848e-15,
+    "ci_pts": [
+     17.13,
+     28.17
+    ],
+    "odds_ci": [
+     9.468,
+     2211.382
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     17.09,
+     27.91
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     16.01,
+     28.94
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    2,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9646,
+    "rate_b": 0.9208,
+    "diff_pts": 4.38,
+    "a_only": 28,
+    "b_only": 7,
+    "p": 0.0005082604475319386,
+    "ci_pts": [
+     1.99,
+     7.0
+    ],
+    "odds_ci": [
+     1.707,
+     10.847
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     1.99,
+     6.76
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     1.44,
+     7.44
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9417,
+    "rate_b": 0.8583,
+    "diff_pts": 8.33,
+    "a_only": 24,
+    "b_only": 4,
+    "p": 0.00017999112606048584,
+    "ci_pts": [
+     4.13,
+     12.95
+    ],
+    "odds_ci": [
+     2.061,
+     23.792
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     4.14,
+     12.52
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     2.98,
+     13.83
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    2,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9646,
+    "rate_b": 0.9521,
+    "diff_pts": 1.25,
+    "a_only": 17,
+    "b_only": 11,
+    "p": 0.34492845088243484,
+    "ci_pts": [
+     -1.01,
+     3.6
+    ],
+    "odds_ci": [
+     0.683,
+     3.65
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -0.91,
+     3.41
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -1.34,
+     3.9
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9417,
+    "rate_b": 0.9083,
+    "diff_pts": 3.33,
+    "a_only": 16,
+    "b_only": 8,
+    "p": 0.15158963203430176,
+    "ci_pts": [
+     -0.81,
+     7.68
+    ],
+    "odds_ci": [
+     0.808,
+     5.398
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -0.65,
+     7.31
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -1.47,
+     8.24
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    5,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9646,
+    "rate_b": 0.8083,
+    "diff_pts": 15.62,
+    "a_only": 78,
+    "b_only": 3,
+    "p": 7.332294385792548e-20,
+    "ci_pts": [
+     12.31,
+     19.23
+    ],
+    "odds_ci": [
+     8.575,
+     128.802
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     12.23,
+     19.02
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     11.76,
+     19.61
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9417,
+    "rate_b": 0.6958,
+    "diff_pts": 24.58,
+    "a_only": 60,
+    "b_only": 1,
+    "p": 5.377642775528102e-17,
+    "ci_pts": [
+     19.03,
+     30.37
+    ],
+    "odds_ci": [
+     10.365,
+     2408.871
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     19.01,
+     30.15
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     17.97,
+     31.1
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    5,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9646,
+    "rate_b": 0.9292,
+    "diff_pts": 3.54,
+    "a_only": 26,
+    "b_only": 9,
+    "p": 0.005988120567053557,
+    "ci_pts": [
+     1.12,
+     6.16
+    ],
+    "odds_ci": [
+     1.312,
+     7.007
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     1.15,
+     5.94
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     0.69,
+     6.5
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9417,
+    "rate_b": 0.875,
+    "diff_pts": 6.67,
+    "a_only": 22,
+    "b_only": 6,
+    "p": 0.0037191659212112427,
+    "ci_pts": [
+     2.36,
+     11.29
+    ],
+    "odds_ci": [
+     1.442,
+     11.054
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     2.43,
+     10.9
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     1.49,
+     11.99
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    5,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9646,
+    "rate_b": 0.9583,
+    "diff_pts": 0.62,
+    "a_only": 15,
+    "b_only": 12,
+    "p": 0.7011080384254456,
+    "ci_pts": [
+     -1.63,
+     2.92
+    ],
+    "odds_ci": [
+     0.546,
+     2.925
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -1.5,
+     2.75
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -1.89,
+     3.17
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9417,
+    "rate_b": 0.9292,
+    "diff_pts": 1.25,
+    "a_only": 12,
+    "b_only": 9,
+    "p": 0.6636238098144531,
+    "ci_pts": [
+     -2.74,
+     5.33
+    ],
+    "odds_ci": [
+     0.516,
+     3.583
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -2.49,
+     4.99
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -3.3,
+     5.85
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    10,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9646,
+    "rate_b": 0.8479,
+    "diff_pts": 11.67,
+    "a_only": 63,
+    "b_only": 7,
+    "p": 2.2750760151658833e-12,
+    "ci_pts": [
+     8.47,
+     15.12
+    ],
+    "odds_ci": [
+     4.122,
+     23.296
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     8.41,
+     14.92
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     8.08,
+     15.4
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9417,
+    "rate_b": 0.7542,
+    "diff_pts": 18.75,
+    "a_only": 49,
+    "b_only": 4,
+    "p": 7.053979622639872e-11,
+    "ci_pts": [
+     13.3,
+     24.45
+    ],
+    "odds_ci": [
+     4.491,
+     46.742
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     13.3,
+     24.2
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     12.5,
+     25.02
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9646,
+    "rate_b": 0.95,
+    "diff_pts": 1.46,
+    "a_only": 18,
+    "b_only": 11,
+    "p": 0.26493089646101,
+    "ci_pts": [
+     -0.83,
+     3.85
+    ],
+    "odds_ci": [
+     0.732,
+     3.834
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -0.74,
+     3.65
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -1.16,
+     4.14
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9417,
+    "rate_b": 0.9125,
+    "diff_pts": 2.92,
+    "a_only": 16,
+    "b_only": 9,
+    "p": 0.2295229434967041,
+    "ci_pts": [
+     -1.33,
+     7.33
+    ],
+    "odds_ci": [
+     0.74,
+     4.564
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -1.15,
+     6.98
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -1.83,
+     7.77
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9646,
+    "rate_b": 0.9458,
+    "diff_pts": 1.88,
+    "a_only": 23,
+    "b_only": 14,
+    "p": 0.18774155899882317,
+    "ci_pts": [
+     -0.68,
+     4.52
+    ],
+    "odds_ci": [
+     0.81,
+     3.453
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -0.6,
+     4.35
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -0.79,
+     4.61
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9417,
+    "rate_b": 0.9167,
+    "diff_pts": 2.5,
+    "a_only": 17,
+    "b_only": 11,
+    "p": 0.34492845088243484,
+    "ci_pts": [
+     -2.0,
+     7.11
+    ],
+    "odds_ci": [
+     0.683,
+     3.65
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -1.81,
+     6.81
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -2.2,
+     7.29
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    1
+   ],
+   "b": [
+    2,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8063,
+    "rate_b": 0.9208,
+    "diff_pts": -11.46,
+    "a_only": 11,
+    "b_only": 66,
+    "p": 1.0539880077661144e-10,
+    "ci_pts": [
+     -15.02,
+     -8.04
+    ],
+    "odds_ci": [
+     0.079,
+     0.318
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -14.89,
+     -8.02
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -15.77,
+     -7.16
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.7167,
+    "rate_b": 0.8583,
+    "diff_pts": -14.17,
+    "a_only": 7,
+    "b_only": 41,
+    "p": 6.240408438884516e-07,
+    "ci_pts": [
+     -19.66,
+     -8.74
+    ],
+    "odds_ci": [
+     0.065,
+     0.384
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -19.53,
+     -8.8
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -21.3,
+     -6.88
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    1
+   ],
+   "b": [
+    2,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8063,
+    "rate_b": 0.9521,
+    "diff_pts": -14.58,
+    "a_only": 8,
+    "b_only": 78,
+    "p": 1.5235832099273424e-15,
+    "ci_pts": [
+     -18.29,
+     -11.07
+    ],
+    "odds_ci": [
+     0.043,
+     0.212
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -18.14,
+     -11.03
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -18.67,
+     -10.57
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.7167,
+    "rate_b": 0.9083,
+    "diff_pts": -19.17,
+    "a_only": 7,
+    "b_only": 53,
+    "p": 7.671918274276823e-10,
+    "ci_pts": [
+     -25.14,
+     -13.26
+    ],
+    "odds_ci": [
+     0.051,
+     0.292
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -25.01,
+     -13.32
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -25.9,
+     -12.31
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    1
+   ],
+   "b": [
+    5,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8063,
+    "rate_b": 0.8083,
+    "diff_pts": -0.21,
+    "a_only": 32,
+    "b_only": 33,
+    "p": 1.0,
+    "ci_pts": [
+     -3.55,
+     3.13
+    ],
+    "odds_ci": [
+     0.577,
+     1.627
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -3.5,
+     3.08
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -5.2,
+     4.79
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.7167,
+    "rate_b": 0.6958,
+    "diff_pts": 2.08,
+    "a_only": 20,
+    "b_only": 15,
+    "p": 0.4995598332025112,
+    "ci_pts": [
+     -2.82,
+     6.98
+    ],
+    "odds_ci": [
+     0.649,
+     2.799
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -2.74,
+     6.91
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -6.04,
+     10.17
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    1
+   ],
+   "b": [
+    5,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8063,
+    "rate_b": 0.9292,
+    "diff_pts": -12.29,
+    "a_only": 10,
+    "b_only": 69,
+    "p": 5.544696639021875e-12,
+    "ci_pts": [
+     -15.89,
+     -8.86
+    ],
+    "odds_ci": [
+     0.067,
+     0.283
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -15.75,
+     -8.83
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -16.55,
+     -8.07
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.7167,
+    "rate_b": 0.875,
+    "diff_pts": -15.83,
+    "a_only": 7,
+    "b_only": 45,
+    "p": 6.973810151578164e-08,
+    "ci_pts": [
+     -21.5,
+     -10.24
+    ],
+    "odds_ci": [
+     0.059,
+     0.347
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -21.37,
+     -10.3
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -22.84,
+     -8.68
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    1
+   ],
+   "b": [
+    5,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8063,
+    "rate_b": 0.9583,
+    "diff_pts": -15.21,
+    "a_only": 9,
+    "b_only": 82,
+    "p": 7.088912032076993e-16,
+    "ci_pts": [
+     -19.01,
+     -11.6
+    ],
+    "odds_ci": [
+     0.048,
+     0.219
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -18.86,
+     -11.56
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -19.25,
+     -11.26
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.7167,
+    "rate_b": 0.9292,
+    "diff_pts": -21.25,
+    "a_only": 6,
+    "b_only": 57,
+    "p": 1.6395687108330947e-11,
+    "ci_pts": [
+     -27.29,
+     -15.3
+    ],
+    "odds_ci": [
+     0.037,
+     0.244
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -27.15,
+     -15.35
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -27.8,
+     -14.61
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    1
+   ],
+   "b": [
+    10,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8063,
+    "rate_b": 0.8479,
+    "diff_pts": -4.17,
+    "a_only": 22,
+    "b_only": 42,
+    "p": 0.01685819004428113,
+    "ci_pts": [
+     -7.49,
+     -0.89
+    ],
+    "odds_ci": [
+     0.298,
+     0.898
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -7.41,
+     -0.92
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -8.95,
+     0.63
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.7167,
+    "rate_b": 0.7542,
+    "diff_pts": -3.75,
+    "a_only": 14,
+    "b_only": 23,
+    "p": 0.18774155899882317,
+    "ci_pts": [
+     -8.78,
+     1.27
+    ],
+    "odds_ci": [
+     0.29,
+     1.234
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -8.69,
+     1.19
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -11.58,
+     4.14
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    1
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8063,
+    "rate_b": 0.95,
+    "diff_pts": -14.38,
+    "a_only": 6,
+    "b_only": 75,
+    "p": 2.91096598559025e-16,
+    "ci_pts": [
+     -17.99,
+     -10.99
+    ],
+    "odds_ci": [
+     0.028,
+     0.182
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -17.82,
+     -10.93
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -18.48,
+     -10.34
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.7167,
+    "rate_b": 0.9125,
+    "diff_pts": -19.58,
+    "a_only": 3,
+    "b_only": 50,
+    "p": 5.519584789226428e-12,
+    "ci_pts": [
+     -25.19,
+     -14.17
+    ],
+    "odds_ci": [
+     0.012,
+     0.186
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -24.99,
+     -14.18
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -26.28,
+     -12.77
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    1
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8063,
+    "rate_b": 0.9458,
+    "diff_pts": -13.96,
+    "a_only": 13,
+    "b_only": 80,
+    "p": 6.224673473360482e-13,
+    "ci_pts": [
+     -17.82,
+     -10.24
+    ],
+    "odds_ci": [
+     0.083,
+     0.294
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -17.69,
+     -10.22
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -18.09,
+     -9.89
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.7167,
+    "rate_b": 0.9167,
+    "diff_pts": -20.0,
+    "a_only": 7,
+    "b_only": 55,
+    "p": 2.4300843108615577e-10,
+    "ci_pts": [
+     -26.04,
+     -14.03
+    ],
+    "odds_ci": [
+     0.049,
+     0.28
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -25.91,
+     -14.09
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -26.66,
+     -13.23
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    5
+   ],
+   "b": [
+    2,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9208,
+    "rate_b": 0.9521,
+    "diff_pts": -3.12,
+    "a_only": 15,
+    "b_only": 30,
+    "p": 0.035697803555194696,
+    "ci_pts": [
+     -6.01,
+     -0.35
+    ],
+    "odds_ci": [
+     0.25,
+     0.959
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -5.85,
+     -0.4
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -6.31,
+     -0.02
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8583,
+    "rate_b": 0.9083,
+    "diff_pts": -5.0,
+    "a_only": 14,
+    "b_only": 26,
+    "p": 0.0806904677519924,
+    "ci_pts": [
+     -10.34,
+     0.24
+    ],
+    "odds_ci": [
+     0.26,
+     1.07
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -10.13,
+     0.13
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -10.83,
+     0.79
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    5
+   ],
+   "b": [
+    5,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9208,
+    "rate_b": 0.8083,
+    "diff_pts": 11.25,
+    "a_only": 65,
+    "b_only": 11,
+    "p": 1.81197137160965e-10,
+    "ci_pts": [
+     7.86,
+     14.8
+    ],
+    "odds_ci": [
+     3.094,
+     12.418
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     7.84,
+     14.66
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     6.97,
+     15.55
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8583,
+    "rate_b": 0.6958,
+    "diff_pts": 16.25,
+    "a_only": 46,
+    "b_only": 7,
+    "p": 4.003196174551249e-08,
+    "ci_pts": [
+     10.6,
+     21.93
+    ],
+    "odds_ci": [
+     2.947,
+     17.251
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     10.67,
+     21.83
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     8.85,
+     23.46
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    5
+   ],
+   "b": [
+    5,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9208,
+    "rate_b": 0.9292,
+    "diff_pts": -0.83,
+    "a_only": 15,
+    "b_only": 19,
+    "p": 0.6075913612730801,
+    "ci_pts": [
+     -3.35,
+     1.64
+    ],
+    "odds_ci": [
+     0.373,
+     1.64
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -3.21,
+     1.55
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -4.23,
+     2.55
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8583,
+    "rate_b": 0.875,
+    "diff_pts": -1.67,
+    "a_only": 11,
+    "b_only": 15,
+    "p": 0.557197093963623,
+    "ci_pts": [
+     -6.06,
+     2.66
+    ],
+    "odds_ci": [
+     0.305,
+     1.709
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -5.83,
+     2.49
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -7.81,
+     4.47
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    5
+   ],
+   "b": [
+    5,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9208,
+    "rate_b": 0.9583,
+    "diff_pts": -3.75,
+    "a_only": 13,
+    "b_only": 31,
+    "p": 0.009559878856634896,
+    "ci_pts": [
+     -6.62,
+     -1.03
+    ],
+    "odds_ci": [
+     0.201,
+     0.825
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -6.44,
+     -1.06
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -6.87,
+     -0.73
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8583,
+    "rate_b": 0.9292,
+    "diff_pts": -7.08,
+    "a_only": 10,
+    "b_only": 27,
+    "p": 0.007632078602910042,
+    "ci_pts": [
+     -12.25,
+     -2.11
+    ],
+    "odds_ci": [
+     0.16,
+     0.79
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -11.97,
+     -2.2
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -12.71,
+     -1.56
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    5
+   ],
+   "b": [
+    10,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9208,
+    "rate_b": 0.8479,
+    "diff_pts": 7.29,
+    "a_only": 51,
+    "b_only": 16,
+    "p": 2.168923876071706e-05,
+    "ci_pts": [
+     4.01,
+     10.7
+    ],
+    "odds_ci": [
+     1.788,
+     5.989
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     4.01,
+     10.57
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     3.26,
+     11.36
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8583,
+    "rate_b": 0.7542,
+    "diff_pts": 10.42,
+    "a_only": 37,
+    "b_only": 12,
+    "p": 0.0004697573180081349,
+    "ci_pts": [
+     4.78,
+     16.1
+    ],
+    "odds_ci": [
+     1.573,
+     6.495
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     4.85,
+     15.98
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     3.35,
+     17.39
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    5
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9208,
+    "rate_b": 0.95,
+    "diff_pts": -2.92,
+    "a_only": 11,
+    "b_only": 25,
+    "p": 0.028816719655878845,
+    "ci_pts": [
+     -5.54,
+     -0.43
+    ],
+    "odds_ci": [
+     0.195,
+     0.927
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -5.35,
+     -0.48
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -6.12,
+     0.22
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8583,
+    "rate_b": 0.9125,
+    "diff_pts": -5.42,
+    "a_only": 8,
+    "b_only": 21,
+    "p": 0.0241195447742939,
+    "ci_pts": [
+     -10.07,
+     -0.98
+    ],
+    "odds_ci": [
+     0.146,
+     0.895
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -9.76,
+     -1.07
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -11.21,
+     0.32
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    5
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9208,
+    "rate_b": 0.9458,
+    "diff_pts": -2.5,
+    "a_only": 17,
+    "b_only": 29,
+    "p": 0.10380535550410741,
+    "ci_pts": [
+     -5.41,
+     0.32
+    ],
+    "odds_ci": [
+     0.302,
+     1.103
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -5.26,
+     0.26
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -5.74,
+     0.69
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8583,
+    "rate_b": 0.9167,
+    "diff_pts": -5.83,
+    "a_only": 11,
+    "b_only": 25,
+    "p": 0.028816719655878845,
+    "ci_pts": [
+     -10.94,
+     -0.89
+    ],
+    "odds_ci": [
+     0.195,
+     0.927
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -10.68,
+     -0.99
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -11.58,
+     -0.15
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    10
+   ],
+   "b": [
+    5,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9521,
+    "rate_b": 0.8083,
+    "diff_pts": 14.38,
+    "a_only": 76,
+    "b_only": 7,
+    "p": 9.43054794183671e-16,
+    "ci_pts": [
+     10.93,
+     18.03
+    ],
+    "odds_ci": [
+     5.021,
+     27.917
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     10.88,
+     17.87
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     10.38,
+     18.45
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9083,
+    "rate_b": 0.6958,
+    "diff_pts": 21.25,
+    "a_only": 57,
+    "b_only": 6,
+    "p": 1.6395687108330947e-11,
+    "ci_pts": [
+     15.29,
+     27.26
+    ],
+    "odds_ci": [
+     4.106,
+     26.965
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     15.35,
+     27.15
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     14.28,
+     28.06
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    10
+   ],
+   "b": [
+    5,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9521,
+    "rate_b": 0.9292,
+    "diff_pts": 2.29,
+    "a_only": 22,
+    "b_only": 11,
+    "p": 0.08014331245794892,
+    "ci_pts": [
+     -0.11,
+     4.82
+    ],
+    "odds_ci": [
+     0.93,
+     4.568
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -0.05,
+     4.63
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -0.73,
+     5.38
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9083,
+    "rate_b": 0.875,
+    "diff_pts": 3.33,
+    "a_only": 18,
+    "b_only": 10,
+    "p": 0.1849333420395851,
+    "ci_pts": [
+     -1.11,
+     7.92
+    ],
+    "odds_ci": [
+     0.788,
+     4.365
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -0.97,
+     7.63
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -2.29,
+     9.0
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    10
+   ],
+   "b": [
+    5,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9521,
+    "rate_b": 0.9583,
+    "diff_pts": -0.62,
+    "a_only": 12,
+    "b_only": 15,
+    "p": 0.7011080384254456,
+    "ci_pts": [
+     -2.92,
+     1.62
+    ],
+    "odds_ci": [
+     0.342,
+     1.831
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -2.75,
+     1.5
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -3.34,
+     2.07
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9083,
+    "rate_b": 0.9292,
+    "diff_pts": -2.08,
+    "a_only": 10,
+    "b_only": 15,
+    "p": 0.42435622215270996,
+    "ci_pts": [
+     -6.47,
+     2.19
+    ],
+    "odds_ci": [
+     0.268,
+     1.586
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -6.16,
+     1.99
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -7.13,
+     2.91
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    10
+   ],
+   "b": [
+    10,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9521,
+    "rate_b": 0.8479,
+    "diff_pts": 10.42,
+    "a_only": 58,
+    "b_only": 8,
+    "p": 1.7951476752580547e-10,
+    "ci_pts": [
+     7.28,
+     13.79
+    ],
+    "odds_ci": [
+     3.446,
+     17.584
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     7.23,
+     13.6
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     6.69,
+     14.24
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9083,
+    "rate_b": 0.7542,
+    "diff_pts": 15.42,
+    "a_only": 44,
+    "b_only": 7,
+    "p": 1.2115257419509362e-07,
+    "ci_pts": [
+     9.88,
+     21.1
+    ],
+    "odds_ci": [
+     2.809,
+     16.54
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     9.92,
+     20.91
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     8.79,
+     21.98
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    10
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9521,
+    "rate_b": 0.95,
+    "diff_pts": 0.21,
+    "a_only": 15,
+    "b_only": 14,
+    "p": 1.0,
+    "ci_pts": [
+     -2.12,
+     2.55
+    ],
+    "odds_ci": [
+     0.482,
+     2.396
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -1.99,
+     2.41
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -2.6,
+     3.02
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9083,
+    "rate_b": 0.9125,
+    "diff_pts": -0.42,
+    "a_only": 12,
+    "b_only": 13,
+    "p": 1.0,
+    "ci_pts": [
+     -4.76,
+     3.9
+    ],
+    "odds_ci": [
+     0.385,
+     2.194
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -4.5,
+     3.67
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -5.65,
+     4.81
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    2,
+    10
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9521,
+    "rate_b": 0.9458,
+    "diff_pts": 0.62,
+    "a_only": 21,
+    "b_only": 18,
+    "p": 0.7492586247608418,
+    "ci_pts": [
+     -2.03,
+     3.31
+    ],
+    "odds_ci": [
+     0.592,
+     2.323
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -1.92,
+     3.17
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -2.23,
+     3.5
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9083,
+    "rate_b": 0.9167,
+    "diff_pts": -0.83,
+    "a_only": 15,
+    "b_only": 17,
+    "p": 0.860050065908581,
+    "ci_pts": [
+     -5.68,
+     3.98
+    ],
+    "odds_ci": [
+     0.41,
+     1.878
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -5.45,
+     3.79
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -6.02,
+     4.34
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    5,
+    1
+   ],
+   "b": [
+    5,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8083,
+    "rate_b": 0.9292,
+    "diff_pts": -12.08,
+    "a_only": 8,
+    "b_only": 66,
+    "p": 1.8077410513282365e-12,
+    "ci_pts": [
+     -15.58,
+     -8.78
+    ],
+    "odds_ci": [
+     0.05,
+     0.253
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -15.43,
+     -8.74
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -16.33,
+     -7.87
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.6958,
+    "rate_b": 0.875,
+    "diff_pts": -17.92,
+    "a_only": 5,
+    "b_only": 48,
+    "p": 7.077378683106872e-10,
+    "ci_pts": [
+     -23.54,
+     -12.37
+    ],
+    "odds_ci": [
+     0.032,
+     0.26
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -23.41,
+     -12.42
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -24.99,
+     -10.65
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    5,
+    1
+   ],
+   "b": [
+    5,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8083,
+    "rate_b": 0.9583,
+    "diff_pts": -15.0,
+    "a_only": 9,
+    "b_only": 81,
+    "p": 1.2793974524745824e-15,
+    "ci_pts": [
+     -18.78,
+     -11.4
+    ],
+    "odds_ci": [
+     0.049,
+     0.222
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -18.63,
+     -11.37
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -19.03,
+     -11.07
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.6958,
+    "rate_b": 0.9292,
+    "diff_pts": -23.33,
+    "a_only": 6,
+    "b_only": 62,
+    "p": 8.181953378705309e-13,
+    "ci_pts": [
+     -29.49,
+     -17.21
+    ],
+    "odds_ci": [
+     0.034,
+     0.223
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -29.39,
+     -17.28
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -29.96,
+     -16.57
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    5,
+    1
+   ],
+   "b": [
+    10,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8083,
+    "rate_b": 0.8479,
+    "diff_pts": -3.96,
+    "a_only": 25,
+    "b_only": 44,
+    "p": 0.029493493531317295,
+    "ci_pts": [
+     -7.4,
+     -0.55
+    ],
+    "odds_ci": [
+     0.333,
+     0.949
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -7.33,
+     -0.58
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -8.73,
+     0.82
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.6958,
+    "rate_b": 0.7542,
+    "diff_pts": -5.83,
+    "a_only": 12,
+    "b_only": 26,
+    "p": 0.03355243967962451,
+    "ci_pts": [
+     -10.89,
+     -0.78
+    ],
+    "odds_ci": [
+     0.212,
+     0.948
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -10.81,
+     -0.85
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -13.73,
+     2.16
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    5,
+    1
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8083,
+    "rate_b": 0.95,
+    "diff_pts": -14.17,
+    "a_only": 6,
+    "b_only": 74,
+    "p": 5.396645380673323e-16,
+    "ci_pts": [
+     -17.76,
+     -10.8
+    ],
+    "odds_ci": [
+     0.029,
+     0.185
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -17.59,
+     -10.74
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -18.26,
+     -10.15
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.6958,
+    "rate_b": 0.9125,
+    "diff_pts": -21.67,
+    "a_only": 4,
+    "b_only": 56,
+    "p": 9.084503982403902e-13,
+    "ci_pts": [
+     -27.51,
+     -15.92
+    ],
+    "odds_ci": [
+     0.019,
+     0.193
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -27.37,
+     -15.97
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -28.44,
+     -14.73
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    5,
+    1
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8083,
+    "rate_b": 0.9458,
+    "diff_pts": -13.75,
+    "a_only": 13,
+    "b_only": 79,
+    "p": 1.0733747410748014e-12,
+    "ci_pts": [
+     -17.59,
+     -10.05
+    ],
+    "odds_ci": [
+     0.084,
+     0.298
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -17.47,
+     -10.03
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -17.87,
+     -9.69
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.6958,
+    "rate_b": 0.9167,
+    "diff_pts": -22.08,
+    "a_only": 7,
+    "b_only": 60,
+    "p": 1.3280368233066496e-11,
+    "ci_pts": [
+     -28.25,
+     -15.93
+    ],
+    "odds_ci": [
+     0.045,
+     0.255
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -28.16,
+     -16.01
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -28.82,
+     -15.19
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    5,
+    5
+   ],
+   "b": [
+    5,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9292,
+    "rate_b": 0.9583,
+    "diff_pts": -2.92,
+    "a_only": 12,
+    "b_only": 26,
+    "p": 0.03355243967962451,
+    "ci_pts": [
+     -5.61,
+     -0.36
+    ],
+    "odds_ci": [
+     0.212,
+     0.948
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -5.42,
+     -0.41
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -5.94,
+     0.02
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.875,
+    "rate_b": 0.9292,
+    "diff_pts": -5.42,
+    "a_only": 9,
+    "b_only": 22,
+    "p": 0.029449373483657837,
+    "ci_pts": [
+     -10.22,
+     -0.82
+    ],
+    "odds_ci": [
+     0.166,
+     0.924
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -9.91,
+     -0.92
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -10.87,
+     -0.06
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    5,
+    5
+   ],
+   "b": [
+    10,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9292,
+    "rate_b": 0.8479,
+    "diff_pts": 8.12,
+    "a_only": 50,
+    "b_only": 11,
+    "p": 4.588831219506234e-07,
+    "ci_pts": [
+     5.03,
+     11.39
+    ],
+    "odds_ci": [
+     2.336,
+     9.683
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     5.02,
+     11.23
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     4.17,
+     12.13
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.875,
+    "rate_b": 0.7542,
+    "diff_pts": 12.08,
+    "a_only": 38,
+    "b_only": 9,
+    "p": 2.4904030624384174e-05,
+    "ci_pts": [
+     6.64,
+     17.63
+    ],
+    "odds_ci": [
+     2.007,
+     9.93
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     6.7,
+     17.47
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     5.15,
+     18.93
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    5,
+    5
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9292,
+    "rate_b": 0.95,
+    "diff_pts": -2.08,
+    "a_only": 10,
+    "b_only": 20,
+    "p": 0.09873714670538905,
+    "ci_pts": [
+     -4.51,
+     0.21
+    ],
+    "odds_ci": [
+     0.209,
+     1.119
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -4.31,
+     0.15
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -5.19,
+     0.97
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.875,
+    "rate_b": 0.9125,
+    "diff_pts": -3.75,
+    "a_only": 7,
+    "b_only": 16,
+    "p": 0.0931396484375,
+    "ci_pts": [
+     -7.98,
+     0.28
+    ],
+    "odds_ci": [
+     0.152,
+     1.124
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -7.64,
+     0.14
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -9.37,
+     1.83
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    5,
+    5
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9292,
+    "rate_b": 0.9458,
+    "diff_pts": -1.67,
+    "a_only": 18,
+    "b_only": 26,
+    "p": 0.2912152365458951,
+    "ci_pts": [
+     -4.51,
+     1.11
+    ],
+    "odds_ci": [
+     0.358,
+     1.312
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -4.37,
+     1.04
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -4.81,
+     1.44
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.875,
+    "rate_b": 0.9167,
+    "diff_pts": -4.17,
+    "a_only": 12,
+    "b_only": 22,
+    "p": 0.12144948495551944,
+    "ci_pts": [
+     -9.15,
+     0.69
+    ],
+    "odds_ci": [
+     0.246,
+     1.151
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -8.9,
+     0.57
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -9.75,
+     1.36
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    5,
+    10
+   ],
+   "b": [
+    10,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9583,
+    "rate_b": 0.8479,
+    "diff_pts": 11.04,
+    "a_only": 62,
+    "b_only": 9,
+    "p": 7.335319390745429e-11,
+    "ci_pts": [
+     7.79,
+     14.52
+    ],
+    "odds_ci": [
+     3.405,
+     15.768
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     7.75,
+     14.34
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     7.38,
+     14.82
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9292,
+    "rate_b": 0.7542,
+    "diff_pts": 17.5,
+    "a_only": 48,
+    "b_only": 6,
+    "p": 3.2565301566478407e-09,
+    "ci_pts": [
+     11.89,
+     23.28
+    ],
+    "odds_ci": [
+     3.419,
+     22.876
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     11.92,
+     23.08
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     11.1,
+     23.88
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    5,
+    10
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9583,
+    "rate_b": 0.95,
+    "diff_pts": 0.83,
+    "a_only": 18,
+    "b_only": 14,
+    "p": 0.5966148958541453,
+    "ci_pts": [
+     -1.59,
+     3.3
+    ],
+    "odds_ci": [
+     0.604,
+     2.793
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -1.48,
+     3.14
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -1.88,
+     3.58
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9292,
+    "rate_b": 0.9125,
+    "diff_pts": 1.67,
+    "a_only": 15,
+    "b_only": 11,
+    "p": 0.557197093963623,
+    "ci_pts": [
+     -2.7,
+     6.12
+    ],
+    "odds_ci": [
+     0.585,
+     3.282
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -2.49,
+     5.83
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -3.28,
+     6.66
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    5,
+    10
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9583,
+    "rate_b": 0.9458,
+    "diff_pts": 1.25,
+    "a_only": 19,
+    "b_only": 13,
+    "p": 0.37708558747544885,
+    "ci_pts": [
+     -1.15,
+     3.73
+    ],
+    "odds_ci": [
+     0.685,
+     3.22
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -1.06,
+     3.56
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -1.51,
+     4.06
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9292,
+    "rate_b": 0.9167,
+    "diff_pts": 1.25,
+    "a_only": 13,
+    "b_only": 10,
+    "p": 0.6776394844055176,
+    "ci_pts": [
+     -2.9,
+     5.47
+    ],
+    "odds_ci": [
+     0.527,
+     3.312
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -2.66,
+     5.16
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -3.65,
+     6.19
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    10,
+    1
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8479,
+    "rate_b": 0.95,
+    "diff_pts": -10.21,
+    "a_only": 7,
+    "b_only": 56,
+    "p": 1.363671398024735e-10,
+    "ci_pts": [
+     -13.51,
+     -7.15
+    ],
+    "odds_ci": [
+     0.048,
+     0.275
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -13.32,
+     -7.1
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -14.05,
+     -6.46
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.7542,
+    "rate_b": 0.9125,
+    "diff_pts": -15.83,
+    "a_only": 4,
+    "b_only": 42,
+    "p": 5.100190492157708e-09,
+    "ci_pts": [
+     -21.24,
+     -10.66
+    ],
+    "odds_ci": [
+     0.025,
+     0.262
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -21.0,
+     -10.67
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -22.36,
+     -9.25
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    10,
+    1
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.8479,
+    "rate_b": 0.9458,
+    "diff_pts": -9.79,
+    "a_only": 15,
+    "b_only": 62,
+    "p": 6.083249930070788e-08,
+    "ci_pts": [
+     -13.4,
+     -6.32
+    ],
+    "odds_ci": [
+     0.128,
+     0.43
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -13.27,
+     -6.32
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -13.67,
+     -6.0
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.7542,
+    "rate_b": 0.9167,
+    "diff_pts": -16.25,
+    "a_only": 9,
+    "b_only": 48,
+    "p": 1.5201952291432616e-07,
+    "ci_pts": [
+     -22.22,
+     -10.38
+    ],
+    "odds_ci": [
+     0.081,
+     0.386
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -22.06,
+     -10.44
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -22.74,
+     -9.71
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed7",
+   "a": [
+    10,
+    5
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.95,
+    "rate_b": 0.9458,
+    "diff_pts": 0.42,
+    "a_only": 20,
+    "b_only": 18,
+    "p": 0.8714146793645341,
+    "ci_pts": [
+     -2.21,
+     3.06
+    ],
+    "odds_ci": [
+     0.558,
+     2.228
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -2.1,
+     2.93
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -2.47,
+     3.31
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9125,
+    "rate_b": 0.9167,
+    "diff_pts": -0.42,
+    "a_only": 14,
+    "b_only": 15,
+    "p": 1.0,
+    "ci_pts": [
+     -5.05,
+     4.2
+    ],
+    "odds_ci": [
+     0.417,
+     2.074
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -4.81,
+     3.98
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -5.55,
+     4.71
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed8",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9625,
+    "rate_b": 0.9333,
+    "diff_pts": 2.92,
+    "a_only": 23,
+    "b_only": 9,
+    "p": 0.020061607006937265,
+    "ci_pts": [
+     0.58,
+     5.43
+    ],
+    "odds_ci": [
+     1.139,
+     6.275
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     0.62,
+     5.21
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     0.08,
+     5.85
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9375,
+    "rate_b": 0.8792,
+    "diff_pts": 5.83,
+    "a_only": 21,
+    "b_only": 7,
+    "p": 0.012540951371192932,
+    "ci_pts": [
+     1.49,
+     10.46
+    ],
+    "odds_ci": [
+     1.229,
+     8.354
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     1.58,
+     10.09
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     0.64,
+     11.15
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi05_seed8",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9625,
+    "rate_b": 0.9437,
+    "diff_pts": 1.88,
+    "a_only": 23,
+    "b_only": 14,
+    "p": 0.18774155899882317,
+    "ci_pts": [
+     -0.68,
+     4.52
+    ],
+    "odds_ci": [
+     0.81,
+     3.453
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -0.6,
+     4.35
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -0.85,
+     4.67
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.9375,
+    "rate_b": 0.9167,
+    "diff_pts": 2.08,
+    "a_only": 17,
+    "b_only": 12,
+    "p": 0.45825831964612007,
+    "ci_pts": [
+     -2.5,
+     6.76
+    ],
+    "odds_ci": [
+     0.638,
+     3.251
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -2.31,
+     6.47
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -2.68,
+     6.92
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi05_seed8",
+   "a": [
+    10,
+    5
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.9333,
+    "rate_b": 0.9437,
+    "diff_pts": -1.04,
+    "a_only": 17,
+    "b_only": 22,
+    "p": 0.5223973804968411,
+    "ci_pts": [
+     -3.73,
+     1.6
+    ],
+    "odds_ci": [
+     0.385,
+     1.524
+    ],
+    "verdict": "EQUIV",
+    "wald_ci_pts": [
+     -3.59,
+     1.51
+    ],
+    "verdict_wald": "EQUIV",
+    "unpaired_ci_pts": [
+     -4.16,
+     2.05
+    ],
+    "verdict_unpaired": "EQUIV"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.8792,
+    "rate_b": 0.9167,
+    "diff_pts": -3.75,
+    "a_only": 10,
+    "b_only": 19,
+    "p": 0.13604594767093658,
+    "ci_pts": [
+     -8.41,
+     0.76
+    ],
+    "odds_ci": [
+     0.219,
+     1.19
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -8.12,
+     0.62
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -9.29,
+     1.73
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi0_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    1,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.3646,
+    "rate_b": 0.7729,
+    "diff_pts": -40.83,
+    "a_only": 18,
+    "b_only": 214,
+    "p": 9.514281683673568e-44,
+    "ci_pts": [
+     -45.67,
+     -35.6
+    ],
+    "odds_ci": [
+     0.049,
+     0.136
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -45.87,
+     -35.8
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -46.3,
+     -34.92
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.1208,
+    "rate_b": 0.6583,
+    "diff_pts": -53.75,
+    "a_only": 4,
+    "b_only": 133,
+    "p": 1.6613665736354485e-34,
+    "ci_pts": [
+     -60.01,
+     -46.51
+    ],
+    "odds_ci": [
+     0.008,
+     0.079
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -60.47,
+     -47.03
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -60.47,
+     -45.94
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi0_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    10,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.3646,
+    "rate_b": 0.6708,
+    "diff_pts": -30.62,
+    "a_only": 24,
+    "b_only": 171,
+    "p": 1.5561565757327863e-28,
+    "ci_pts": [
+     -35.48,
+     -25.48
+    ],
+    "odds_ci": [
+     0.088,
+     0.216
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -35.63,
+     -25.62
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -36.45,
+     -24.46
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.1208,
+    "rate_b": 0.5,
+    "diff_pts": -37.92,
+    "a_only": 7,
+    "b_only": 98,
+    "p": 1.2065431169279858e-21,
+    "ci_pts": [
+     -44.55,
+     -30.77
+    ],
+    "odds_ci": [
+     0.028,
+     0.153
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -44.77,
+     -31.06
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -45.12,
+     -30.06
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi0_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.3646,
+    "rate_b": 0.7875,
+    "diff_pts": -42.29,
+    "a_only": 15,
+    "b_only": 218,
+    "p": 2.430113713937583e-47,
+    "ci_pts": [
+     -47.05,
+     -37.14
+    ],
+    "odds_ci": [
+     0.038,
+     0.116
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -47.24,
+     -37.34
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -47.7,
+     -36.43
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.1208,
+    "rate_b": 0.675,
+    "diff_pts": -55.42,
+    "a_only": 3,
+    "b_only": 136,
+    "p": 1.2848933856204945e-36,
+    "ci_pts": [
+     -61.55,
+     -48.28
+    ],
+    "odds_ci": [
+     0.004,
+     0.066
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -62.02,
+     -48.82
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -62.05,
+     -47.65
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi0_seed7",
+   "a": [
+    1,
+    1
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.3646,
+    "rate_b": 0.8521,
+    "diff_pts": -48.75,
+    "a_only": 17,
+    "b_only": 251,
+    "p": 1.436648542847393e-54,
+    "ci_pts": [
+     -53.59,
+     -43.44
+    ],
+    "odds_ci": [
+     0.039,
+     0.111
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -53.82,
+     -43.68
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -53.84,
+     -43.16
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.1208,
+    "rate_b": 0.8167,
+    "diff_pts": -69.58,
+    "a_only": 1,
+    "b_only": 168,
+    "p": 4.5437000071567326e-49,
+    "ci_pts": [
+     -74.86,
+     -62.88
+    ],
+    "odds_ci": [
+     0.0,
+     0.034
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -75.52,
+     -63.65
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -75.22,
+     -62.42
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi0_seed7",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    10,
+    1
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.7729,
+    "rate_b": 0.6708,
+    "diff_pts": 10.21,
+    "a_only": 84,
+    "b_only": 35,
+    "p": 8.182182568303964e-06,
+    "ci_pts": [
+     5.81,
+     14.57
+    ],
+    "odds_ci": [
+     1.6,
+     3.669
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     5.85,
+     14.57
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     4.54,
+     15.79
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.6583,
+    "rate_b": 0.5,
+    "diff_pts": 15.83,
+    "a_only": 52,
+    "b_only": 14,
+    "p": 2.8220182313622557e-06,
+    "ci_pts": [
+     9.38,
+     22.05
+    ],
+    "odds_ci": [
+     2.028,
+     7.258
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     9.51,
+     22.16
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     7.01,
+     24.32
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi0_seed7",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.7729,
+    "rate_b": 0.7875,
+    "diff_pts": -1.46,
+    "a_only": 49,
+    "b_only": 56,
+    "p": 0.5583942911655911,
+    "ci_pts": [
+     -5.67,
+     2.75
+    ],
+    "odds_ci": [
+     0.584,
+     1.307
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -5.64,
+     2.72
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -6.69,
+     3.78
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.6583,
+    "rate_b": 0.675,
+    "diff_pts": -1.67,
+    "a_only": 30,
+    "b_only": 34,
+    "p": 0.7079807541347641,
+    "ci_pts": [
+     -8.21,
+     4.89
+    ],
+    "odds_ci": [
+     0.522,
+     1.486
+    ],
+    "verdict": "INCONCLUSIVE",
+    "wald_ci_pts": [
+     -8.2,
+     4.86
+    ],
+    "verdict_wald": "INCONCLUSIVE",
+    "unpaired_ci_pts": [
+     -10.03,
+     6.73
+    ],
+    "verdict_unpaired": "INCONCLUSIVE"
+   }
+  },
+  {
+   "grid": "pi0_seed7",
+   "a": [
+    1,
+    10
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.7729,
+    "rate_b": 0.8521,
+    "diff_pts": -7.92,
+    "a_only": 33,
+    "b_only": 71,
+    "p": 0.000247115841064573,
+    "ci_pts": [
+     -12.06,
+     -3.79
+    ],
+    "odds_ci": [
+     0.298,
+     0.712
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -12.02,
+     -3.81
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -12.82,
+     -2.98
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.6583,
+    "rate_b": 0.8167,
+    "diff_pts": -15.83,
+    "a_only": 12,
+    "b_only": 50,
+    "p": 1.2143807700186297e-06,
+    "ci_pts": [
+     -21.95,
+     -9.62
+    ],
+    "odds_ci": [
+     0.116,
+     0.457
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -21.94,
+     -9.72
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -23.43,
+     -7.99
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi0_seed7",
+   "a": [
+    10,
+    1
+   ],
+   "b": [
+    10,
+    5
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.6708,
+    "rate_b": 0.7875,
+    "diff_pts": -11.67,
+    "a_only": 33,
+    "b_only": 89,
+    "p": 4.040347038076119e-07,
+    "ci_pts": [
+     -16.05,
+     -7.24
+    ],
+    "odds_ci": [
+     0.241,
+     0.559
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -16.05,
+     -7.28
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -17.18,
+     -6.06
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.5,
+    "rate_b": 0.675,
+    "diff_pts": -17.5,
+    "a_only": 19,
+    "b_only": 61,
+    "p": 2.7318699228822653e-06,
+    "ci_pts": [
+     -24.31,
+     -10.39
+    ],
+    "odds_ci": [
+     0.176,
+     0.529
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -24.46,
+     -10.54
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -25.92,
+     -8.71
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi0_seed7",
+   "a": [
+    10,
+    1
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.6708,
+    "rate_b": 0.8521,
+    "diff_pts": -18.12,
+    "a_only": 27,
+    "b_only": 114,
+    "p": 6.399435193704268e-14,
+    "ci_pts": [
+     -22.69,
+     -13.51
+    ],
+    "odds_ci": [
+     0.15,
+     0.363
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -22.69,
+     -13.56
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -23.33,
+     -12.8
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.5,
+    "rate_b": 0.8167,
+    "diff_pts": -31.67,
+    "a_only": 7,
+    "b_only": 83,
+    "p": 1.3151874833452022e-17,
+    "ci_pts": [
+     -38.1,
+     -24.79
+    ],
+    "odds_ci": [
+     0.033,
+     0.182
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -38.3,
+     -25.04
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -39.32,
+     -23.4
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  },
+  {
+   "grid": "pi0_seed7",
+   "a": [
+    10,
+    5
+   ],
+   "b": [
+    10,
+    10
+   ],
+   "full": {
+    "n": 480,
+    "rate_a": 0.7875,
+    "rate_b": 0.8521,
+    "diff_pts": -6.46,
+    "a_only": 33,
+    "b_only": 64,
+    "p": 0.002151553087925026,
+    "ci_pts": [
+     -10.49,
+     -2.45
+    ],
+    "odds_ci": [
+     0.328,
+     0.797
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -10.44,
+     -2.48
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -11.3,
+     -1.59
+    ],
+    "verdict_unpaired": "DIFF"
+   },
+   "informative": {
+    "n": 240,
+    "rate_a": 0.675,
+    "rate_b": 0.8167,
+    "diff_pts": -14.17,
+    "a_only": 15,
+    "b_only": 49,
+    "p": 2.436457216293327e-05,
+    "ci_pts": [
+     -20.45,
+     -7.79
+    ],
+    "odds_ci": [
+     0.159,
+     0.555
+    ],
+    "verdict": "DIFF",
+    "wald_ci_pts": [
+     -20.45,
+     -7.88
+    ],
+    "verdict_wald": "DIFF",
+    "unpaired_ci_pts": [
+     -21.73,
+     -6.39
+    ],
+    "verdict_unpaired": "DIFF"
+   }
+  }
+ ],
+ "size_control": {
+  "saturated_half": [
+   1,
+   3,
+   4,
+   6
+  ],
+  "n_four_task_subsets": 70,
+  "equiv_kept_informative_half": 1,
+  "equiv_kept_saturated_half": 17,
+  "equiv_kept_median_over_subsets": 8,
+  "equiv_kept_by_subset": [
+   {
+    "tasks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "kept": 15
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     2,
+     4
+    ],
+    "kept": 15
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     2,
+     6
+    ],
+    "kept": 15
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     2,
+     8
+    ],
+    "kept": 3
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     2,
+     9
+    ],
+    "kept": 14
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     3,
+     4
+    ],
+    "kept": 13
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     3,
+     6
+    ],
+    "kept": 16
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     3,
+     8
+    ],
+    "kept": 4
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     3,
+     9
+    ],
+    "kept": 11
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     4,
+     6
+    ],
+    "kept": 12
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     4,
+     8
+    ],
+    "kept": 3
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     4,
+     9
+    ],
+    "kept": 11
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     6,
+     8
+    ],
+    "kept": 4
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     6,
+     9
+    ],
+    "kept": 12
+   },
+   {
+    "tasks": [
+     0,
+     1,
+     8,
+     9
+    ],
+    "kept": 2
+   },
+   {
+    "tasks": [
+     0,
+     2,
+     3,
+     4
+    ],
+    "kept": 10
+   },
+   {
+    "tasks": [
+     0,
+     2,
+     3,
+     6
+    ],
+    "kept": 12
+   },
+   {
+    "tasks": [
+     0,
+     2,
+     3,
+     8
+    ],
+    "kept": 2
+   },
+   {
+    "tasks": [
+     0,
+     2,
+     3,
+     9
+    ],
+    "kept": 11
+   },
+   {
+    "tasks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "kept": 12
+   },
+   {
+    "tasks": [
+     0,
+     2,
+     4,
+     8
+    ],
+    "kept": 2
+   },
+   {
+    "tasks": [
+     0,
+     2,
+     4,
+     9
+    ],
+    "kept": 12
+   },
+   {
+    "tasks": [
+     0,
+     2,
+     6,
+     8
+    ],
+    "kept": 4
+   },
+   {
+    "tasks": [
+     0,
+     2,
+     6,
+     9
+    ],
+    "kept": 11
+   },
+   {
+    "tasks": [
+     0,
+     2,
+     8,
+     9
+    ],
+    "kept": 1
+   },
+   {
+    "tasks": [
+     0,
+     3,
+     4,
+     6
+    ],
+    "kept": 9
+   },
+   {
+    "tasks": [
+     0,
+     3,
+     4,
+     8
+    ],
+    "kept": 5
+   },
+   {
+    "tasks": [
+     0,
+     3,
+     4,
+     9
+    ],
+    "kept": 8
+   },
+   {
+    "tasks": [
+     0,
+     3,
+     6,
+     8
+    ],
+    "kept": 4
+   },
+   {
+    "tasks": [
+     0,
+     3,
+     6,
+     9
+    ],
+    "kept": 10
+   },
+   {
+    "tasks": [
+     0,
+     3,
+     8,
+     9
+    ],
+    "kept": 2
+   },
+   {
+    "tasks": [
+     0,
+     4,
+     6,
+     8
+    ],
+    "kept": 3
+   },
+   {
+    "tasks": [
+     0,
+     4,
+     6,
+     9
+    ],
+    "kept": 10
+   },
+   {
+    "tasks": [
+     0,
+     4,
+     8,
+     9
+    ],
+    "kept": 4
+   },
+   {
+    "tasks": [
+     0,
+     6,
+     8,
+     9
+    ],
+    "kept": 2
+   },
+   {
+    "tasks": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "kept": 18
+   },
+   {
+    "tasks": [
+     1,
+     2,
+     3,
+     6
+    ],
+    "kept": 17
+   },
+   {
+    "tasks": [
+     1,
+     2,
+     3,
+     8
+    ],
+    "kept": 4
+   },
+   {
+    "tasks": [
+     1,
+     2,
+     3,
+     9
+    ],
+    "kept": 14
+   },
+   {
+    "tasks": [
+     1,
+     2,
+     4,
+     6
+    ],
+    "kept": 17
+   },
+   {
+    "tasks": [
+     1,
+     2,
+     4,
+     8
+    ],
+    "kept": 3
+   },
+   {
+    "tasks": [
+     1,
+     2,
+     4,
+     9
+    ],
+    "kept": 10
+   },
+   {
+    "tasks": [
+     1,
+     2,
+     6,
+     8
+    ],
+    "kept": 4
+   },
+   {
+    "tasks": [
+     1,
+     2,
+     6,
+     9
+    ],
+    "kept": 13
+   },
+   {
+    "tasks": [
+     1,
+     2,
+     8,
+     9
+    ],
+    "kept": 3
+   },
+   {
+    "tasks": [
+     1,
+     3,
+     4,
+     6
+    ],
+    "kept": 17
+   },
+   {
+    "tasks": [
+     1,
+     3,
+     4,
+     8
+    ],
+    "kept": 5
+   },
+   {
+    "tasks": [
+     1,
+     3,
+     4,
+     9
+    ],
+    "kept": 9
+   },
+   {
+    "tasks": [
+     1,
+     3,
+     6,
+     8
+    ],
+    "kept": 6
+   },
+   {
+    "tasks": [
+     1,
+     3,
+     6,
+     9
+    ],
+    "kept": 14
+   },
+   {
+    "tasks": [
+     1,
+     3,
+     8,
+     9
+    ],
+    "kept": 4
+   },
+   {
+    "tasks": [
+     1,
+     4,
+     6,
+     8
+    ],
+    "kept": 5
+   },
+   {
+    "tasks": [
+     1,
+     4,
+     6,
+     9
+    ],
+    "kept": 14
+   },
+   {
+    "tasks": [
+     1,
+     4,
+     8,
+     9
+    ],
+    "kept": 6
+   },
+   {
+    "tasks": [
+     1,
+     6,
+     8,
+     9
+    ],
+    "kept": 7
+   },
+   {
+    "tasks": [
+     2,
+     3,
+     4,
+     6
+    ],
+    "kept": 13
+   },
+   {
+    "tasks": [
+     2,
+     3,
+     4,
+     8
+    ],
+    "kept": 4
+   },
+   {
+    "tasks": [
+     2,
+     3,
+     4,
+     9
+    ],
+    "kept": 9
+   },
+   {
+    "tasks": [
+     2,
+     3,
+     6,
+     8
+    ],
+    "kept": 4
+   },
+   {
+    "tasks": [
+     2,
+     3,
+     6,
+     9
+    ],
+    "kept": 11
+   },
+   {
+    "tasks": [
+     2,
+     3,
+     8,
+     9
+    ],
+    "kept": 2
+   },
+   {
+    "tasks": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "kept": 3
+   },
+   {
+    "tasks": [
+     2,
+     4,
+     6,
+     9
+    ],
+    "kept": 11
+   },
+   {
+    "tasks": [
+     2,
+     4,
+     8,
+     9
+    ],
+    "kept": 3
+   },
+   {
+    "tasks": [
+     2,
+     6,
+     8,
+     9
+    ],
+    "kept": 2
+   },
+   {
+    "tasks": [
+     3,
+     4,
+     6,
+     8
+    ],
+    "kept": 2
+   },
+   {
+    "tasks": [
+     3,
+     4,
+     6,
+     9
+    ],
+    "kept": 10
+   },
+   {
+    "tasks": [
+     3,
+     4,
+     8,
+     9
+    ],
+    "kept": 6
+   },
+   {
+    "tasks": [
+     3,
+     6,
+     8,
+     9
+    ],
+    "kept": 5
+   },
+   {
+    "tasks": [
+     4,
+     6,
+     8,
+     9
+    ],
+    "kept": 5
+   }
+  ],
+  "subsets_keeping_none": 0,
+  "subsets_containing_task8_keeping_any": 35,
+  "subsets_without_task8_median_kept": 12,
+  "subsets_with_task8_median_kept": 4
+ },
+ "sensitivity": {
+  "wald_pm5": {
+   "n_equiv_full": 18,
+   "kept_informative": 3,
+   "kept_saturated": 17
+  },
+  "unpaired_newcombe_pm5": {
+   "n_equiv_full": 14,
+   "kept_informative": 0,
+   "kept_saturated": 14
+  },
+  "paired_newcombe_pm3": {
+   "n_equiv_full": 3,
+   "kept_informative": 0,
+   "kept_saturated": 1
+  },
+  "paired_newcombe_pm7": {
+   "n_equiv_full": 20,
+   "kept_informative": 10,
+   "kept_saturated": 19
+  },
+  "paired_newcombe_90pct_pm5": {
+   "n_equiv_full": 20,
+   "kept_informative": 5,
+   "kept_saturated": 18
+  }
+ },
+ "diff_kept_saturated_half": 38,
+ "n_diff_full_holm": 48,
+ "certificates_by_grid": {
+  "pi05_seed7": 16,
+  "pi05_seed8": 2,
+  "pi0_seed7": 0
+ },
+ "certificates_distinct_cells": 13,
+ "by_contrast_kind": {
+  "steps": {
+   "n": 21,
+   "equiv_full": 11,
+   "equiv_kept_informative": 0,
+   "diff_full": 10,
+   "diff_kept_informative": 9
+  },
+  "horizon": {
+   "n": 17,
+   "equiv_full": 2,
+   "equiv_kept_informative": 0,
+   "diff_full": 15,
+   "diff_kept_informative": 14
+  },
+  "both": {
+   "n": 41,
+   "equiv_full": 5,
+   "equiv_kept_informative": 1,
+   "diff_full": 34,
+   "diff_kept_informative": 34
+  }
+ }
+}

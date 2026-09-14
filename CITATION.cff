@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use RoboRigor, please cite the paper below once it is public."
+title: "RoboRigor"
+authors:
+  - family-names: "Gunukula"
+    given-names: "Nihal"
+    email: "ngunukul@purdue.edu"
+    affiliation: "Purdue University"
+license: Apache-2.0
+repository-code: "https://github.com/nihalgunu/roborigor"
+preferred-citation:
+  type: article
+  title: "Certified by the Ceiling: Saturated Benchmarks Supply the No-Loss Claims Behind VLA Acceleration"
+  authors:
+    - family-names: "Gunukula"
+      given-names: "Nihal"
+      email: "ngunukul@purdue.edu"
+      affiliation: "Purdue University"
+  year: 2026
+  notes: "Technical report. Citation details will be updated on publication."

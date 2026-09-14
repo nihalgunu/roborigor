@@ -1,0 +1,354 @@
+{"arxiv_id": "2609.10915", "title": "IMLE-VLA: Fast Single-Step Action Generation for Vision-Language-Action Policies", "date": "2026-09-10", "sources": ["C"], "cid": 0}
+{"arxiv_id": "2609.09941", "title": "HaWMPO: Hallucination-Aware World Model-based Policy Optimization for Generalist Robot Policy", "date": "2026-09-09", "sources": ["A"], "cid": 1}
+{"arxiv_id": "2609.07006", "title": "GIFT: Goal-Injected Fine-Tuning for Efficient Manipulation Policy Adaptation", "date": "2026-09-07", "sources": ["A"], "cid": 2}
+{"arxiv_id": "2609.07838", "title": "ComVLA: Communication-Aware Split Inference for VLA Models in 6G-Connected Robotics", "date": "2026-09-07", "sources": ["A", "C"], "cid": 3}
+{"arxiv_id": "2609.06852", "title": "ContextFlow: In-Context Flow Matching for Robot Manipulation", "date": "2026-09-06", "sources": ["A"], "cid": 4}
+{"arxiv_id": "2609.06508", "title": "VLA-Corrector: Stage-Aware Observable State Understanding for Prompt-Based Closed-Loop Recovery of Vision-Language-Action Policies", "date": "2026-09-06", "sources": ["A"], "cid": 5}
+{"arxiv_id": "2609.06079", "title": "LayerRoute: Action-Conditioned Mixture-of-Layers Routing for Vision-Language-Action Policies", "date": "2026-09-05", "sources": ["A", "C"], "cid": 6}
+{"arxiv_id": "2609.03715", "title": "MINERVA: How Small Can a Manipulation Policy Be and Still Solve LIBERO?", "date": "2026-09-03", "sources": ["A"], "cid": 7}
+{"arxiv_id": "2609.00908", "title": "Knowing When to Stop: Adaptive Action Chunking via Internal Cross-Attention Dynamics in VLAs", "date": "2026-09-01", "sources": ["A", "C"], "cid": 8}
+{"arxiv_id": "2609.01215", "title": "REFACTOR-VLA: Unsupervised Library Learning of Typed Motor Programs", "date": "2026-09-01", "sources": ["A"], "cid": 9}
+{"arxiv_id": "2608.30643", "title": "Temporal Forcing: 4D Representation Alignment for Vision-Language-Action Models", "date": "2026-08-31", "sources": ["A"], "cid": 10}
+{"arxiv_id": "2608.29749", "title": "DriftingVLA: Native One-Step Vision-Language-Action Generation via Per-Dimension Temporal Drifting", "date": "2026-08-30", "sources": ["A", "C"], "cid": 11}
+{"arxiv_id": "2608.29208", "title": "AdaVLA: Adaptive Step Flow Matching for Training-free Acceleration of Vision-Language-Action Models", "date": "2026-08-29", "sources": ["A", "C"], "cid": 12}
+{"arxiv_id": "2608.29432", "title": "SMILE: Smooth Motion for Improved Long-Horizon VLA Execution", "date": "2026-08-29", "sources": ["A"], "cid": 13}
+{"arxiv_id": null, "title": "SIRModel: Learning Spatial Intermediate Representation to Parameter-Efficiently Fine-Tune a Vision Language Model for Manipulation", "date": "2026-08-28", "sources": ["A"], "cid": 14}
+{"arxiv_id": "2608.26673", "title": "PredVLA: Predictive Sensorimotor Modeling for Sub-Million-Parameter Robot Manipulation", "date": "2026-08-27", "sources": ["A"], "cid": 15}
+{"arxiv_id": "2608.27609", "title": "PHR-VLA: Planning Horizon Reasoning for Vision-Language-Action Models", "date": "2026-08-27", "sources": ["A"], "cid": 16}
+{"arxiv_id": "2608.26821", "title": "TemporalFlow-VLA: Learning Physically Grounded Execution History for Long-Horizon Robot Manipulation", "date": "2026-08-27", "sources": ["A"], "cid": 17}
+{"arxiv_id": "2608.27384", "title": "FlashVLA: Streaming Action Decoding for Fast and Asynchronous VLA Inference", "date": "2026-08-27", "sources": ["C"], "cid": 18}
+{"arxiv_id": "2608.25659", "title": "GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation", "date": "2026-08-26", "sources": ["A"], "cid": 19}
+{"arxiv_id": "2608.25585", "title": "RA-VLA: Retrieval-Augmented VLA for Test-Time Adaptation", "date": "2026-08-26", "sources": ["A"], "cid": 20}
+{"arxiv_id": "2608.24042", "title": "Hierarchical Skill Retrieval for Data-Efficient Adaptation of Vision-Language-Action Models", "date": "2026-08-25", "sources": ["A"], "cid": 21}
+{"arxiv_id": "2608.24959", "title": "GaussVLA: Geometry-Aware Spatial Reasoning for Vision-Language-Action Model", "date": "2026-08-25", "sources": ["A"], "cid": 22}
+{"arxiv_id": "2608.23224", "title": "Think Only When Needed: Prompt-Authority Control for Selective Slow-Path Intervention in Vision-Language-Action Manipulation", "date": "2026-08-24", "sources": ["A"], "cid": 23}
+{"arxiv_id": "2608.21031", "title": "PhysCaP: Grounding Code-as-Policy Agent with Physics-Informed Exploration", "date": "2026-08-21", "sources": ["A"], "cid": 24}
+{"arxiv_id": "2608.21247", "title": "Just Noticeable Difference Modeling for Token Compression in Vision-Language-Action Models", "date": "2026-08-21", "sources": ["A", "C"], "cid": 25}
+{"arxiv_id": "2608.18410", "title": "Role-Conditioned Sub-Token Routing for Efficient Vision-Language-Action Policies", "date": "2026-08-19", "sources": ["A"], "cid": 26}
+{"arxiv_id": "2608.17496", "title": "Calibrated Predictive Safety for Heterogeneous Robots: An Action-Conditioned JEPA Framework with Model-Based Safety Shields", "date": "2026-08-18", "sources": ["A"], "cid": 27}
+{"arxiv_id": "2608.17484", "title": "Reuse Before You Retrieve: Diagnosing Headroom and Complementarity for Test-Time Augmentation of Embodied Multimodal Policies", "date": "2026-08-18", "sources": ["A"], "cid": 28}
+{"arxiv_id": "2608.16503", "title": "NebulaVLA: A Dual-Frequency Vision-Language-Action Model With Guide Action for Robotic Manipulation", "date": "2026-08-17", "sources": ["A"], "cid": 29}
+{"arxiv_id": "2608.17163", "title": "Q-Learning With World Models", "date": "2026-08-17", "sources": ["A"], "cid": 30}
+{"arxiv_id": "2608.16697", "title": "FabriMAE I Trust Myself? Self-Evaluating VLA Action Generation with Markov Attention Entropy", "date": "2026-08-17", "sources": ["A"], "cid": 31}
+{"arxiv_id": "2608.15636", "title": "Algorithm-Architecture Co-Design for Efficient VLA Inference via Speculative Inference and Verification", "date": "2026-08-16", "sources": ["A", "C"], "cid": 32}
+{"arxiv_id": "2608.15502", "title": "EcoVLA: Energy-Efficient Device-Edge Co-Inference for Vision-Language-Action Models under Real-Time Constraints", "date": "2026-08-16", "sources": ["C"], "cid": 33}
+{"arxiv_id": "2608.15285", "title": "PhaseLoRA: Control-Regime-Conditioned Low-Rank Adaptation for Continuous-Action Vision-Language-Action Policies", "date": "2026-08-15", "sources": ["A"], "cid": 34}
+{"arxiv_id": "2608.13026", "title": "Temporal GRPO: Beyond Trajectory-Level Credit in Vision-Language-Action Reinforcement Learning", "date": "2026-08-13", "sources": ["A"], "cid": 35}
+{"arxiv_id": "2608.11671", "title": "StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models", "date": "2026-08-12", "sources": ["A"], "cid": 36}
+{"arxiv_id": "2608.10824", "title": "Neural Introspection Gating for Adaptive KV-Cache Reuse in Vision-Language-Action Models", "date": "2026-08-11", "sources": ["A", "C"], "cid": 37}
+{"arxiv_id": "2608.21407", "title": "Mamba-based Selective State Space Modeling Improves the Accuracy-Complexity Tradeoff of SmolVLA Vision-Language-Action Experts", "date": "2026-08-10", "sources": ["A"], "cid": 38}
+{"arxiv_id": "2608.09730", "title": "World Tokens: Enhancing Embodied Policies with Training-Time World Modeling", "date": "2026-08-10", "sources": ["A"], "cid": 39}
+{"arxiv_id": "2608.09381", "title": "JEPA-WAM: Learning Vision-Language-Action Policies with Joint-Embedding World Modeling", "date": "2026-08-10", "sources": ["A"], "cid": 40}
+{"arxiv_id": "2608.09492", "title": "Rethink Before You Execute: Adaptive Execution for World Action Models", "date": "2026-08-10", "sources": ["C"], "cid": 41}
+{"arxiv_id": "2608.08725", "title": "WA-SpecDec: World-Aware Speculative Decoding for Vision-Language-Action Models", "date": "2026-08-09", "sources": ["C"], "cid": 42}
+{"arxiv_id": "2608.05738", "title": "In-Context VLA: Endowing Vision-Language-Action Models with Language via In-Context Post-Training and Agentic Tool Use", "date": "2026-08-06", "sources": ["A"], "cid": 43}
+{"arxiv_id": "2608.06434", "title": "Fast and Accurate: An Adaptive VLA Inference Framework through Environment-aware Model Selection", "date": "2026-08-06", "sources": ["A", "C"], "cid": 44}
+{"arxiv_id": "2608.06008", "title": "Adaptive-WAM: Quality-Guided Early-Exit Planning from Intermediate Video-Diffusion Features", "date": "2026-08-06", "sources": ["C"], "cid": 45}
+{"arxiv_id": "2608.04527", "title": "Retrieve in Time, Correct in Frequency", "date": "2026-08-05", "sources": ["A"], "cid": 46}
+{"arxiv_id": "2608.04633", "title": "Mind-VLA: Instruction-Aware Spatial Representation Alignment for Vision-Language-Action Models", "date": "2026-08-05", "sources": ["A"], "cid": 47}
+{"arxiv_id": "2608.04510", "title": "GUARD: Grounding Uncertainty and Ablation-Based Risk Detection for Diffusion-Based VLAs", "date": "2026-08-05", "sources": ["A"], "cid": 48}
+{"arxiv_id": "2608.05369", "title": "World-to-Wrist: Task-Conditioned Future Wrist Modeling for Fine-Grained Robot Manipulation", "date": "2026-08-05", "sources": ["A"], "cid": 49}
+{"arxiv_id": "2608.04404", "title": "Faster-WAM: Efficient Inference-Time Future Conditioning for Robust World Action Models", "date": "2026-08-05", "sources": ["C"], "cid": 50}
+{"arxiv_id": "2608.04428", "title": "Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference", "date": "2026-08-05", "sources": ["C"], "cid": 51}
+{"arxiv_id": "2608.03682", "title": "PhyAI: Real-Time Physical AI at the Edge, Scalable Rollouts in the Cloud", "date": "2026-08-04", "sources": ["A", "C"], "cid": 52}
+{"arxiv_id": "2608.03483", "title": "Continue or Replan? Bernoulli-Continuation Policy Learning for Adaptive Horizon Execution", "date": "2026-08-04", "sources": ["A"], "cid": 53}
+{"arxiv_id": "2608.01826", "title": "Multi-View Unified Camera Fields: Geometry-Shaped Action-Facing Representations for RGB-Only Multi-Camera VLA Policies", "date": "2026-08-03", "sources": ["A"], "cid": 54}
+{"arxiv_id": "2608.02197", "title": "Look Where It Matters: Adaptive Visual Refinement for Vision-Language-Action Models", "date": "2026-08-03", "sources": ["A"], "cid": 55}
+{"arxiv_id": "2608.01265", "title": "Hermite Curves as Trajectory Priors for Vision-Language-Action Models", "date": "2026-08-02", "sources": ["A"], "cid": 56}
+{"arxiv_id": "2608.01428", "title": "When Replanning Becomes the Bottleneck: Budgeted Replanning for Embodied Agents", "date": "2026-08-02", "sources": ["C"], "cid": 57}
+{"arxiv_id": "2608.00391", "title": "The Gate, Not the Cache: Gate Provenance Bounds the Closed-Loop Reliability of Training-Free VLA Token Skipping", "date": "2026-08-01", "sources": ["A", "C"], "cid": 58}
+{"arxiv_id": null, "title": "Poster: Task-Aware Dynamic Visual Token Pruning for Efficient Vision-Language-Action Inference", "date": "2026-08-01", "sources": ["A"], "cid": 59}
+{"arxiv_id": "2608.00569", "title": "Latency-Tolerant Cloud-Edge Collaborative Vision-Language-Action Models via Emergent Representational Specialization", "date": "2026-08-01", "sources": ["A", "C"], "cid": 60}
+{"arxiv_id": "2607.27782", "title": "RedFlow: Redirect Failure into Action-Level Corrections for Flow-matching VLA Policy", "date": "2026-07-30", "sources": ["A"], "cid": 61}
+{"arxiv_id": "2607.28405", "title": "QuantWAMs: Calibrating at the Right Granularity for World Action Models", "date": "2026-07-30", "sources": ["C"], "cid": 62}
+{"arxiv_id": "2607.27138", "title": "DLAM: Distributional Latent Actions with Temporal Constraints", "date": "2026-07-29", "sources": ["A"], "cid": 63}
+{"arxiv_id": "2607.27205", "title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM", "date": "2026-07-29", "sources": ["A"], "cid": 64}
+{"arxiv_id": "2607.25487", "title": "CoTinyVLA: Chain-of-Thought Distillation for a Sub-Billion-Parameter Vision-Language-Action Model", "date": "2026-07-28", "sources": ["A"], "cid": 65}
+{"arxiv_id": "2607.24148", "title": "A Motion-Aware Vector Quantization Framework with Centroid Reuse for Efficient VLA Inference", "date": "2026-07-27", "sources": ["C"], "cid": 66}
+{"arxiv_id": "2607.20293", "title": "Evolving Cache Schedules for Fast Diffusion Policy Inference", "date": "2026-07-22", "sources": ["C"], "cid": 67}
+{"arxiv_id": "2607.17786", "title": "Reasoning as a Double-Edged Sword: Architecture and Cross-Stage Robustness in Vision-Language-Action Models", "date": "2026-07-20", "sources": ["A"], "cid": 68}
+{"arxiv_id": "2607.14695", "title": "Reflex: Real-Time VLA Control through Streaming Inference", "date": "2026-07-16", "sources": ["A", "C"], "cid": 69}
+{"arxiv_id": "2607.12992", "title": "ChunkFlow: Towards Continuity-Consistent Chunked Policy Learning", "date": "2026-07-14", "sources": ["A"], "cid": 70}
+{"arxiv_id": "2607.12659", "title": "Jetson-PI: Towards Onboard Real-Time Robot Control via Foresight-Aligned Asynchronous Inference", "date": "2026-07-14", "sources": ["A", "C"], "cid": 71}
+{"arxiv_id": "2607.12287", "title": "Reducing Temporal Redundancy for Efficient Vision-Language-Action Inference", "date": "2026-07-14", "sources": ["A", "C"], "cid": 72}
+{"arxiv_id": "2607.10504", "title": "SUREFlow: State-space Uncertainty-aware REsidual Flow Matching for Robust Robot Manipulation", "date": "2026-07-11", "sources": ["A"], "cid": 73}
+{"arxiv_id": "2607.09042", "title": "Learning More from Less: Reinforcement Learning from Hindsight", "date": "2026-07-10", "sources": ["A"], "cid": 74}
+{"arxiv_id": "2607.08283", "title": "TFP: Temporally Conditioned Memory-Fusion Policies for Visuomotor Learning", "date": "2026-07-09", "sources": ["A"], "cid": 75}
+{"arxiv_id": "2607.07608", "title": "Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation", "date": "2026-07-08", "sources": ["A"], "cid": 76}
+{"arxiv_id": "2607.06370", "title": "ActionCache: Training-Free Acceleration for Vision-Language-Action Models with Action Caching and Refinement", "date": "2026-07-07", "sources": ["C"], "cid": 77}
+{"arxiv_id": "2607.04816", "title": "CAC-VLA: Context-Gated Action Conditioning for Vision-Language-Action Models", "date": "2026-07-06", "sources": ["A"], "cid": 78}
+{"arxiv_id": "2607.04609", "title": "SEAM: Smooth Execution of Action-Chunked Motion for Vision-Language-Action Policies", "date": "2026-07-06", "sources": ["A"], "cid": 79}
+{"arxiv_id": "2607.04171", "title": "Teaching Tiny VLA Models Where to Look and How to Move", "date": "2026-07-05", "sources": ["A", "C"], "cid": 80}
+{"arxiv_id": "2607.01586", "title": "VLAFlow: A Unified Training Framework for Vision-Language-Action Models via Co-training and Future Latent Alignment", "date": "2026-07-02", "sources": ["A"], "cid": 81}
+{"arxiv_id": "2607.01804", "title": "VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon", "date": "2026-07-02", "sources": ["C"], "cid": 82}
+{"arxiv_id": "2607.02501", "title": "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots", "date": "2026-07-02", "sources": ["C"], "cid": 83}
+{"arxiv_id": null, "title": "Dynamic Maclaurin-Series-Based Vision-Language-Action Model", "date": "2026-07-01", "sources": ["A"], "cid": 84}
+{"arxiv_id": null, "title": "Breaking the Resource Barrier: Parameter-Efficient Hierarchical VLA Fine-Tuning via Single-View Semantic Reasoning", "date": "2026-07-01", "sources": ["A"], "cid": 85}
+{"arxiv_id": "2606.31382", "title": "Revisiting Parameter Redundancy in Vision-Language-Action Models: Insights from VLM-to-VLA Adaptation", "date": "2026-06-30", "sources": ["A", "C"], "cid": 86}
+{"arxiv_id": "2606.31167", "title": "MIRTH: Mutual-Information Reasoning with Temporal Hubs for Vision-Language-Action Agents", "date": "2026-06-30", "sources": ["A"], "cid": 87}
+{"arxiv_id": "2606.29350", "title": "Fast Enough to Act: Spatio-Temporal Visual Token Merging for Low-Latency Robotic VLMs and VLAs", "date": "2026-06-28", "sources": ["C"], "cid": 88}
+{"arxiv_id": "2606.27755", "title": "Drop-Then-Recovery: How Redundant Are Vision-Language-Action Models?", "date": "2026-06-26", "sources": ["C"], "cid": 89}
+{"arxiv_id": "2606.28529", "title": "The Speedup Paradox: Rethinking Inference Speed-Quality Trade-off in Embodied Tasks", "date": "2026-06-26", "sources": ["C"], "cid": 90}
+{"arxiv_id": "2606.25215", "title": "Reflective VLA: In-Context Action Consequences Make VLAs Generalize", "date": "2026-06-23", "sources": ["A"], "cid": 91}
+{"arxiv_id": "2606.23623", "title": "dVLA-RL: Reinforcement Learning over Denoising Trajectories for Discrete Diffusion Vision-Language-Action Models", "date": "2026-06-22", "sources": ["A"], "cid": 92}
+{"arxiv_id": "2606.22794", "title": "UniFS: Unified Fast-to-Slow Hierarchical Architecture for Vision-Language-Action Models", "date": "2026-06-22", "sources": ["A"], "cid": 93}
+{"arxiv_id": "2606.23420", "title": "Flowing With Purpose: Latent Action Guided Flow Matching Policies For Robotic Manipulation", "date": "2026-06-22", "sources": ["A"], "cid": 94}
+{"arxiv_id": "2606.23085", "title": "Foresight: Failure Detection for Long-Horizon Robotic Manipulation with Action-Conditioned World Model Latents", "date": "2026-06-22", "sources": ["A"], "cid": 95}
+{"arxiv_id": "2606.22540", "title": "PolicyTrim: Boosting Intrinsic Policy Efficiency of Vision-Language-Action Models", "date": "2026-06-21", "sources": ["C"], "cid": 96}
+{"arxiv_id": "2606.21372", "title": "NAC: Neural Action Codec for Vision-Language-Action Models", "date": "2026-06-19", "sources": ["A"], "cid": 97}
+{"arxiv_id": "2606.21501", "title": "UniviewVLA: A Unified Multiview Vision-Language-Action Model with World Modeling", "date": "2026-06-19", "sources": ["A"], "cid": 98}
+{"arxiv_id": "2608.14586", "title": "Efficient Block-Layer Parallel Inference for Vision-Language-Action on Hybrid Architectures", "date": "2026-06-19", "sources": ["C"], "cid": 99}
+{"arxiv_id": "2606.20246", "title": "Finetuning Vision-Language-Action Models Requires Fewer Layers Than You Think", "date": "2026-06-18", "sources": ["A", "C"], "cid": 100}
+{"arxiv_id": "2606.20867", "title": "FOCA: Future-Oriented Conditioning for Data-Efficient Vision-Language-Action Adaptation", "date": "2026-06-18", "sources": ["A"], "cid": 101}
+{"arxiv_id": "2606.19565", "title": "Mix-QVLA: Task-Evidence-Aware Mixed-Precision Quantization of Vision-Language-Action Models", "date": "2026-06-17", "sources": ["A", "C"], "cid": 102}
+{"arxiv_id": "2606.19194", "title": "Invertible Neural Network Adapter for One-Step Flow Matching in Robot Manipulation", "date": "2026-06-17", "sources": ["C"], "cid": 103}
+{"arxiv_id": "2606.18043", "title": "Uncertainty Quantification for Flow-Based Vision-Language-Action Models", "date": "2026-06-16", "sources": ["A"], "cid": 104}
+{"arxiv_id": "2606.17924", "title": "PearlVLA: Progressive Embodied Action-Plan Refinement in Latent Space", "date": "2026-06-16", "sources": ["A"], "cid": 105}
+{"arxiv_id": "2606.16253", "title": "Learned Image Compression for Vision-Language-Action Models", "date": "2026-06-15", "sources": ["A", "C"], "cid": 106}
+{"arxiv_id": "2606.15768", "title": "LaWAM: Latent World Action Models for Efficient Dynamics-Aware Robot Policies", "date": "2026-06-14", "sources": ["A"], "cid": 107}
+{"arxiv_id": "2606.15285", "title": "Acting While Understanding: Asynchronous Semantic-Action Decoupling for Real-Time Vision-Language-Action Models", "date": "2026-06-13", "sources": ["A", "C"], "cid": 108}
+{"arxiv_id": "2606.15099", "title": "Think Less, Act Early: Reinforced Latent Reasoning with Early Exit in Vision-Language-Action Models", "date": "2026-06-13", "sources": ["A", "C"], "cid": 109}
+{"arxiv_id": "2606.14255", "title": "ReactVLA: Fast and Lightweight Reactive Robot Manipulation via Improved Mean Flow Action Generation", "date": "2026-06-12", "sources": ["A", "C"], "cid": 110}
+{"arxiv_id": "2606.14375", "title": "Elastic Queries Reinforcement Learning: Self-Aware Policy Execution for VLA Models", "date": "2026-06-12", "sources": ["C"], "cid": 111}
+{"arxiv_id": "2606.13886", "title": "PhysVLA: Towards Physically-Grounded VLA for Embodied Robotic Manipulation", "date": "2026-06-11", "sources": ["A"], "cid": 112}
+{"arxiv_id": "2606.12403", "title": "World Pilot: Steering Vision-Language-Action Models with World-Action Priors", "date": "2026-06-10", "sources": ["A"], "cid": 113}
+{"arxiv_id": "2606.09827", "title": "MemoryVLA++: Temporal Modeling via Memory and Imagination in Vision-Language-Action Models", "date": "2026-06-08", "sources": ["A"], "cid": 114}
+{"arxiv_id": "2606.09572", "title": "CT-VAM: A Cerebello-Thalamic-Inspired Vision-Action Model for Efficient Visuomotor Control", "date": "2026-06-08", "sources": ["A"], "cid": 115}
+{"arxiv_id": "2606.08962", "title": "C$^3$ache: Accelerating World Action Models with Cross Inference Chunk Cache", "date": "2026-06-08", "sources": ["C"], "cid": 116}
+{"arxiv_id": "2606.08530", "title": "GEAR-VLA: Learning Geometry-Aware Action Representations for Generalizable Robotic Manipulation", "date": "2026-06-07", "sources": ["A"], "cid": 117}
+{"arxiv_id": "2606.08094", "title": "vla.cpp: A Unified Inference Runtime for Vision-Language-Action Models", "date": "2026-06-06", "sources": ["A", "C"], "cid": 118}
+{"arxiv_id": "2606.08015", "title": "Q-VGM: Q-Guided Value-Gradient Matching for Offline-to-Online RL of Flow-Matching VLA", "date": "2026-06-06", "sources": ["A"], "cid": 119}
+{"arxiv_id": "2606.06904", "title": "ActionMap: Robot Policy Learning via Voxel Action Heatmap", "date": "2026-06-05", "sources": ["A"], "cid": 120}
+{"arxiv_id": "2606.05737", "title": "Let It Be Simple: One-Step Action Generation for Vision-Language-Action Models", "date": "2026-06-04", "sources": ["A", "C"], "cid": 121}
+{"arxiv_id": "2606.06245", "title": "MPCoT: Reward-Guided Multi-Path Latent Reasoning for Test-Time Scalable Vision-Language-Action", "date": "2026-06-04", "sources": ["A"], "cid": 122}
+{"arxiv_id": "2606.04436", "title": "3DThinkVLA: Endowing Vision-Language-Action Models with Latent 3D Priors via 3D-Thinking-Guided Co-training", "date": "2026-06-03", "sources": ["A"], "cid": 123}
+{"arxiv_id": "2606.05254", "title": "Flash-WAM: Modality-Aware Distillation for World Action Models", "date": "2026-06-03", "sources": ["C"], "cid": 124}
+{"arxiv_id": null, "title": "DiTPA: A DiT-Based Action Planner Accelerator Exploiting Action-Denoising-Multimodality Redundancy for Embodied Artificial Intelligence", "date": "2026-06-01", "sources": ["A"], "cid": 125}
+{"arxiv_id": "2606.02775", "title": "AURA: Action-Gated Memory for Robot Policies at Constant VRAM", "date": "2026-06-01", "sources": ["A"], "cid": 126}
+{"arxiv_id": "2606.01095", "title": "Beyond Task Success: Behavioral and Representational Diagnostics for WAM and VLA", "date": "2026-05-31", "sources": ["A"], "cid": 127}
+{"arxiv_id": "2606.00966", "title": "Threading Optimization for Vision-Language-Action Model Inference in Low-Cost Smart Agricultural Manipulation", "date": "2026-05-31", "sources": ["C"], "cid": 128}
+{"arxiv_id": "2606.00229", "title": "Continuous Reasoning for Vision-Language-Action", "date": "2026-05-29", "sources": ["A"], "cid": 129}
+{"arxiv_id": "2605.30695", "title": "Primitive Subspaces Mediate Few-Shot Transfer in VLAs", "date": "2026-05-29", "sources": ["A"], "cid": 130}
+{"arxiv_id": "2605.29438", "title": "ElegantVLA: Learning When to Think for Efficient Vision-Language-Action Models", "date": "2026-05-28", "sources": ["C"], "cid": 131}
+{"arxiv_id": "2605.29662", "title": "SAFE-Pruner: Semantic Attention-Guided Future-Aware Token Pruning for Efficient Vision-Language-Action Manipulation", "date": "2026-05-28", "sources": ["C"], "cid": 132}
+{"arxiv_id": "2605.30011", "title": "VisualThink-VLA: Visual Intermediate Reasoning for Effective and Low-Latency Vision-Language-Action Policies", "date": "2026-05-28", "sources": ["C"], "cid": 133}
+{"arxiv_id": "2605.28803", "title": "HoloQ-VLA: Uniform W4A4 Quantization of Vision-Language-Action Models", "date": "2026-05-27", "sources": ["A", "C"], "cid": 134}
+{"arxiv_id": "2605.21854", "title": "CrossVLA: Cross-Paradigm Post-Training and Inference Optimization for Vision-Language-Action Models", "date": "2026-05-21", "sources": ["A", "C"], "cid": 135}
+{"arxiv_id": "2605.22896", "title": "Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Models", "date": "2026-05-21", "sources": ["A"], "cid": 136}
+{"arxiv_id": "2605.22671", "title": "From Abstraction to Instantiation: Learning Behavioral Representation for Vision-Language-Action Model", "date": "2026-05-21", "sources": ["A"], "cid": 137}
+{"arxiv_id": "2605.22446", "title": "Pre-VLA: Preemptive Runtime Verification for Reliable Vision-Language-Action and World-Model Rollouts", "date": "2026-05-21", "sources": ["A"], "cid": 138}
+{"arxiv_id": "2605.21414", "title": "PointACT: Vision-Language-Action Models with Multi-Scale Point-Action Interaction", "date": "2026-05-20", "sources": ["A"], "cid": 139}
+{"arxiv_id": "2605.20752", "title": "GaussianDream: A Feed-Forward 3D Gaussian World Model for Robotic Manipulation", "date": "2026-05-20", "sources": ["A"], "cid": 140}
+{"arxiv_id": "2605.19282", "title": "Rethinking Muon Beyond Pretraining: Spectral Failures and High-Pass Remedies for VLA and RLVR", "date": "2026-05-19", "sources": ["A"], "cid": 141}
+{"arxiv_id": "2605.19294", "title": "DEFLECT: Temporal Counterfactual Preference Learning for Delay-Robust Asynchronous VLAs", "date": "2026-05-19", "sources": ["A"], "cid": 142}
+{"arxiv_id": "2605.24011", "title": "ActQuant: Sub-4-bit Action-Guided Quantization for Vision-Language-Action Models", "date": "2026-05-19", "sources": ["A", "C"], "cid": 143}
+{"arxiv_id": "2605.18556", "title": "Key-Gram: Extensible World Knowledge for Embodied Manipulation", "date": "2026-05-18", "sources": ["A"], "cid": 144}
+{"arxiv_id": "2605.17486", "title": "DyGRO-VLA: Cross-Task Scaling of Vision-Language-Action Models via Dynamic Grouped Residual Optimization", "date": "2026-05-17", "sources": ["A"], "cid": 145}
+{"arxiv_id": "2605.16241", "title": "Offline Semantic Guidance for Efficient Vision-Language-Action Policy Distillation", "date": "2026-05-15", "sources": ["A", "C"], "cid": 146}
+{"arxiv_id": "2605.16154", "title": "Learn Where Outcomes Diverge: Efficient VLA RL via Probabilistic Chunk Masking", "date": "2026-05-15", "sources": ["A"], "cid": 147}
+{"arxiv_id": "2605.13382", "title": "BlockVLA: Accelerating Autoregressive VLA via Block Diffusion Finetuning", "date": "2026-05-13", "sources": ["A", "C"], "cid": 148}
+{"arxiv_id": "2605.13778", "title": "Realtime-VLA FLASH: Speculative Inference Framework for Diffusion-based VLAs", "date": "2026-05-13", "sources": ["A", "C"], "cid": 149}
+{"arxiv_id": "2605.13403", "title": "RotVLA: Rotational Latent Action for Vision-Language-Action Model", "date": "2026-05-13", "sources": ["A"], "cid": 150}
+{"arxiv_id": "2605.13548", "title": "AttenA+: Rectifying Action Inequality in Robotic Foundation Models", "date": "2026-05-13", "sources": ["A"], "cid": 151}
+{"arxiv_id": "2605.13276", "title": "D-VLA: A High-Concurrency Distributed Asynchronous Reinforcement Learning Framework for Vision-Language-Action Models", "date": "2026-05-13", "sources": ["A"], "cid": 152}
+{"arxiv_id": "2605.13119", "title": "Towards Long-horizon Embodied Agents with Tool-Aligned Vision-Language-Action Models", "date": "2026-05-13", "sources": ["A"], "cid": 153}
+{"arxiv_id": "2605.11832", "title": "Learning Action Manifold with Multi-view Latent Priors for Robotic Manipulation", "date": "2026-05-12", "sources": ["A"], "cid": 154}
+{"arxiv_id": "2605.11817", "title": "See What Matters: Differentiable Grid Sample Pruning for Generalizable Vision-Language-Action Model", "date": "2026-05-12", "sources": ["A", "C"], "cid": 155}
+{"arxiv_id": "2605.11567", "title": "Dynamic Execution Commitment of Vision-Language-Action Models", "date": "2026-05-12", "sources": ["C"], "cid": 156}
+{"arxiv_id": "2605.09948", "title": "LoopVLA: Learning Sufficiency in Recurrent Refinement for Vision-Language-Action Models", "date": "2026-05-11", "sources": ["A", "C"], "cid": 157}
+{"arxiv_id": "2605.10819", "title": "ALAM: Algebraically Consistent Latent Action Model for Vision-Language-Action Models", "date": "2026-05-11", "sources": ["A"], "cid": 158}
+{"arxiv_id": "2605.10993", "title": "ECHO: Continuous Hierarchical Memory for Vision-Language-Action Models", "date": "2026-05-09", "sources": ["A"], "cid": 159}
+{"arxiv_id": "2605.07931", "title": "One Token Per Frame: Reconsidering Visual Bandwidth in World Models for VLA Policy", "date": "2026-05-08", "sources": ["A"], "cid": 160}
+{"arxiv_id": "2605.07288", "title": "Sword: Style-Robust World Models as Simulators via Dynamic Latent Bootstrapping for VLA Policy Post-Training", "date": "2026-05-08", "sources": ["A"], "cid": 161}
+{"arxiv_id": "2605.06481", "title": "OA-WAM: Object-Addressable World Action Model for Robust Robot Manipulation", "date": "2026-05-07", "sources": ["A"], "cid": 162}
+{"arxiv_id": "2605.06175", "title": "VLA-GSE: Boosting Parameter-Efficient Fine-Tuning in VLA with Generalized and Specialized Experts", "date": "2026-05-07", "sources": ["A"], "cid": 163}
+{"arxiv_id": "2605.05126", "title": "ConsisVLA-4D: Advancing Spatiotemporal Consistency in Efficient 3D-Perception and 4D-Reasoning for Robotic Manipulation", "date": "2026-05-06", "sources": ["A"], "cid": 164}
+{"arxiv_id": "2605.08168", "title": "Understanding Asynchronous Inference Methods for Vision-Language-Action Models", "date": "2026-05-04", "sources": ["A"], "cid": 165}
+{"arxiv_id": "2605.02757", "title": "Seeing Realism from Simulation: Efficient Video Transfer for Vision-Language-Action Data Augmentation", "date": "2026-05-04", "sources": ["A"], "cid": 166}
+{"arxiv_id": "2605.02739", "title": "Latent Bridge: Feature Delta Prediction for Efficient Dual-System Vision-Language-Action Model Inference", "date": "2026-05-04", "sources": ["A", "C"], "cid": 167}
+{"arxiv_id": "2605.01194", "title": "VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model", "date": "2026-05-02", "sources": ["A", "C"], "cid": 168}
+{"arxiv_id": "2605.00438", "title": "Thinking in Text and Images: Interleaved Vision-Language Reasoning Traces for Long-Horizon Robot Manipulation", "date": "2026-05-01", "sources": ["A"], "cid": 169}
+{"arxiv_id": "2604.28192", "title": "LaST-R1: Reinforcing Robotic Manipulation via Adaptive Physical Latent Reasoning", "date": "2026-04-30", "sources": ["A"], "cid": 170}
+{"arxiv_id": "2604.24622", "title": "CF-VLA: Efficient Coarse-to-Fine Action Generation for Vision-Language-Action Policies", "date": "2026-04-27", "sources": ["A", "C"], "cid": 171}
+{"arxiv_id": "2604.24447", "title": "Characterizing Vision-Language-Action Models across XPUs: Constraints and Acceleration for On-Robot Deployment", "date": "2026-04-27", "sources": ["C"], "cid": 172}
+{"arxiv_id": "2604.21241", "title": "CorridorVLA: Explicit Spatial Constraints for Generative Action Heads via Sparse Anchors", "date": "2026-04-23", "sources": ["A"], "cid": 173}
+{"arxiv_id": "2604.20834", "title": "PokeVLA: Empowering Pocket-Sized Vision-Language-Action Model with Comprehensive World Knowledge Guidance", "date": "2026-04-22", "sources": ["A"], "cid": 174}
+{"arxiv_id": "2604.17876", "title": "OFlow: Injecting Object-Aware Temporal Flow Matching for Robust Robotic Manipulation", "date": "2026-04-20", "sources": ["A"], "cid": 175}
+{"arxiv_id": "2604.18107", "title": "Test-Time Perturbation Learning with Delayed Feedback for Vision-Language-Action Models", "date": "2026-04-20", "sources": ["A"], "cid": 176}
+{"arxiv_id": null, "title": "ActionX: pre-training action experts with reinforcement learning for vision-language action models", "date": "2026-04-14", "sources": ["A"], "cid": 177}
+{"arxiv_id": "2604.11572", "title": "DA-PTQ: Drift-Aware Post-Training Quantization for Efficient Vision-Language-Action Models", "date": "2026-04-13", "sources": ["C"], "cid": 178}
+{"arxiv_id": "2604.09244", "title": "2D or 3D: Who Governs Salience in VLA Models? -- Tri-Stage Token Pruning Framework with Modality Salience Awareness", "date": "2026-04-10", "sources": ["C"], "cid": 179}
+{"arxiv_id": "2604.05656", "title": "SnapFlow: One-Step Action Generation for Flow-Matching VLAs via Progressive Self-Distillation", "date": "2026-04-07", "sources": ["A", "C"], "cid": 180}
+{"arxiv_id": "2604.05672", "title": "A1: A Fully Transparent Open-Source, Adaptive and Efficient Truncated Vision-Language-Action Model", "date": "2026-04-07", "sources": ["A", "C"], "cid": 181}
+{"arxiv_id": "2604.05323", "title": "VLA-InfoEntropy: A Training-Free Vision-Attention Information Entropy Approach for Vision-Language-Action Models Inference Acceleration and Success", "date": "2026-04-07", "sources": ["C"], "cid": 182}
+{"arxiv_id": "2604.04161", "title": "Adaptive Action Chunking at Inference-time for Vision-Language-Action Models", "date": "2026-04-05", "sources": ["C"], "cid": 183}
+{"arxiv_id": "2604.02965", "title": "Open-Loop Planning, Closed-Loop Verification: Speculative Verification for VLA", "date": "2026-04-03", "sources": ["C"], "cid": 184}
+{"arxiv_id": "2603.29409", "title": "CLaD: Planning with Grounded Foresight via Cross-Modal Latent Dynamics", "date": "2026-03-31", "sources": ["A"], "cid": 185}
+{"arxiv_id": "2603.28565", "title": "StreamingVLA: Streaming Vision-Language-Action Model with Action Flow Matching and Adaptive Early Observation", "date": "2026-03-30", "sources": ["C"], "cid": 186}
+{"arxiv_id": "2603.27670", "title": "ProgressVLA: Progress-Guided Diffusion Policy for Vision-Language Robotic Manipulation", "date": "2026-03-29", "sources": ["A"], "cid": 187}
+{"arxiv_id": null, "title": "State-Space Modeling for Action Generation in Embodied Agents", "date": "2026-03-27", "sources": ["A"], "cid": 188}
+{"arxiv_id": "2603.26666", "title": "VLA-OPD: Bridging Offline SFT and Online RL for Vision-Language-Action Models via On-Policy Distillation", "date": "2026-03-27", "sources": ["A"], "cid": 189}
+{"arxiv_id": "2603.26360", "title": "Realtime-VLA V2: Learning to Run VLAs Fast, Smooth, and Accurate", "date": "2026-03-27", "sources": ["C"], "cid": 190}
+{"arxiv_id": "2603.25399", "title": "LaMP: Learning Vision-Language-Action Policy with 3D Scene Flow as Latent Motion Prior", "date": "2026-03-26", "sources": ["A"], "cid": 191}
+{"arxiv_id": "2603.24941", "title": "Beyond Attention Magnitude: Leveraging Inter-layer Rank Consistency for Efficient Vision-Language-Action Models", "date": "2026-03-26", "sources": ["C"], "cid": 192}
+{"arxiv_id": "2603.25661", "title": "Fast-dVLA: Accelerating Discrete Diffusion VLA to Real-Time Performance", "date": "2026-03-26", "sources": ["C"], "cid": 193}
+{"arxiv_id": "2603.22991", "title": "Training-Free Interaction-Aligned Visual Token Pruning for Efficient Embodied Manipulation", "date": "2026-03-24", "sources": ["A", "C"], "cid": 194}
+{"arxiv_id": "2603.22280", "title": "DualCoT-VLA: Visual-Linguistic Chain of Thought via Parallel Reasoning for Vision-Language-Action Models", "date": "2026-03-23", "sources": ["A"], "cid": 195}
+{"arxiv_id": "2603.22126", "title": "ROBOGATE: Adaptive Failure Discovery for Safe Robot Policy Deployment via Two-Stage Boundary-Focused Sampling", "date": "2026-03-23", "sources": ["A"], "cid": 196}
+{"arxiv_id": "2603.22078", "title": "Do World Action Models Generalize Better than VLAs? A Robustness Study", "date": "2026-03-23", "sources": ["A"], "cid": 197}
+{"arxiv_id": "2603.20658", "title": "Speedup Patch: Learning a Plug-and-Play Policy to Accelerate Embodied Manipulation", "date": "2026-03-21", "sources": ["C"], "cid": 198}
+{"arxiv_id": "2603.20711", "title": "RoboECC: Multi-Factor-Aware Edge-Cloud Collaborative Deployment for VLA Models", "date": "2026-03-21", "sources": ["C"], "cid": 199}
+{"arxiv_id": "2603.18464", "title": "AcceRL: A Distributed Asynchronous Reinforcement Learning and World Model Framework for Vision-Language-Action Models", "date": "2026-03-19", "sources": ["A"], "cid": 200}
+{"arxiv_id": "2603.19199", "title": "FASTER: Rethinking Real-Time Flow VLAs", "date": "2026-03-19", "sources": ["C"], "cid": 201}
+{"arxiv_id": "2603.17850", "title": "ProbeFlow: Training-Free Adaptive Flow Matching for Vision-Language-Action Models", "date": "2026-03-18", "sources": ["A", "C"], "cid": 202}
+{"arxiv_id": "2603.17573", "title": "HeiSD: Hybrid Speculative Decoding for Embodied Vision-Language-Action Models with Kinematic Awareness", "date": "2026-03-18", "sources": ["C"], "cid": 203}
+{"arxiv_id": "2603.16666", "title": "Fast-WAM: Do World Action Models Need Test-time Future Imagination?", "date": "2026-03-17", "sources": ["A"], "cid": 204}
+{"arxiv_id": "2603.14371", "title": "OxyGen: Unified KV Cache Management for VLA Inference under Multi-Task Parallelism", "date": "2026-03-15", "sources": ["C"], "cid": 205}
+{"arxiv_id": null, "title": "Towards Efficient and Robust Manipulation via Multi-Frame Vision-Language-Action Modeling", "date": "2026-03-14", "sources": ["A"], "cid": 206}
+{"arxiv_id": "2603.13966", "title": "vla-eval: A Unified Evaluation Harness for Vision-Language-Action Models", "date": "2026-03-14", "sources": ["A"], "cid": 207}
+{"arxiv_id": "2603.12553", "title": "Beyond Dense Futures: World Models as Structured Planners for Robotic Manipulation", "date": "2026-03-13", "sources": ["A"], "cid": 208}
+{"arxiv_id": "2603.12480", "title": "One-Step Flow Policy: Self-Distillation for Fast Visuomotor Policies", "date": "2026-03-12", "sources": ["C"], "cid": 209}
+{"arxiv_id": "2603.11106", "title": "RC-NF: Robot-Conditioned Normalizing Flow for Real-Time Anomaly Detection in Robotic Manipulation", "date": "2026-03-11", "sources": ["A"], "cid": 210}
+{"arxiv_id": "2603.10469", "title": "DepthCache: Depth-Guided Training-Free Visual Token Merging for Vision-Language-Action Model Inference", "date": "2026-03-11", "sources": ["A", "C"], "cid": 211}
+{"arxiv_id": "2603.10448", "title": "DiT4DiT: Jointly Modeling Video Dynamics and Actions for Generalizable Robot Control", "date": "2026-03-11", "sources": ["A"], "cid": 212}
+{"arxiv_id": "2603.10422", "title": "World2Act: Latent Action Post-Training from World Model Dynamics", "date": "2026-03-11", "sources": ["A"], "cid": 213}
+{"arxiv_id": "2603.08124", "title": "SaiVLA-0: Cerebrum-Pons-Cerebellum Tripartite Architecture for Compute-Aware Vision-Language-Action", "date": "2026-03-09", "sources": ["A"], "cid": 214}
+{"arxiv_id": "2603.08519", "title": "AtomVLA: Scalable Post-Training for Robotic Manipulation via Predictive Latent World Models", "date": "2026-03-09", "sources": ["A"], "cid": 215}
+{"arxiv_id": "2603.07904", "title": "DyQ-VLA: Temporal-Dynamic-Aware Quantization for Embodied Vision-Language-Action Models", "date": "2026-03-09", "sources": ["C"], "cid": 216}
+{"arxiv_id": "2603.07949", "title": "RAPID: Redundancy-Aware and Compatibility-Optimal Edge-Cloud Partitioned Inference for Diverse VLA Models", "date": "2026-03-09", "sources": ["C"], "cid": 217}
+{"arxiv_id": "2603.07647", "title": "TempoFit: Plug-and-Play Layer-Wise Temporal KV Memory for Long-Horizon Vision-Language-Action Manipulation", "date": "2026-03-08", "sources": ["A"], "cid": 218}
+{"arxiv_id": "2603.05147", "title": "Act, Think or Abstain: Complexity-Aware Adaptive Inference for Vision-Language-Action Models", "date": "2026-03-05", "sources": ["A", "C"], "cid": 219}
+{"arxiv_id": "2603.03380", "title": "LiteVLA-Edge: Quantized On-Device Multimodal Control for Embedded Robotics", "date": "2026-03-03", "sources": ["C"], "cid": 220}
+{"arxiv_id": "2603.02083", "title": "\u03c0-StepNFT: Wider Space Needs Finer Steps in Online RL for Flow-based VLAs", "date": "2026-03-02", "sources": ["A"], "cid": 221}
+{"arxiv_id": "2603.01766", "title": "Neural Implicit Action Fields: From Discrete Waypoints to Continuous Functions for Vision-Language-Action Models", "date": "2026-03-02", "sources": ["A"], "cid": 222}
+{"arxiv_id": "2603.01469", "title": "Mean-Flow based One-Step Vision-Language-Action", "date": "2026-03-02", "sources": ["C"], "cid": 223}
+{"arxiv_id": "2603.01581", "title": "KERV: Kinematic-Rectified Speculative Decoding for Embodied VLA Models", "date": "2026-03-02", "sources": ["C"], "cid": 224}
+{"arxiv_id": "2602.22896", "title": "DySL-VLA: Efficient Vision-Language-Action Model Inference via Dynamic-Static Layer-Skipping for Robot Manipulation", "date": "2026-02-26", "sources": ["C"], "cid": 225}
+{"arxiv_id": "2602.20566", "title": "BFA++: Hierarchical Best-Feature-Aware Token Prune for Multi-View Vision Language Action Model", "date": "2026-02-24", "sources": ["C"], "cid": 226}
+{"arxiv_id": "2602.21445", "title": "VLA Knows Its Limits: Adaptive Execution Horizons for Robot Policies", "date": "2026-02-24", "sources": ["C"], "cid": 227}
+{"arxiv_id": "2602.20309", "title": "QuantVLA: Scale-Calibrated Post-Training Quantization for Vision-Language-Action Models", "date": "2026-02-23", "sources": ["A", "C"], "cid": 228}
+{"arxiv_id": "2602.19710", "title": "Universal Pose Pretraining for Generalizable Vision-Language-Action Policies", "date": "2026-02-23", "sources": ["A"], "cid": 229}
+{"arxiv_id": "2602.20200", "title": "Global Prior Meets Local Consistency: Dual-Memory Augmented Vision-Language-Action Model for Efficient Robotic Manipulation", "date": "2026-02-22", "sources": ["A", "C"], "cid": 230}
+{"arxiv_id": "2602.15397", "title": "ActionCodec: What Makes for Good Action Tokenizers", "date": "2026-02-17", "sources": ["A"], "cid": 231}
+{"arxiv_id": "2602.13710", "title": "HBVLA: Pushing 1-Bit Post-Training Quantization for Vision-Language-Action Models", "date": "2026-02-14", "sources": ["A", "C"], "cid": 232}
+{"arxiv_id": "2602.11832", "title": "JEPA-VLA: Video Predictive Embedding is Needed for VLA Models", "date": "2026-02-12", "sources": ["A"], "cid": 233}
+{"arxiv_id": "2602.12062", "title": "HoloBrain-0 Technical Report", "date": "2026-02-12", "sources": ["A"], "cid": 234}
+{"arxiv_id": "2602.10503", "title": "Towards Long-Lived Robots: Continual Learning VLA Models via Reinforcement Fine-Tuning", "date": "2026-02-11", "sources": ["A"], "cid": 235}
+{"arxiv_id": "2602.10098", "title": "VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model", "date": "2026-02-10", "sources": ["A"], "cid": 236}
+{"arxiv_id": "2602.07845", "title": "Recurrent-Depth VLA: Implicit Test-Time Compute Scaling of Vision-Language-Action Models via Latent Iterative Reasoning", "date": "2026-02-08", "sources": ["C"], "cid": 237}
+{"arxiv_id": "2602.06575", "title": "Think Proprioceptively: State-Grounded Visual Token Selection for VLA Policies", "date": "2026-02-06", "sources": ["A", "C"], "cid": 238}
+{"arxiv_id": "2602.15882", "title": "FUTURE-VLA: Forecasting Unified Trajectories Under Real-time Execution", "date": "2026-02-05", "sources": ["A"], "cid": 239}
+{"arxiv_id": "2602.04228", "title": "Reshaping Action Error Distributions for Reliable Vision-Language-Action Models", "date": "2026-02-04", "sources": ["A"], "cid": 240}
+{"arxiv_id": "2602.03782", "title": "QVLA: Not All Channels Are Equal in Vision-Language-Action Model's Quantization", "date": "2026-02-03", "sources": ["A", "C"], "cid": 241}
+{"arxiv_id": "2602.03983", "title": "Efficient Long-Horizon Vision-Language-Action Models via Static-Dynamic Disentanglement", "date": "2026-02-03", "sources": ["C"], "cid": 242}
+{"arxiv_id": "2602.01100", "title": "StreamVLA: Breaking the Reason-Act Cycle via Completion-State Gating", "date": "2026-02-01", "sources": ["A", "C"], "cid": 243}
+{"arxiv_id": null, "title": "FPC-VLA: A vision-language-action framework with a supervisor for failure prediction and correction", "date": "2026-02-01", "sources": ["A"], "cid": 244}
+{"arxiv_id": null, "title": "Semantically Supervised SeDINO Encoder for Visual\u2013Language\u2013Action Model", "date": "2026-01-31", "sources": ["A"], "cid": 245}
+{"arxiv_id": "2602.00686", "title": "Learning to Accelerate Vision-Language-Action Models through Adaptive Visual Token Caching", "date": "2026-01-31", "sources": ["A", "C"], "cid": 246}
+{"arxiv_id": "2602.00780", "title": "Environment-Aware Adaptive Pruning with Interleaved Inference Orchestration for Vision-Language-Action Models", "date": "2026-01-31", "sources": ["C"], "cid": 247}
+{"arxiv_id": "2601.20262", "title": "Shallow-{\\pi}: Knowledge Distillation for Flow-based VLAs", "date": "2026-01-28", "sources": ["C"], "cid": 248}
+{"arxiv_id": "2601.19634", "title": "AC^2-VLA: Action-Context-Aware Adaptive Computation in Vision-Language-Action Models for Efficient Robotic Manipulation", "date": "2026-01-27", "sources": ["C"], "cid": 249}
+{"arxiv_id": "2601.16163", "title": "Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning", "date": "2026-01-22", "sources": ["A"], "cid": 250}
+{"arxiv_id": "2601.16065", "title": "DTP: A Simple yet Effective Distracting Token Pruning Framework for Vision-Language Action Models", "date": "2026-01-22", "sources": ["C"], "cid": 251}
+{"arxiv_id": "2601.14945", "title": "TIDAL: Temporally Interleaved Diffusion and Action Loop for High-Frequency VLA Control", "date": "2026-01-21", "sources": ["C"], "cid": 252}
+{"arxiv_id": "2601.14323", "title": "SilentDrift: Exploiting Action Chunking for Stealthy Backdoor Attacks on Vision-Language-Action Models", "date": "2026-01-20", "sources": ["A"], "cid": 253}
+{"arxiv_id": "2601.12993", "title": "Being-H0.5: Scaling Human-Centric Robot Learning for Cross-Embodiment Generalization", "date": "2026-01-19", "sources": ["A"], "cid": 254}
+{"arxiv_id": "2601.12894", "title": "Sparse ActionGen: Accelerating Diffusion Policy with Real-time Pruning", "date": "2026-01-19", "sources": ["C"], "cid": 255}
+{"arxiv_id": "2601.09512", "title": "CLARE: Continual Learning for Vision-Language-Action Models via Autonomous Adapter Routing and Expansion", "date": "2026-01-14", "sources": ["A"], "cid": 256}
+{"arxiv_id": "2601.09708", "title": "Fast-ThinkAct: Efficient Vision-Language-Action Reasoning via Verbalizable Latent Planning", "date": "2026-01-14", "sources": ["C"], "cid": 257}
+{"arxiv_id": "2512.20166", "title": "LoLA: Long Horizon Latent Action Learning for General Robot Manipulation", "date": "2025-12-23", "sources": ["A"], "cid": 258}
+{"arxiv_id": "2512.20276", "title": "ActionFlow: A Pipelined Action Acceleration for Vision Language Models on Edge", "date": "2025-12-23", "sources": ["C"], "cid": 259}
+{"arxiv_id": "2512.18007", "title": "Robotic VLA Benefits from Joint Learning with Motion Image Diffusion", "date": "2025-12-19", "sources": ["A"], "cid": 260}
+{"arxiv_id": "2512.15773", "title": "TS-DP: Reinforcement Speculative Decoding For Temporal Adaptive Diffusion Policy Acceleration", "date": "2025-12-13", "sources": ["C"], "cid": 261}
+{"arxiv_id": null, "title": "ExpVLA: Enhancing the Generality of VLA Model via Explainable CoT Reasoning", "date": "2025-12-12", "sources": ["A"], "cid": 262}
+{"arxiv_id": "2512.11769", "title": "BLURR: A Boosted Low-Resource Inference for Vision-Language-Action Models", "date": "2025-12-12", "sources": ["C"], "cid": 263}
+{"arxiv_id": "2512.09927", "title": "Token Expand-Merge: Training-Free Token Compression for Vision-Language-Action Models", "date": "2025-12-10", "sources": ["A", "C"], "cid": 264}
+{"arxiv_id": "2512.09928", "title": "HiF-VLA: Hindsight, Insight and Foresight through Motion Representation for Vision-Language-Action Models", "date": "2025-12-10", "sources": ["A"], "cid": 265}
+{"arxiv_id": "2512.09619", "title": "GLaD: Geometric Latent Distillation for Vision-Language-Action Models", "date": "2025-12-10", "sources": ["A"], "cid": 266}
+{"arxiv_id": "2512.07582", "title": "See Once, Then Act: Vision-Language-Action Model with Task Learning from One-Shot Video Demonstrations", "date": "2025-12-08", "sources": ["A"], "cid": 267}
+{"arxiv_id": "2512.04952", "title": "FASTer: Toward Efficient Autoregressive Vision Language Action Modeling via Neural Action Tokenization", "date": "2025-12-04", "sources": ["C"], "cid": 268}
+{"arxiv_id": "2512.03538", "title": "AdaPower: Specializing World Foundation Models for Predictive Manipulation", "date": "2025-12-03", "sources": ["A"], "cid": 269}
+{"arxiv_id": "2512.00975", "title": "MM-ACT: Learn from Multimodal Parallel Generation to Act", "date": "2025-11-30", "sources": ["A"], "cid": 270}
+{"arxiv_id": "2512.01031", "title": "VLASH: Real-Time VLAs via Future-State-Aware Asynchronous Inference", "date": "2025-11-30", "sources": ["C"], "cid": 271}
+{"arxiv_id": "2511.23034", "title": "LatBot: Distilling Universal Latent Actions for Vision-Language-Action Models", "date": "2025-11-28", "sources": ["A"], "cid": 272}
+{"arxiv_id": "2511.21542", "title": "E0: Enhancing Generalization and Fine-Grained Control in VLA Models via Tweedie Discrete Diffusion", "date": "2025-11-26", "sources": ["A"], "cid": 273}
+{"arxiv_id": "2511.19859", "title": "Unifying Perception and Action: A Hybrid-Modality Pipeline with Implicit Visual Chain-of-Thought for Robotic Action Generation", "date": "2025-11-25", "sources": ["A"], "cid": 274}
+{"arxiv_id": "2511.18950", "title": "Compressor-VLA: Instruction-Guided Visual Token Compression for Efficient Robotic Manipulation", "date": "2025-11-24", "sources": ["A", "C"], "cid": 275}
+{"arxiv_id": "2511.19433", "title": "Mixture of Horizons in Action Chunking", "date": "2025-11-24", "sources": ["A"], "cid": 276}
+{"arxiv_id": "2511.18085", "title": "Continually Evolving Skill Knowledge in Vision Language Action Model", "date": "2025-11-22", "sources": ["A"], "cid": 277}
+{"arxiv_id": "2511.18082", "title": "ActDistill: General Action-Guided Self-Derived Distillation for Efficient Vision-Language-Action Models", "date": "2025-11-22", "sources": ["C"], "cid": 278}
+{"arxiv_id": "2511.16175", "title": "Mantis: A Versatile Vision-Language-Action Model with Disentangled Visual Foresight", "date": "2025-11-20", "sources": ["A"], "cid": 279}
+{"arxiv_id": "2511.16449", "title": "Bridging the Semantic-Action Gap in Visual Token Pruning for Efficient VLA Inference", "date": "2025-11-20", "sources": ["C"], "cid": 280}
+{"arxiv_id": "2511.15605", "title": "SRPO: Self-Referential Policy Optimization for Vision-Language-Action Models", "date": "2025-11-19", "sources": ["A"], "cid": 281}
+{"arxiv_id": "2511.10518", "title": "SemanticVLA: Semantic-Aligned Sparsification and Enhancement for Efficient Robotic Manipulation", "date": "2025-11-13", "sources": ["A", "C"], "cid": 282}
+{"arxiv_id": "2511.06202", "title": "ExpReS-VLA: Specializing Vision-Language-Action Models Through Experience Replay and Retrieval", "date": "2025-11-09", "sources": ["A"], "cid": 283}
+{"arxiv_id": "2511.04555", "title": "Evo-1: Lightweight Vision-Language-Action Model with Preserved Semantic Alignment", "date": "2025-11-06", "sources": ["A"], "cid": 284}
+{"arxiv_id": "2511.01718", "title": "Unified Diffusion VLA: Vision-Language-Action Model via Joint Discrete Denoising Diffusion Process", "date": "2025-11-03", "sources": ["A"], "cid": 285}
+{"arxiv_id": "2511.01914", "title": "iFlyBot-VLA Technical Report", "date": "2025-11-01", "sources": ["A"], "cid": 286}
+{"arxiv_id": "2510.26742", "title": "Running VLAs at Real-time Speed", "date": "2025-10-30", "sources": ["C"], "cid": 287}
+{"arxiv_id": "2510.14300", "title": "Expertise need not monopolize: Action-Specialized Mixture of Experts for Vision-Language-Action Learning", "date": "2025-10-16", "sources": ["A"], "cid": 288}
+{"arxiv_id": "2510.13237", "title": "Model-agnostic Adversarial Attack and Defense for Vision-Language-Action Models", "date": "2025-10-15", "sources": ["A"], "cid": 289}
+{"arxiv_id": "2510.13375", "title": "DepthVLA: Enhancing Vision-Language-Action Models with Depth-Aware Spatial Reasoning", "date": "2025-10-15", "sources": ["A"], "cid": 290}
+{"arxiv_id": "2510.09976", "title": "Reinforcement Fine-Tuning of Flow-Matching Policies for Vision-Language-Action Models", "date": "2025-10-11", "sources": ["A"], "cid": 291}
+{"arxiv_id": "2510.09607", "title": "VITA-VLA: Efficiently Teaching Vision-Language Models to Act via Action Expert Distillation", "date": "2025-10-10", "sources": ["A"], "cid": 292}
+{"arxiv_id": "2510.08464", "title": "Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered", "date": "2025-10-09", "sources": ["C"], "cid": 293}
+{"arxiv_id": "2510.06710", "title": "RLinf-VLA: A Unified and Efficient Framework for Reinforcement Learning of Vision-Language-Action Models", "date": "2025-10-08", "sources": ["A"], "cid": 294}
+{"arxiv_id": "2510.05580", "title": "MetaVLA: Unified Meta Co-training For Efficient Embodied Adaption", "date": "2025-10-07", "sources": ["A"], "cid": 295}
+{"arxiv_id": "2510.05057", "title": "StaMo: Unsupervised Learning of Generalizable Robot Motion from Compact State Representation", "date": "2025-10-06", "sources": ["A"], "cid": 296}
+{"arxiv_id": "2510.04898", "title": "HyperVLA: Efficient Inference in Vision-Language-Action Models via Hypernetworks", "date": "2025-10-06", "sources": ["C"], "cid": 297}
+{"arxiv_id": "2509.25681", "title": "dVLA: Diffusion Vision-Language-Action Model with Multimodal Chain-of-Thought", "date": "2025-09-30", "sources": ["A"], "cid": 298}
+{"arxiv_id": "2509.23655", "title": "Focusing on What Matters: Object-Agent-centric Tokenization for Vision Language Action models", "date": "2025-09-28", "sources": ["A", "C"], "cid": 299}
+{"arxiv_id": "2509.23224", "title": "Leave No Observation Behind: Real-time Correction for VLA Action Chunks", "date": "2025-09-27", "sources": ["A", "C"], "cid": 300}
+{"arxiv_id": "2509.22093", "title": "Action-aware Dynamic Pruning for Efficient Vision-Language-Action Manipulation", "date": "2025-09-26", "sources": ["A", "C"], "cid": 301}
+{"arxiv_id": "2509.18953", "title": "Eva-VLA: Evaluating Vision-Language-Action Models' Robustness Under Real-World Physical Variations", "date": "2025-09-23", "sources": ["A"], "cid": 302}
+{"arxiv_id": "2509.18428", "title": "Latent Action Pretraining Through World Modeling", "date": "2025-09-22", "sources": ["A"], "cid": 303}
+{"arxiv_id": "2509.21354", "title": "KV-Efficient VLA: A Method to Speed up Vision Language Models with RNN-Gated Chunked KV Cache", "date": "2025-09-20", "sources": ["C"], "cid": 304}
+{"arxiv_id": "2509.18183", "title": "VLA-LPAF: Lightweight Perspective-Adaptive Fusion for Vision-Language-Action to Enable More Unconstrained Robotic Manipulation", "date": "2025-09-18", "sources": ["A"], "cid": 305}
+{"arxiv_id": "2509.12594", "title": "The Better You Learn, The Smarter You Prune: Towards Efficient Vision-language-action Models via Differentiable Token Pruning", "date": "2025-09-16", "sources": ["A", "C"], "cid": 306}
+{"arxiv_id": "2509.11480", "title": "Cross-Platform Scaling of Vision-Language-Action Models from Edge to Cloud GPUs", "date": "2025-09-15", "sources": ["A"], "cid": 307}
+{"arxiv_id": "2509.09674", "title": "SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning", "date": "2025-09-11", "sources": ["A"], "cid": 308}
+{"arxiv_id": "2509.09090", "title": "SQAP-VLA: A Synergistic Quantization-Aware Pruning Framework for High-Performance Vision-Language-Action Models", "date": "2025-09-11", "sources": ["C"], "cid": 309}
+{"arxiv_id": "2509.05614", "title": "SpecPrune-VLA: Accelerating Vision-Language-Action Models via Action-Aware Self-Speculative Pruning", "date": "2025-09-06", "sources": ["A", "C"], "cid": 310}
+{"arxiv_id": "2509.04018", "title": "FPC-VLA: A Vision-Language-Action Framework with a Supervisor for Failure Prediction and Correction", "date": "2025-09-04", "sources": ["A"], "cid": 311}
+{"arxiv_id": "2508.21046", "title": "CogVLA: Cognition-Aligned Vision-Language-Action Model via Instruction-Driven Routing & Sparsification", "date": "2025-08-28", "sources": ["A", "C"], "cid": 312}
+{"arxiv_id": "2508.20072", "title": "Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding in Vision-Language-Action Policies", "date": "2025-08-27", "sources": ["A"], "cid": 313}
+{"arxiv_id": "2508.16845", "title": "NinA: Normalizing Flows in Action. Training VLA Models with Normalizing Flows", "date": "2025-08-23", "sources": ["A"], "cid": 314}
+{"arxiv_id": "2508.19257", "title": "TTF-VLA: Temporal Token Fusion via Pixel-Attention Integration for Vision-Language-Action Models", "date": "2025-08-15", "sources": ["A"], "cid": 315}
+{"arxiv_id": "2508.00697", "title": "On-Device Diffusion Transformer Policy for Efficient Robot Manipulation", "date": "2025-08-01", "sources": ["C"], "cid": 316}
+{"arxiv_id": "2507.22424", "title": "Spec-VLA: Speculative Decoding for Vision-Language-Action Models with Relaxed Acceptance", "date": "2025-07-30", "sources": ["C"], "cid": 317}
+{"arxiv_id": "2507.05116", "title": "VOTE: Vision-Language-Action Optimization with Trajectory Ensemble Voting", "date": "2025-07-07", "sources": ["C"], "cid": 318}
+{"arxiv_id": "2507.01843", "title": "MoIRA: Modular Instruction Routing Architecture for Multi-Task Robotics", "date": "2025-07-02", "sources": ["A"], "cid": 319}
+{"arxiv_id": "2506.19816", "title": "CronusVLA: Towards Efficient and Robust Manipulation via Multi-Frame Vision-Language-Action Modeling", "date": "2025-06-24", "sources": ["A"], "cid": 320}
+{"arxiv_id": "2506.17639", "title": "RLRC: Reinforcement Learning-based Recovery for Compressed Vision-Language-Action Models", "date": "2025-06-21", "sources": ["C"], "cid": 321}
+{"arxiv_id": "2506.13456", "title": "Block-wise Adaptive Caching for Accelerating Diffusion Policy", "date": "2025-06-16", "sources": ["C"], "cid": 322}
+{"arxiv_id": "2506.13725", "title": "CEED-VLA: Consistency Vision-Language-Action Model with Early-Exit Decoding", "date": "2025-06-16", "sources": ["C"], "cid": 323}
+{"arxiv_id": "2506.12723", "title": "SP-VLA: A Joint Model Scheduling and Token Pruning Approach for VLA Model Acceleration", "date": "2025-06-15", "sources": ["A", "C"], "cid": 324}
+{"arxiv_id": "2506.10100", "title": "EfficientVLA: Training-Free Acceleration and Compression for Vision-Language-Action Models", "date": "2025-06-11", "sources": ["C"], "cid": 325}
+{"arxiv_id": "2506.08822", "title": "FreqPolicy: Efficient Flow-based Visuomotor Policy via Frequency Consistency", "date": "2025-06-10", "sources": ["A"], "cid": 326}
+{"arxiv_id": "2506.08440", "title": "TGRPO :Fine-tuning Vision-Language-Action Model via Trajectory-wise Group Relative Policy Optimization", "date": "2025-06-10", "sources": ["A"], "cid": 327}
+{"arxiv_id": "2506.07639", "title": "Fast ECoT: Efficient Embodied Chain-of-Thought via Thoughts Reuse", "date": "2025-06-09", "sources": ["A", "C"], "cid": 328}
+{"arxiv_id": "2506.07530", "title": "BitVLA: 1-bit Vision-Language-Action Models for Robotics Manipulation", "date": "2025-06-09", "sources": ["C"], "cid": 329}
+{"arxiv_id": "2506.06535", "title": "MapleGrasp: Mask-guided Feature Pooling for Language-driven Efficient Robotic Grasping", "date": "2025-06-06", "sources": ["A"], "cid": 330}
+{"arxiv_id": "2505.21200", "title": "Think Twice, Act Once: Token-Aware Compression and Action Reuse for Efficient Inference in Vision-Language-Action Models", "date": "2025-05-27", "sources": ["A", "C"], "cid": 331}
+{"arxiv_id": "2505.21567", "title": "EaqVLA: Encoding-aligned Quantization for Vision-Language-Action Models", "date": "2025-05-27", "sources": ["C"], "cid": 332}
+{"arxiv_id": "2505.18719", "title": "VLA-RL: Towards Masterful and General Robotic Manipulation with Scalable Reinforcement Learning", "date": "2025-05-24", "sources": ["A"], "cid": 333}
+{"arxiv_id": "2505.15304", "title": "Saliency-Aware Quantized Imitation Learning for Efficient Robotic Control", "date": "2025-05-21", "sources": ["C"], "cid": 334}
+{"arxiv_id": "2505.08243", "title": "Training Strategies for Efficient Embodied Reasoning", "date": "2025-05-13", "sources": ["A", "C"], "cid": 335}
+{"arxiv_id": "2505.03500", "title": "VLAs are Confined yet Capable of Generalizing to Novel Instructions", "date": "2025-05-06", "sources": ["A"], "cid": 336}
+{"arxiv_id": "2503.20384", "title": "MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers for Efficient Robot Manipulation", "date": "2025-03-26", "sources": ["C"], "cid": 337}
+{"arxiv_id": "2503.02310", "title": "PD-VLA: Accelerating Vision-Language-Action Model Integrated with Action Chunking via Parallel Decoding", "date": "2025-03-04", "sources": ["C"], "cid": 338}
+{"arxiv_id": "2503.00339", "title": "Falcon: Fast Visuomotor Policies via Partial Denoising", "date": "2025-03-01", "sources": ["C"], "cid": 339}
+{"arxiv_id": "2502.19645", "title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success", "date": "2025-02-27", "sources": ["A", "C"], "cid": 340}
+{"arxiv_id": "2502.02175", "title": "VLA-Cache: Efficient Vision-Language-Action Manipulation via Adaptive Token Caching", "date": "2025-02-04", "sources": ["A", "C"], "cid": 341}
+{"arxiv_id": "2412.01034", "title": "Quantization-Aware Imitation-Learning for Resource-Efficient Robotic Control", "date": "2024-12-02", "sources": ["C"], "cid": 342}
+{"arxiv_id": "2411.02359", "title": "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution", "date": "2024-11-04", "sources": ["C"], "cid": 343}
+{"arxiv_id": "2407.04292", "title": "DaDu-Corki: Algorithm-Architecture Co-Design for Embodied AI-powered Robotic Manipulation", "date": "2024-07-05", "sources": ["C"], "cid": 344}
+{"arxiv_id": null, "title": "\u21300: Enhancing Generalization and Fine-Grained Control in VLA Models via Continuized Discrete Diffusion", "date": null, "sources": ["A"], "cid": 345}
+{"arxiv_id": "2607.26657", "title": "Enfold: Folding World Model Imagination into Predictive Representations for Ultra-Efficient Embodied Control", "date": "2026-07-29", "sources": ["C"], "cid": 346}
+{"arxiv_id": "2608.02365", "title": "Faster-WAM: Do World Action Models Need Deep Action Modules?", "date": "2026-08-03", "sources": ["C"], "cid": 347}
+{"arxiv_id": "2608.11521", "title": "Keep the Future, Drop the Rollout: RIFT for World Action Models", "date": "2026-08-12", "sources": ["C"], "cid": 348}
+{"arxiv_id": "2608.14379", "title": "Reflex: Enabling Fast and Predictive Vision-Language-Action Models for Reaction-Critical Manipulation", "date": "2026-08-14", "sources": ["C"], "cid": 349}
+{"arxiv_id": "2608.22364", "title": "WAM-OPD: On-Policy Distillation for World Action Models", "date": "2026-08-23", "sources": ["C"], "cid": 350}
+{"arxiv_id": "2606.08242", "title": "Light-WAM", "date": null, "sources": ["B"], "cid": 351, "snowball_from": "cid 348 (RIFT) / 347"}
+{"arxiv_id": "2606.10040", "title": "Efficient-WAM", "date": null, "sources": ["B"], "cid": 352, "snowball_from": "cid 348 (RIFT) / 347"}
+{"arxiv_id": null, "title": "PFD: Privileged Foresight Distillation (Fang, Chen, Cai 2026)", "date": null, "sources": ["B"], "cid": 353, "snowball_from": "cid 348 (RIFT)"}

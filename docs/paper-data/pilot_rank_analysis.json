@@ -1,0 +1,152 @@
+{
+ "clean_reference": {
+  "pi05": 0.96,
+  "pi0": 0.795,
+  "smolvla": 0.645
+ },
+ "axis_results": {
+  "Camera Viewpoints": {
+   "pert": {
+    "pi05": 0.5426,
+    "pi0": 0.0851,
+    "smolvla": 0.0399
+   },
+   "n": {
+    "pi05": 376,
+    "pi0": 376,
+    "smolvla": 376
+   },
+   "flips": 0.0,
+   "n_pairs": 3,
+   "tau": 1.0,
+   "null_p": 1.0
+  },
+  "Objects Layout": {
+   "pert": {
+    "pi05": 0.8878,
+    "pi0": 0.7917,
+    "smolvla": 0.2532
+   },
+   "n": {
+    "pi05": 312,
+    "pi0": 312,
+    "smolvla": 312
+   },
+   "flips": 0.0,
+   "n_pairs": 3,
+   "tau": 1.0,
+   "null_p": 1.0
+  }
+ },
+ "level_scan": [
+  {
+   "axis": "Camera Viewpoints",
+   "level": "1",
+   "n": 16,
+   "rates": {
+    "pi05": 0.9375,
+    "pi0": 0.1875,
+    "smolvla": 0.0625
+   },
+   "flips": 0.0,
+   "null_p": 1.0
+  },
+  {
+   "axis": "Camera Viewpoints",
+   "level": "2",
+   "n": 47,
+   "rates": {
+    "pi05": 0.9574,
+    "pi0": 0.1915,
+    "smolvla": 0.0851
+   },
+   "flips": 0.0,
+   "null_p": 1.0
+  },
+  {
+   "axis": "Camera Viewpoints",
+   "level": "3",
+   "n": 55,
+   "rates": {
+    "pi05": 0.8727,
+    "pi0": 0.1455,
+    "smolvla": 0.0545
+   },
+   "flips": 0.0,
+   "null_p": 1.0
+  },
+  {
+   "axis": "Camera Viewpoints",
+   "level": "4",
+   "n": 58,
+   "rates": {
+    "pi05": 0.5862,
+    "pi0": 0.1034,
+    "smolvla": 0.069
+   },
+   "flips": 0.0,
+   "null_p": 1.0
+  },
+  {
+   "axis": "Camera Viewpoints",
+   "level": "5",
+   "n": 200,
+   "rates": {
+    "pi05": 0.31,
+    "pi0": 0.03,
+    "smolvla": 0.015
+   },
+   "flips": 0.0,
+   "null_p": 1.0
+  },
+  {
+   "axis": "Objects Layout",
+   "level": "1",
+   "n": 150,
+   "rates": {
+    "pi05": 0.92,
+    "pi0": 0.7733,
+    "smolvla": 0.3133
+   },
+   "flips": 0.0,
+   "null_p": 1.0
+  },
+  {
+   "axis": "Objects Layout",
+   "level": "2",
+   "n": 74,
+   "rates": {
+    "pi05": 0.8378,
+    "pi0": 0.7162,
+    "smolvla": 0.1216
+   },
+   "flips": 0.0,
+   "null_p": 1.0
+  },
+  {
+   "axis": "Objects Layout",
+   "level": "3",
+   "n": 65,
+   "rates": {
+    "pi05": 0.8462,
+    "pi0": 0.8769,
+    "smolvla": 0.2923
+   },
+   "flips": 1.0,
+   "null_p": 0.26343414146463384
+  },
+  {
+   "axis": "Objects Layout",
+   "level": "4",
+   "n": 20,
+   "rates": {
+    "pi05": 0.95,
+    "pi0": 0.9,
+    "smolvla": 0.2
+   },
+   "flips": 0.0,
+   "null_p": 1.0
+  }
+ ],
+ "clean_reference_source": "own paired 200-episode anchors, libero_10, results/clean_anchors (supersedes literature values)"
+}

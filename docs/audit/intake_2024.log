@@ -1,0 +1,27 @@
+# 2024 stratum intake decisions (batch 1, 2026-08-19). Newest-first walk.
+2412.20451 | INCLUDED
+2412.15182 | INCLUDED
+2412.15109 | INCLUDED
+2412.14058 | INCLUDED
+2412.12953 | INCLUDED
+2412.10345 | INCLUDED
+2412.07215 | INCLUDED
+2412.04445 | INCLUDED
+2412.03293 | EXCLUDED(real-robot-only in v1)
+2412.02125 | EXCLUDED(no in-scope benchmark: Minecraft only)
+2412.01034 | INCLUDED
+# batch 2 (2026-08-19)
+2411.19650 | INCLUDED
+2411.13587 | EXCLUDED(attack study; no own-policy-vs-baseline success comparison)
+2411.07223 | INCLUDED
+2411.00508 | EXCLUDED(v1 real-robot-only)
+2410.24164 | EXCLUDED(pi0 v1 real-robot-only; no in-scope sim benchmark)
+2410.22689 | INCLUDED
+2410.15959 | EXCLUDED(v1 Maniskill2/Calvin only; in-scope benchmarks added in later revisions)
+2410.15549 | INCLUDED
+2410.13816 | INCLUDED
+2410.11758 | INCLUDED
+2410.07864 | EXCLUDED(RDT-1B v1 real-robot-only)
+2410.01529 | INCLUDED
+2410.00064 | INCLUDED
+# 2024 stratum: 17/17 quota REACHED. SAMPLE COMPLETE: 50/50.

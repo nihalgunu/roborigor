@@ -1,0 +1,62 @@
+{
+ "ns1_eh1": {
+  "mu": 0.642,
+  "icc_init": 0.495,
+  "e_pq_sampling": 0.1167
+ },
+ "ns1_eh5": {
+  "mu": 0.896,
+  "icc_init": 0.667,
+  "e_pq_sampling": 0.0312
+ },
+ "ns1_eh10": {
+  "mu": 0.965,
+  "icc_init": 0.332,
+  "e_pq_sampling": 0.0229
+ },
+ "ns2_eh1": {
+  "mu": 0.806,
+  "icc_init": 0.455,
+  "e_pq_sampling": 0.0854
+ },
+ "ns2_eh5": {
+  "mu": 0.921,
+  "icc_init": 0.516,
+  "e_pq_sampling": 0.0354
+ },
+ "ns2_eh10": {
+  "mu": 0.952,
+  "icc_init": 0.454,
+  "e_pq_sampling": 0.025
+ },
+ "ns5_eh1": {
+  "mu": 0.808,
+  "icc_init": 0.545,
+  "e_pq_sampling": 0.0708
+ },
+ "ns5_eh5": {
+  "mu": 0.929,
+  "icc_init": 0.527,
+  "e_pq_sampling": 0.0312
+ },
+ "ns5_eh10": {
+  "mu": 0.958,
+  "icc_init": 0.272,
+  "e_pq_sampling": 0.0292
+ },
+ "ns10_eh1": {
+  "mu": 0.848,
+  "icc_init": 0.55,
+  "e_pq_sampling": 0.0583
+ },
+ "ns10_eh5": {
+  "mu": 0.95,
+  "icc_init": 0.388,
+  "e_pq_sampling": 0.0292
+ },
+ "ns10_eh10": {
+  "mu": 0.946,
+  "icc_init": 0.0,
+  "e_pq_sampling": 0.0521
+ }
+}

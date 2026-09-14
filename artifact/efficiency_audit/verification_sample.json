@@ -1,0 +1,153 @@
+{
+ "seed": 20260913,
+ "n_included": 86,
+ "n_sampled": 17,
+ "fields_checked": 54,
+ "fields_confirmed": 51,
+ "agreement": 0.944,
+ "papers_fully_confirmed": 15,
+ "results": [
+  {
+   "id": "2603.28565",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": true,
+   "text_chars": 72432
+  },
+  {
+   "id": "2511.18950",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": null,
+   "text_chars": 47477
+  },
+  {
+   "id": "2603.14371",
+   "quote_found": true,
+   "rate_base_found": false,
+   "rate_method_found": false,
+   "n_evidence_found": null,
+   "text_chars": 81512
+  },
+  {
+   "id": "2512.01031",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": null,
+   "text_chars": 75507
+  },
+  {
+   "id": "2508.16845",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": null,
+   "text_chars": 35019
+  },
+  {
+   "id": "2506.08822",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": true,
+   "text_chars": 93460
+  },
+  {
+   "id": "2604.24622",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": false,
+   "text_chars": 85503
+  },
+  {
+   "id": "2603.22991",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": null,
+   "text_chars": 114388
+  },
+  {
+   "id": "2606.22540",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": null,
+   "text_chars": 82394
+  },
+  {
+   "id": "2511.18082",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": null,
+   "text_chars": 125086
+  },
+  {
+   "id": "2608.04428",
+   "quote_found": true,
+   "rate_base_found": null,
+   "rate_method_found": null,
+   "n_evidence_found": null,
+   "text_chars": 186544
+  },
+  {
+   "id": "2602.03782",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": null,
+   "text_chars": 77811
+  },
+  {
+   "id": "2608.09492",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": true,
+   "text_chars": 55737
+  },
+  {
+   "id": "2506.12723",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": null,
+   "text_chars": 85802
+  },
+  {
+   "id": "2606.05737",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": true,
+   "text_chars": 87431
+  },
+  {
+   "id": "2606.19565",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": null,
+   "text_chars": 79773
+  },
+  {
+   "id": "2602.13710",
+   "quote_found": true,
+   "rate_base_found": true,
+   "rate_method_found": true,
+   "n_evidence_found": null,
+   "text_chars": 57257
+  }
+ ],
+ "manual_resolution": {
+  "checked_by": "session author (text search in cached pdftotext output), 2026-09-13",
+  "2603.14371 rate_base/rate_method": "extractor-computed suite averages; all eight per-suite rates (98.8, 98.2, 98.0, 92.4 / 98.0, 98.6, 97.4, 93.2) present in text",
+  "2604.24622 n_evidence": "quote spliced from two sentences split by two-column layout; 'Each simulation task is evaluated with 10 trials' and 'We report per-suite average success rates' both present",
+  "fields_confirmed_after_manual": 54
+ }
+}

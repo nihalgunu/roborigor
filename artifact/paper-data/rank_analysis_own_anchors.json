@@ -1,0 +1,49 @@
+{
+ "clean_own_anchors": {
+  "pi05": 0.96,
+  "pi0": 0.795,
+  "smolvla": 0.645
+ },
+ "axes": {
+  "Camera Viewpoints": {
+   "pert": {
+    "pi05": 0.5426,
+    "pi0": 0.0851,
+    "smolvla": 0.0399
+   },
+   "flips": 0.0,
+   "tau": 1.0,
+   "null_p": 1.0,
+   "gaps_clean_pts": {
+    "pi05-pi0": 16.5,
+    "pi05-smol": 31.5,
+    "pi0-smol": 15.0
+   },
+   "gaps_pert_pts": {
+    "pi05-pi0": 45.7,
+    "pi05-smol": 50.3,
+    "pi0-smol": 4.5
+   }
+  },
+  "Objects Layout": {
+   "pert": {
+    "pi05": 0.8878,
+    "pi0": 0.7917,
+    "smolvla": 0.2532
+   },
+   "flips": 0.0,
+   "tau": 1.0,
+   "null_p": 1.0,
+   "gaps_clean_pts": {
+    "pi05-pi0": 16.5,
+    "pi05-smol": 31.5,
+    "pi0-smol": 15.0
+   },
+   "gaps_pert_pts": {
+    "pi05-pi0": 9.6,
+    "pi05-smol": 63.5,
+    "pi0-smol": 53.8
+   }
+  }
+ }
+}

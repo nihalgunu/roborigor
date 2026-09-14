@@ -1,0 +1,308 @@
+{
+ "n_screened": 354,
+ "n_included": 86,
+ "n_strict_improvement_only": 18,
+ "n_included_without_rates": 2,
+ "O1_base_ge_090": {
+  "k": 64,
+  "n": 84,
+  "pct": 76.2
+ },
+ "O2_uncertainty": {
+  "k": 11,
+  "n": 86,
+  "pct": 12.8
+ },
+ "O3_per_task": {
+  "k": 4,
+  "n": 86,
+  "pct": 4.7
+ },
+ "O4_usable_n": {
+  "k": 47,
+  "n": 86,
+  "pct": 54.7
+ },
+ "O5_paired": {
+  "k": 1,
+  "n": 86,
+  "pct": 1.2
+ },
+ "O1b_base_ge_095": {
+  "k": 55,
+  "n": 84,
+  "pct": 65.5
+ },
+ "any_uncertainty_or_per_task_or_paired": {
+  "k": 15,
+  "n": 86,
+  "pct": 17.4
+ },
+ "O6_median_gap_pts": -0.2,
+ "O6_median_failure_ratio": 1.017,
+ "O7": {
+  "n_usable": 47,
+  "n_certifiable_pm5": 38,
+  "n_certifiable_but_ratio_hi_ge_1_5": 14
+ },
+ "O8": {
+  "n_papers_with_lower_base_benchmark": 30,
+  "loss_larger_on_lower_base": 9,
+  "loss_smaller_on_lower_base": 21,
+  "sign_test_p": 0.042773945257067694,
+  "pairs": [
+   {
+    "paper": "2609.10915",
+    "benchmark": "Real robot (Franka, 4 tasks, DROID-trained)",
+    "loss_libero_pts": -0.5,
+    "loss_other_pts": -17.5,
+    "fr_libero": 0.8,
+    "fr_other": 0.4615384615384617
+   },
+   {
+    "paper": "2606.22540",
+    "benchmark": "Meta-World MT50 (pi0.5)",
+    "loss_libero_pts": 0.05,
+    "loss_other_pts": -0.3,
+    "fr_libero": 1.0175438596491249,
+    "fr_other": 0.9914040114613181
+   },
+   {
+    "paper": "2606.15285",
+    "benchmark": "Real robot (SO100 + Kinova Gen2, 6 tasks)",
+    "loss_libero_pts": 1.4,
+    "loss_other_pts": -15.0,
+    "fr_libero": 1.2916666666666667,
+    "fr_other": 0.3087557603686634
+   },
+   {
+    "paper": "2605.11567",
+    "benchmark": "MetaWorld (pi0.5)",
+    "loss_libero_pts": -0.1,
+    "loss_other_pts": -1.6,
+    "fr_libero": 0.9523809523809523,
+    "fr_other": 0.9279279279279279
+   },
+   {
+    "paper": "2603.20658",
+    "benchmark": "Real robot (dual-arm, 3 tasks, pi0.5)",
+    "loss_libero_pts": -0.4,
+    "loss_other_pts": -2.2,
+    "fr_libero": 0.8709677419354839,
+    "fr_other": 0.9464720194647201
+   },
+   {
+    "paper": "2606.05737",
+    "benchmark": "LIBERO-Pro (16 perturbation cells, full-encoder standard-LIBERO checkpoint)",
+    "loss_libero_pts": -0.6,
+    "loss_other_pts": -0.7,
+    "fr_libero": 0.88,
+    "fr_other": 0.9876106194690267
+   },
+   {
+    "paper": "2505.21200",
+    "benchmark": "VLABench (Select Painting task, OpenVLA LoRA weights)",
+    "loss_libero_pts": 0.7,
+    "loss_other_pts": 2.0,
+    "fr_libero": 1.02734375,
+    "fr_other": 1.021505376344086
+   },
+   {
+    "paper": "2608.06434",
+    "benchmark": "Realman MuJoCo sim single-arm hard",
+    "loss_libero_pts": 1.75,
+    "loss_other_pts": 6.0,
+    "fr_libero": 1.2991452991452985,
+    "fr_other": 1.1363636363636365
+   },
+   {
+    "paper": "2607.28405",
+    "benchmark": "Real robot AgiBot G2 (3 tasks, Fast-WAM)",
+    "loss_libero_pts": 0.2,
+    "loss_other_pts": 6.6,
+    "fr_libero": 1.0833333333333333,
+    "fr_other": 1.1798365122615806
+   },
+   {
+    "paper": "2602.03983",
+    "benchmark": "Real robot Cobot Magic (7 tasks, OpenVLA-OFT)",
+    "loss_libero_pts": -0.6,
+    "loss_other_pts": -5.0,
+    "fr_libero": 0.8695652173913043,
+    "fr_other": 0.8923110058152056
+   },
+   {
+    "paper": "2601.20262",
+    "benchmark": "Real robot RB-Y1 hands and torso (3 tasks, Jetson Thor)",
+    "loss_libero_pts": 1.0,
+    "loss_other_pts": -31.5,
+    "fr_libero": 1.25,
+    "fr_other": 0.35185185185185197
+   },
+   {
+    "paper": "2511.18082",
+    "benchmark": "Real robot ARX5 (4 tasks, OpenVLA)",
+    "loss_libero_pts": 1.0,
+    "loss_other_pts": 0.0,
+    "fr_libero": 1.0399201596806387,
+    "fr_other": 1.0
+   },
+   {
+    "paper": "2607.14695",
+    "benchmark": "Kinetix",
+    "loss_libero_pts": -1.5,
+    "loss_other_pts": -7.4,
+    "fr_libero": 0.9318181818181818,
+    "fr_other": 0.8092783505154637
+   },
+   {
+    "paper": "2604.24622",
+    "benchmark": "CALVIN D->D (5-instruction chain success; avg len 3.52 vs 3.67)",
+    "loss_libero_pts": -0.8,
+    "loss_other_pts": -2.6,
+    "fr_libero": 0.813953488372093,
+    "fr_other": 0.9426048565121414
+   },
+   {
+    "paper": "2603.19199",
+    "benchmark": "CALVIN ABC->D (5/5 chain success; avg len 4.313 vs 4.292)",
+    "loss_libero_pts": 0.4,
+    "loss_other_pts": 1.4,
+    "fr_libero": 1.1290322580645162,
+    "fr_other": 1.0682926829268293
+   },
+   {
+    "paper": "2506.17639",
+    "benchmark": "ManiSkill3 PutOnPlateInScene25 (IND+OOD avg)",
+    "loss_libero_pts": -0.5,
+    "loss_other_pts": -3.51,
+    "fr_libero": 0.8275862068965517,
+    "fr_other": 0.8423180592991913
+   },
+   {
+    "paper": "2606.20246",
+    "benchmark": "RoboCasa (5 tasks, 30 demos)",
+    "loss_libero_pts": 0.7,
+    "loss_other_pts": -2.4,
+    "fr_libero": 1.1296296296296295,
+    "fr_other": 0.9715639810426542
+   },
+   {
+    "paper": "2606.05254",
+    "benchmark": "Real robot Unitree G1 (3 tasks)",
+    "loss_libero_pts": 2.9,
+    "loss_other_pts": 6.7,
+    "fr_libero": 3.0714285714285716,
+    "fr_other": 1.2012012012012014
+   },
+   {
+    "paper": "2509.05614",
+    "benchmark": "VLA-Arena Dynamic distractors L1",
+    "loss_libero_pts": 0.5,
+    "loss_other_pts": 0.8,
+    "fr_libero": 1.1470588235294117,
+    "fr_other": 1.0185185185185184
+   },
+   {
+    "paper": "2506.07639",
+    "benchmark": "Real robot Franka household tasks (ID/OOD objects/OOD instruction avg)",
+    "loss_libero_pts": -4.2,
+    "loss_other_pts": -1.3,
+    "fr_libero": 0.842696629213483,
+    "fr_other": 0.9638888888888889
+   },
+   {
+    "paper": "2505.15304",
+    "benchmark": "LIBERO-Spatial language-instruction variants (4 tasks)",
+    "loss_libero_pts": 0.6,
+    "loss_other_pts": 0.0,
+    "fr_libero": 1.0229007633587786,
+    "fr_other": 1.0
+   },
+   {
+    "paper": "2608.29749",
+    "benchmark": "RoboTwin 2.0 (50 tasks, Easy+Hard overall)",
+    "loss_libero_pts": -1.22,
+    "loss_other_pts": -1.51,
+    "fr_libero": 0.5793103448275869,
+    "fr_other": 0.9260528893241919
+   },
+   {
+    "paper": "2608.09492",
+    "benchmark": "Real robot (3 tasks, dual-arm)",
+    "loss_libero_pts": 0.0,
+    "loss_other_pts": -5.56,
+    "fr_libero": 1.0,
+    "fr_other": 0.7498875393612232
+   },
+   {
+    "paper": "2607.06370",
+    "benchmark": "VLABench (10 primitive tasks)",
+    "loss_libero_pts": 0.8,
+    "loss_other_pts": -2.2,
+    "fr_libero": 1.2758620689655173,
+    "fr_other": 0.9640522875816995
+   },
+   {
+    "paper": "2605.13778",
+    "benchmark": "Real robot conveyor-belt sorting (2 objects x 3 speeds)",
+    "loss_libero_pts": 0.3,
+    "loss_other_pts": -35.0,
+    "fr_libero": 1.0508474576271187,
+    "fr_other": 0.6037586324012227
+   },
+   {
+    "paper": "2605.02739",
+    "benchmark": "RoboCasa (24 kitchen tasks, GR00T zero-shot, f=3)",
+    "loss_libero_pts": 2.04,
+    "loss_other_pts": 3.06,
+    "fr_libero": 1.5964912280701746,
+    "fr_other": 1.0905861456483126
+   },
+   {
+    "paper": "2601.09708",
+    "benchmark": "SimplerEnv-Google",
+    "loss_libero_pts": -6.6,
+    "loss_other_pts": -4.0,
+    "fr_libero": 0.6094674556213016,
+    "fr_other": 0.8866855524079319
+   },
+   {
+    "paper": "2505.08243",
+    "benchmark": "LIBERO-90 Perturb",
+    "loss_libero_pts": 1.4,
+    "loss_other_pts": 0.0,
+    "fr_libero": 1.1521739130434785,
+    "fr_other": 1.0
+   },
+   {
+    "paper": "2608.02365",
+    "benchmark": "LIBERO-Plus (overall)",
+    "loss_libero_pts": -0.9,
+    "loss_other_pts": -23.5,
+    "fr_libero": 0.625,
+    "fr_other": 0.5154639175257733
+   },
+   {
+    "paper": "2608.11521",
+    "benchmark": "LIBERO-Plus (overall)",
+    "loss_libero_pts": -0.4,
+    "loss_other_pts": -13.01,
+    "fr_libero": 0.75,
+    "fr_other": 0.5926737633061991
+   }
+  ]
+ },
+ "method_families": [
+  "caching",
+  "chunking",
+  "compression",
+  "distillation",
+  "early_exit",
+  "other",
+  "quantization",
+  "speculative",
+  "steps",
+  "token_pruning"
+ ]
+}

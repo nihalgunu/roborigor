@@ -1,0 +1,30 @@
+# V2 denoising budget x execution horizon, pi0.5 on libero_10.
+# 12 cells as one-arm-per-cell (num_steps is per-server-process; the box
+# driver restarts the server between arms). Same 8 tasks as V1.
+# The (10, 5) cell is V1's control and is not repeated here.
+# RUNS ONLY AFTER the owner's methodology sign-off.
+campaign: v2_knobs_pi05
+benchmark: libero
+policy:
+  policy_id: pi05_libero
+  checkpoint: gs://openpi-assets/checkpoints/pi05_libero
+suite: libero_10
+output_dir: results/v2_knobs
+base:
+  seeds: [7]
+  sampling_seeds: [0, 1, 2]
+  task_ids: [0, 1, 2, 3, 4, 6, 8, 9]
+  init_ids: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+arms:
+  - {name: ns1_eh1, num_steps: 1, exec_horizon: 1}
+  - {name: ns1_eh5, num_steps: 1, exec_horizon: 5}
+  - {name: ns1_eh10, num_steps: 1, exec_horizon: 10}
+  - {name: ns2_eh1, num_steps: 2, exec_horizon: 1}
+  - {name: ns2_eh5, num_steps: 2, exec_horizon: 5}
+  - {name: ns2_eh10, num_steps: 2, exec_horizon: 10}
+  - {name: ns5_eh1, num_steps: 5, exec_horizon: 1}
+  - {name: ns5_eh5, num_steps: 5, exec_horizon: 5}
+  - {name: ns5_eh10, num_steps: 5, exec_horizon: 10}
+  - {name: ns10_eh1, num_steps: 10, exec_horizon: 1}
+  - {name: ns10_eh5, num_steps: 10, exec_horizon: 5}
+  - {name: ns10_eh10, num_steps: 10, exec_horizon: 10}

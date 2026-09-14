@@ -1,0 +1,17 @@
+# Pilot 2a: harness-on-box smoke. pi0.5 on libero_10 task 0, the exact
+# episodes the 2026-08-15 baseline ran (task 0, inits 0-9, env seed 7,
+# uncontrolled sampling), so records diff pairwise against the baseline.
+campaign: pilot2a_smoke
+benchmark: libero
+policy:
+  policy_id: pi05_libero
+  checkpoint: gs://openpi-assets/checkpoints/pi05_libero
+suite: libero_10
+output_dir: results/pilot2a
+base:
+  seeds: [7]
+  task_ids: [0]
+  init_ids: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  n_trials_per_task: 10
+arms:
+  - name: control
