@@ -68,7 +68,7 @@ token pruning, and quantization, applied to released policies such as
 $\pi_0$, $\pi_{0.5}$, and SmolVLA~\cite{black2024pi0,pi05,shukor2025smolvla}.
 Their shared evidence is parity with the base policy on
 LIBERO~\cite{liu2023libero}; released $\pi_{0.5}$, for example, loses
-$0.2$ points at a single denoising step~\cite{oi2026actioncache}.\footnote{Per-episode logs, audit extractions, and code: \ifanon\url{https://anonymous.4open.science/r/flow-dials-eval}\else \url{https://github.com/nihalgunu/roborigor}\fi}
+$0.2$ points at a single denoising step~\cite{oi2026actioncache}.\footnote{\ifanon Code, per-episode logs, and audit extractions are provided as anonymized supplementary material.\else Per-episode logs, audit extractions, and code: \url{https://github.com/nihalgunu/roborigor}\fi}
 
 \textbf{Claim.} Such no-loss verdicts are largely supplied by tasks both
 settings already solve, and so say little about the tasks on which
@@ -208,7 +208,7 @@ with the exact conditional odds-ratio interval; (ii)~the absolute
 interval on tasks declared informative before the experiment; and
 (iii)~a failure-rate-ratio interval against a declared bound, certifying
 only if (ii) lies inside the margin and (iii) lies below the bound.
-\texttt{roborigor report} computes all three from paired records and
+\texttt{\ifanon ceilingcheck\else roborigor\fi{} report} computes all three from paired records and
 warns when a pooled certificate does not hold on the informative tasks.
 
 \textbf{Limitations.} Simulation only, on LIBERO-family benchmarks and
