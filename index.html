@@ -48,15 +48,16 @@
 
   <h2>TL;DR</h2>
   <p><b>Papers that make VLA policies cheaper to run justify their speedups by showing no loss on
-  LIBERO, where base policies already succeed in more than 90% of episodes. Those no-loss verdicts
+  LIBERO, where base policies typically succeed in more than 90% of episodes. Those no-loss verdicts
   are supplied largely by tasks both settings already solve, so they say little about the tasks on
   which policies fail.</b> On released pi0.5, one denoising step is equivalent to ten within
   plus or minus 5 points on an eight-task LIBERO-10 battery, yet inconclusive on the four tasks
   classified as informative before the experiment. Across all 79 paired comparisons in our grids,
   the saturated tasks keep 17 of 18 equivalence certificates and the informative tasks keep 1, while
   the informative tasks keep 57 of 59 significant differences. Among 86 VLA efficiency papers claiming
-  parity on LIBERO, 76% compare against a base above 90% success and 15 report any uncertainty,
-  per-task result, or paired analysis.</p>
+  parity on LIBERO, the median base policy succeeds in 96.4% of episodes, where a plus or minus
+  5-point margin tolerates 2.35 times the base's failures, and 15 report any uncertainty, per-task
+  result, or paired analysis.</p>
 
   <figure>
     <img src="assets/fig_transfer.png" alt="Three panels: the one-step versus ten-step interval narrowing into the equivalence margin only as near-saturated tasks are admitted; equivalence certificates kept by each four-task subset; the same contrast across policies and distribution shifts">
@@ -79,15 +80,16 @@
         tasks keep 1 and 57. The asymmetry holds under unpaired and paired intervals, a 90% rule, and a
         plus or minus 7-point margin.</li>
     <li><b>Where failures are common, verdicts diverge.</b> One step costs released pi0 7.9 points
-        (p=0.00025) and pi0.5 4.7 points under camera-viewpoint shift (838 pairs, p=0.0008),
-        concentrated in the largest shifts; it is inconclusive for SmolVLA.</li>
+        (p=0.00025) and pi0.5 7.1 points on the hardest camera-viewpoint shifts (LIBERO-Plus levels 4-5,
+        p=0.00003), while on levels 1-3 the contrast is inconclusive; it is inconclusive for SmolVLA.</li>
     <li><b>No single margin scale is safe.</b> A failure-rate ratio ignores solved tasks and removes the
         dilution, but under camera shift, where most episodes fail, it certifies non-inferiority even
         though failures rise significantly. Absolute margins are lenient when failures are rare,
         relative margins when they are common.</li>
     <li><b>The efficiency literature makes its claims in this regime.</b> Of 86 papers claiming parity
-        with their base policy on LIBERO, 76% start from a base at or above 90% success, 15 report any
-        uncertainty, per-task result, or paired analysis, and 45% state no usable episode count. The
+        with their base policy on LIBERO, 64 of the 84 with numeric rates start from a base at or above
+        90% success, 15 report any uncertainty, per-task result, or paired analysis, and 45% state no
+        usable episode count. The
         audit does not show that the certified shortcuts are costly; it shows the certificates cannot
         tell.</li>
   </ul>
@@ -115,7 +117,7 @@ warning: equivalence on all tasks does not hold on the informative tasks</pre>
   <p>31,858 per-episode records on released pi0.5, pi0, and SmolVLA across LIBERO and LIBERO-Plus,
   with a datasheet; a paired evaluation harness with exactly-once resume; exact intervals, power
   calculations, and variance decomposition. Every number in the report regenerates from the records
-  by one script.</p>
+  with the released scripts.</p>
 
   <h2 id="bibtex">BibTeX</h2>
   <pre>@misc{gunukula2026ceiling,
