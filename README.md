@@ -14,6 +14,7 @@ VLA acceleration papers (fewer denoising steps, caching, token pruning, quantiza
 | | What | Where |
 |---|---|---|
 | Paper | *Certified by the Ceiling: Saturated Benchmarks Supply the No-Loss Claims Behind VLA Acceleration* | [`paper/`](paper/) |
+| Workshop paper | *Same Scene, Different Answer: Variance and Rollout Budgets for Flow-Policy Evaluation*, NeurIPS 2026 TAE (Trust-AI-Eval) workshop, poster | [PDF](https://nihalgunu.com/roborigor/same-scene-different-answer.pdf), [OpenReview](https://openreview.net/forum?id=GWoS5WMwr4) |
 | Toolkit | Paired evaluation harness, exact statistics, and the `roborigor report` check for no-loss claims | [`src/roborigor/`](src/roborigor/) |
 | Data | Per-episode records for every experiment, with a datasheet | [`artifact/`](artifact/), [`docs/DATASHEET.md`](docs/DATASHEET.md) |
 | Audits | 86 efficiency papers' no-loss claims; reporting practice in 50 VLA papers | [`docs/efficiency_audit/`](docs/efficiency_audit/), [`docs/audit/`](docs/audit/) |
