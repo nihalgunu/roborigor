@@ -35,112 +35,122 @@
 <body>
 <div class="wrap">
   <p class="kicker">RoboRigor</p>
-  <h1>Certified by the Ceiling:<br>Saturated Benchmarks Supply the No-Loss Claims Behind VLA Acceleration</h1>
+  <h1>Same Scene, Different Answer:<br>Variance and Rollout Budgets for Flow-Policy Evaluation</h1>
   <p class="authors">Nihal Gunukula</p>
-  <p class="sub">Technical report, 2026</p>
+  <p class="sub">NeurIPS 2026 Workshop on Trust-AI-Eval (TAE): Can We Trust AI Evaluation? Poster.</p>
   <div class="links">
-    <a href="certified-by-the-ceiling.pdf">Paper (PDF)</a>
+    <a href="same-scene-different-answer.pdf">Paper (PDF)</a>
+    <a href="https://openreview.net/forum?id=GWoS5WMwr4">OpenReview</a>
     <a href="https://github.com/nihalgunu/roborigor">Code</a>
     <a href="https://github.com/nihalgunu/roborigor/releases/tag/logs-v1">Per-episode logs</a>
-    <a href="https://github.com/nihalgunu/roborigor#check-a-no-loss-claim-on-your-own-results">Check your results</a>
     <a href="#bibtex">BibTeX</a>
   </div>
 
   <h2>TL;DR</h2>
-  <p><b>Papers that make VLA policies cheaper to run justify their speedups by showing no loss on
-  LIBERO, where base policies typically succeed in more than 90% of episodes. Those no-loss verdicts
-  are supplied largely by tasks both settings already solve, so they say little about the tasks on
-  which policies fail.</b> On released pi0.5, one denoising step is equivalent to ten within
-  plus or minus 5 points on an eight-task LIBERO-10 battery, yet inconclusive on the four tasks
-  classified as informative before the experiment. Across all 79 paired comparisons in our grids,
-  the saturated tasks keep 17 of 18 equivalence certificates and the informative tasks keep 1, while
-  the informative tasks keep 57 of 59 significant differences. Among 86 VLA efficiency papers claiming
-  parity on LIBERO, the median base policy succeeds in 96.4% of episodes, where a plus or minus
-  5-point margin tolerates 2.35 times the base's failures, and 15 report any uncertainty, per-task
-  result, or paired analysis.</p>
+  <p><b>A reported success rate for a flow-matching VLA policy is a sample from a distribution
+  nobody has decomposed. We decompose it, and the scene turns out to be the smaller share.</b>
+  Holding the initial state fixed leaves 61 to 84 percent of outcome variance in play across three
+  released policies on LIBERO; on the informative task it splits into the flow sampler (38.5 percent
+  of total) and system nondeterminism (46.0 percent), both invisible in a single reported rate, and
+  the partition replicates at three environment seeds. Rerunning the field's standard 500-episode
+  protocol while changing only the sampling seed moves the headline number by 2.2 points, a band
+  that already contains 27 percent of the recomputable improvements highlighted across 50 recent VLA
+  papers. The measured components give a rollout budget, and we spend it: a powered factorial of
+  denoising steps by execution horizon on released checkpoints shows the shipped pi0.5 default is
+  dominated, with a single Euler step at horizon 10 statistically indistinguishable from the 10-step
+  default at 2.7x lower measured latency. Every analysis is pre-registered or labeled exploratory in
+  a public deviations log.</p>
 
   <figure>
-    <img src="assets/fig_transfer.png" alt="Three panels: the one-step versus ten-step interval narrowing into the equivalence margin only as near-saturated tasks are admitted; equivalence certificates kept by each four-task subset; the same contrast across policies and distribution shifts">
-    <figcaption>Where equivalence certificates come from. (a) The one-step vs. ten-step interval on
-    pi0.5 enters the plus or minus 5-point margin only once near-saturated tasks are admitted; the
-    last, perfectly solved task adds 60 pairs and no disagreement. (b) The 18 certificates in our
-    grids, re-tested on every four-task subset at equal episode count: the saturated half keeps 17,
-    the informative half 1. (c) The same contrast where failures are common.</figcaption>
+    <img src="assets/fig_hero.png" alt="Two panels: the share of outcome variance that survives fixing the initial state for three policies, split into flow sampling and system nondeterminism on pi0.5; and the number of points each inference dial and deployment shift moves the reported pi0.5 rate">
+    <figcaption>(a) What survives fixing the scene, on the informative task across three policies
+    (base rates 0.16 to 0.59). The replicate block splits that share into flow sampling and system
+    nondeterminism on pi0.5; the other two policies have no replicate block, so only their combined
+    share is measured (hatched). (b) What each factor moves on the reported pi0.5 rate: inference
+    dials the evaluator sets (dark) and deployment shifts (mid). The seed moves the 500-episode
+    aggregate by only 2.2 points because averaging suppresses the per-episode variance in (a); that
+    is the budget the protocol must buy. Dashed line: the median claimed improvement across the
+    audited comparisons.</figcaption>
   </figure>
 
   <h2>Findings</h2>
   <ul>
-    <li><b>Saturated tasks supply the certificate.</b> Pairs of episodes both settings solve tighten an
-        absolute-difference interval for the pooled average while carrying no information about the
-        episodes on which a setting could fail, the leniency of absolute margins at low event rates
-        long documented for non-inferiority trials. On pi0.5 the one-step contrast is equivalent on
-        the battery ([-0.7, +4.5] points) and inconclusive on the informative tasks ([-2.0, +7.1]).</li>
-    <li><b>The pattern is systematic.</b> At equal episode counts, the four saturated tasks keep 17 of
-        18 equivalence certificates but only 38 of 59 significant differences; the four informative
-        tasks keep 1 and 57. The asymmetry holds under unpaired and paired intervals, a 90% rule, and a
-        plus or minus 7-point margin.</li>
-    <li><b>Where failures are common, verdicts diverge.</b> One step costs released pi0 7.9 points
-        (p=0.00025) and pi0.5 7.1 points on the hardest camera-viewpoint shifts (LIBERO-Plus levels 4-5,
-        p=0.00003), while on levels 1-3 the contrast is inconclusive; it is inconclusive for SmolVLA.</li>
-    <li><b>No single margin scale is safe.</b> A failure-rate ratio ignores solved tasks and removes the
-        dilution, but under camera shift, where most episodes fail, it certifies non-inferiority even
-        though failures rise significantly. Absolute margins are lenient when failures are rare,
-        relative margins when they are common.</li>
-    <li><b>The efficiency literature makes its claims in this regime.</b> Of 86 papers claiming parity
-        with their base policy on LIBERO, 64 of the 84 with numeric rates start from a base at or above
-        90% success, 15 report any uncertainty, per-task result, or paired analysis, and 45% state no
-        usable episode count. The
-        audit does not show that the certified shortcuts are costly; it shows the certificates cannot
-        tell.</li>
+    <li><b>Where the variance lives.</b> With the initial state held fixed, 61 to 84 percent of
+        per-init outcome variance remains across pi0.5, pi0, and SmolVLA on the informative task. A
+        replicate block on pi0.5 attributes 38.5 percent of total variance to the flow sampler and
+        46.0 percent to system nondeterminism. On saturated tasks (observed rate at or above 0.96)
+        both components collapse, which is why a battery average can look stable while the tasks
+        that carry information do not.</li>
+    <li><b>The budget that follows.</b> Ten runs of the standard 500-episode LIBERO-10 protocol
+        differing only in flow-sampling seed span 2.2 points; 27 percent of the 86 recomputable
+        improvements in the audited papers fit inside that band. At the audited median of 50 rollouts
+        per task the minimum detectable effect at LIBERO-typical base rates is 18 points, and a
+        2-point claim costs 2,200 episodes per arm. Pairing by initial state, free on LIBERO, buys a
+        measured 1.4 to 2.3x relative efficiency; a released calculator inverts both directions
+        exactly.</li>
+    <li><b>The shipped default is dominated.</b> On released pi0.5 the published default (10 steps,
+        horizon 5) reaches 0.950 at 17.8 ms of measured inference latency per executed step; one
+        Euler step at horizon 10 reaches 0.965 at 6.7 ms, and nothing on the 4x3 grid dominates it.
+        Held to the paper's own standard the claim is equivalence, not superiority: the exact McNemar
+        test does not separate the cells (p=0.26). Replanning cadence, not denoising budget, is the
+        dial that matters: every replan-every-step cell loses 9 to 41 points to its horizon-10
+        counterpart. pi0 does not tolerate the one-step cut.</li>
+    <li><b>The cut has one confirmed price.</b> Under camera-viewpoint shift the one-step frontier
+        costs pi0.5 4.7 points; on the other registered perturbation axes the contrast is
+        inconclusive.</li>
+    <li><b>Rankings survive off the floor; margins never do.</b> Across identical LIBERO-Plus variant
+        sets, no pairwise ordering of the three policies inverts on the registered axes (Kendall tau
+        1.0), yet one 16.5-point clean gap stands for anything from 9.6 to 67 points of deployed
+        margin. The single significant inversion (SmolVLA over pi0 under robot-initial-state shift,
+        exact p=0.0022; exploratory, post-freeze axis) appears exactly where an axis floors the
+        trailing policies.</li>
+    <li><b>A third of published claims cannot be checked at all.</b> Across 50 VLA papers sampled under
+        frozen intake rules, 34.4 percent of highlighted comparisons state no usable rollout count,
+        only 31 of 131 state an evaluation-seed count, and 31.4 percent of the recomputable
+        comparisons fail an exact test.</li>
   </ul>
 
   <figure>
-    <img src="assets/fig_efficiency.png" alt="Scatter of base-policy success versus method-minus-base gap for 84 no-loss claims, clustered above 90 percent base success">
-    <figcaption>No-loss claims in 84 audited VLA efficiency papers with numeric LIBERO rates. Shaded:
-    base at or above 90% success. Blue: the claim reports uncertainty, per-task results, or a paired
-    analysis.</figcaption>
+    <img src="assets/fig_seed_spread.png" alt="Ten headline LIBERO-10 success rates from the standard 500-episode protocol, differing only in flow-sampling seed, spanning 2.2 points">
+    <figcaption>Ten runs of the standard 500-episode LIBERO-10 protocol differing only in
+    flow-sampling seed (5,000 fresh episodes). The 2.2-point spread contains 27 percent of the 86
+    recomputable improvements highlighted across the 50 audited papers.</figcaption>
   </figure>
 
-  <h2>Check a no-loss claim</h2>
-  <p>The toolkit ships the three-part report the paper recommends: discordant pairs with an exact
-  conditional odds-ratio interval, the paired interval on tasks declared informative in advance, and a
-  failure-rate ratio against a declared bound.</p>
-  <pre>pip install -e ".[stats]"
-roborigor report --a runs/fast --b runs/base --informative-tasks 0,2,8,9
+  <figure>
+    <img src="assets/fig_pareto.png" alt="Success versus measured inference latency per executed step for all step-by-horizon cells on pi0.5, with the one-step horizon-10 cell on the frontier">
+    <figcaption>pi0.5 success against measured latency per executed step for every (steps, horizon)
+    cell on the registered battery (480 paired episodes each). The published default is (10, 5); the
+    frontier is (1, 10).</figcaption>
+  </figure>
 
-all tasks          n=480  96.5% vs 94.6%  diff +1.9 [-0.7, +4.5]  b-c 23-14  -> EQUIVALENT
-informative        n=240  94.2% vs 91.7%  diff +2.5 [-2.0, +7.1]  b-c 17-11  -> INCONCLUSIVE
-failure ratio A/B 0.65 [0.31, 1.21]  -> within bound
-warning: equivalence on all tasks does not hold on the informative tasks</pre>
+  <h2>What to report</h2>
+  <p>Report the dials: steps, horizon, and seed policy move the number by up to 41 points, and a
+  success rate without them is not a measurement. Size the run before launching it. Pair everything
+  the benchmark lets you pair. Average over sampling seeds on informative tasks and report the seed
+  count. Report a margin band under perturbation, not a clean gap. Stop early honestly, with a
+  declared rule.</p>
 
   <h2>Data and tooling</h2>
-  <p>31,858 per-episode records on released pi0.5, pi0, and SmolVLA across LIBERO and LIBERO-Plus,
-  with a datasheet; a paired evaluation harness with exactly-once resume; exact intervals, power
-  calculations, and variance decomposition. Every number in the report regenerates from the records
-  with the released scripts.</p>
+  <p>Per-episode records for every reported number on released pi0.5, pi0, and SmolVLA across LIBERO
+  and LIBERO-Plus; the frozen pre-registration with its deviations log; the audit extraction; and the
+  harness (<code>pip install roborigor</code>): exact intervals, paired comparisons, a rollout-budget
+  calculator, variance decomposition, and a campaign runner with exactly-once resume. Every number in
+  the paper, including the abstract's numerals, regenerates from the records by one script.</p>
 
-  <h2>Workshop paper</h2>
-  <p>The variance decomposition and rollout-budget analysis behind this report appeared first as
-  <a href="same-scene-different-answer.pdf"><i>Same Scene, Different Answer: Variance and Rollout
-  Budgets for Flow-Policy Evaluation</i></a>, accepted as a poster at the NeurIPS 2026 workshop
-  TAE (Trust-AI-Eval): Can We Trust AI Evaluation? (non-archival;
-  <a href="https://openreview.net/forum?id=GWoS5WMwr4">OpenReview</a>).</p>
+  <h2>Extended report</h2>
+  <p>A follow-up technical report from the same data, <a href="certified-by-the-ceiling.html">Certified
+  by the Ceiling: Saturated Benchmarks Supply the No-Loss Claims Behind VLA Acceleration</a>, asks
+  what the saturated tasks do to equivalence certificates and adds a census of no-loss claims in 86
+  VLA efficiency papers.</p>
 
   <h2 id="bibtex">BibTeX</h2>
-  <pre>@misc{gunukula2026ceiling,
-  title        = {Certified by the Ceiling: Saturated Benchmarks Supply the No-Loss Claims Behind VLA Acceleration},
-  author       = {Gunukula, Nihal},
-  year         = {2026},
-  howpublished = {Technical report},
-  url          = {https://nihalgunu.com/roborigor/certified-by-the-ceiling.pdf},
-  note         = {Code and per-episode logs: \url{https://github.com/nihalgunu/roborigor}}
-}</pre>
   <pre>@inproceedings{gunukula2026samescene,
   title     = {Same Scene, Different Answer: Variance and Rollout Budgets for Flow-Policy Evaluation},
   author    = {Gunukula, Nihal},
   booktitle = {NeurIPS 2026 Workshop on Trust-AI-Eval (TAE): Can We Trust AI Evaluation?},
   year      = {2026},
-  note      = {Non-archival workshop paper. \url{https://openreview.net/forum?id=GWoS5WMwr4}}
+  note      = {Non-archival. Code and per-episode logs: \url{https://github.com/nihalgunu/roborigor}}
 }</pre>
 
 </div>
