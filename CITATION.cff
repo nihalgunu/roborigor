@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use RoboRigor, please cite the paper below once it is public."
+message: "If you use RoboRigor, please cite the workshop paper below."
 title: "RoboRigor"
 authors:
   - family-names: "Gunukula"
@@ -8,13 +8,29 @@ authors:
     affiliation: "Purdue University"
 license: Apache-2.0
 repository-code: "https://github.com/nihalgunu/roborigor"
+url: "https://nihalgunu.com/roborigor/"
 preferred-citation:
-  type: article
-  title: "Certified by the Ceiling: Saturated Benchmarks Supply the No-Loss Claims Behind VLA Acceleration"
+  type: conference-paper
+  title: "Same Scene, Different Answer: Variance and Rollout Budgets for Flow-Policy Evaluation"
   authors:
     - family-names: "Gunukula"
       given-names: "Nihal"
       email: "ngunukul@purdue.edu"
       affiliation: "Purdue University"
   year: 2026
-  notes: "Technical report. Citation details will be updated on publication."
+  conference:
+    name: "NeurIPS 2026 Workshop on Trust-AI-Eval (TAE): Can We Trust AI Evaluation?"
+    city: "Sydney"
+    country: "AU"
+  url: "https://openreview.net/forum?id=GWoS5WMwr4"
+  notes: "Non-archival workshop paper (poster)."
+references:
+  - type: report
+    title: "Certified by the Ceiling: Saturated Benchmarks Supply the No-Loss Claims Behind VLA Acceleration"
+    authors:
+      - family-names: "Gunukula"
+        given-names: "Nihal"
+        affiliation: "Purdue University"
+    year: 2026
+    url: "https://nihalgunu.com/roborigor/certified-by-the-ceiling.pdf"
+    notes: "Technical report."

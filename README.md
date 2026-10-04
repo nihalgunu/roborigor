@@ -18,6 +18,7 @@ VLA acceleration papers (fewer denoising steps, caching, token pruning, quantiza
 | Toolkit | Paired evaluation harness, exact statistics, and the `roborigor report` check for no-loss claims | [`src/roborigor/`](src/roborigor/) |
 | Data | Per-episode records for every experiment, with a datasheet | [`artifact/`](artifact/), [`docs/DATASHEET.md`](docs/DATASHEET.md) |
 | Audits | 86 efficiency papers' no-loss claims; reporting practice in 50 VLA papers | [`docs/efficiency_audit/`](docs/efficiency_audit/), [`docs/audit/`](docs/audit/) |
+| Pre-registration | Frozen analysis plan, go/no-go gates, and the dated deviations log cited in the papers | [`docs/audit-preregistration.md`](docs/audit-preregistration.md) |
 
 ## Check a no-loss claim on your own results
 
@@ -93,10 +94,22 @@ See [`scripts/README.md`](scripts/README.md) for the full index.
 | `src/roborigor/` | The pip-installable package: schema and config (py3.8-safe), stats, rollout runner, campaign tools, env adapters, policy server. |
 | `paper/` | Paper source, generated tables, and figures. |
 | `artifact/` | Released per-episode records and derived reports (`python scripts/package_artifact.py`). |
-| `docs/` | Datasheet, audits, paper data, release checklist. |
+| `docs/` | Datasheet, audits, paper data, pre-registration and deviations log, release checklist. |
 | `scripts/` | Serving, provisioning, analysis, figures, packaging. |
 | `configs/` | Campaign YAMLs. |
 | `tests/` | 92 tests including Monte-Carlo coverage checks and golden-value pins. |
+
+## Citation
+
+```bibtex
+@inproceedings{gunukula2026samescene,
+  title     = {Same Scene, Different Answer: Variance and Rollout Budgets for Flow-Policy Evaluation},
+  author    = {Gunukula, Nihal},
+  booktitle = {NeurIPS 2026 Workshop on Trust-AI-Eval (TAE): Can We Trust AI Evaluation?},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=GWoS5WMwr4}
+}
+```
 
 ## License
 
