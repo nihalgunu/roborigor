@@ -561,7 +561,7 @@ visible in the log rather than reconstructed from it.
 
 Same-day addendum (2026-09-03): the title above was shortened to "The Shipped Default Is Dominated: Powered Equivalence for Flow-Policy Inference Dials" before submission; the decomposition clause moved from the title to the abstract's fourth sentence. No other change.
 
-### Entry 20 (2026-09-13, DRAFT on branch reframe-ceiling: reframe after a novelty check; new exploratory analyses)
+### Entry 20 (2026-09-13, written on branch reframe-ceiling, on main since the 2026-10-04 release: reframe after a novelty check; new exploratory analyses)
 
 A literature check run after submission found that the Entry 19 headline, that one Euler step matches the ten-step default on pi0.5 on LIBERO, was already reported on the released checkpoint (ActionCache, arXiv:2607.06370v2, appendix Table 7; also SnapFlow and AdaVLA), and that the "two-regime" rank rule of the perturbation section is contradicted by LIBERO-Plus's own ten-model table (e.g. UniVLA above pi0-fast clean, below it under layout and noise, neither near the floor). Separately, a review of the equivalence certificate noted that it rests on near-ceiling tasks (already disclosed in Entry 13).
 
@@ -575,7 +575,7 @@ The draft manuscript is restructured around that last point. Nothing registered 
 
 Removed from the draft manuscript (still in the artifact and this log): the two-regime rank rule and rank-inversion analysis, the clean-anchor analysis, the Pareto figure, and the audit figure. The pre-registered gates remain failed and are reported.
 
-### Entry 21 (2026-09-13, DRAFT on branch reframe-ceiling: census, paired intervals, efficiency audit; all exploratory)
+### Entry 21 (2026-09-13, written on branch reframe-ceiling, on main since the 2026-10-04 release: census, paired intervals, efficiency audit; all exploratory)
 
 (a) Census. scripts/analyze_dilution_census.py re-tests every paired dial comparison in the released grids (pi0.5 env seeds 7 and 8, pi0; 79 comparisons) on the full battery and on four-task subsets. The informative/saturated split is the one written into configs/v1_varcomp_pi05.yaml on 2026-08-18 for the variance study (qualifying tasks 0, 2, 9 plus instrument task 8; saturated exhibit 1, 3, 4, 6) before any V2 grid episode; using it as the equivalence subset is a post hoc choice made in this entry, after Entry 13's subset results were known. An equal-size control evaluates all 70 four-task subsets, and a symmetric control reports differences kept by each half. Sensitivity: unpaired Newcombe, paired Wald, a 90% interval, and margins of +/-3 and +/-7. Unadjusted and Holm counts are both reported.
 
